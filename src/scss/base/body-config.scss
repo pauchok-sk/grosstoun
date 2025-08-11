@@ -1,0 +1,28 @@
+.body-hidden {
+  overflow: hidden;
+  touch-action: none;
+}
+.body {
+}
+
+.sect-m {
+  margin: 50px 0px;
+}
+.sect-p {
+  padding: 50px 0px;
+}
+
+.content {
+  font-size: 18px;
+  color: rgba(40, 41, 42, 0.85);
+
+  p {
+    margin: 0;
+    &:not(:last-child) {
+      margin-bottom: 18px;
+    }
+  }
+}
+._mulish {
+  font-family: "Mulish", sans-serif;
+}

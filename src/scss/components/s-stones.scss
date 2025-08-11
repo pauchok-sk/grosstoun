@@ -1,0 +1,36 @@
+.s-stones {
+  background-color: var(--gray);
+  &__title {
+    max-width: 965px;
+    margin: 0 auto 32px auto;
+    text-align: center;
+
+    span {
+      &::before {
+        background: url('@img/title-line-185.png') center / 100% auto no-repeat;
+        width: 180px;
+        height: 12px;
+        @include tablet {
+          width: 150px;
+          right: auto;
+          left: 0;
+        }
+      }
+    }
+  }
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    row-gap: 32px;
+
+    @include laptop-min {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    @include tablet {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+      row-gap: 20px;
+    }
+  }
+}

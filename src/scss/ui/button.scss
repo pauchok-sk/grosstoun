@@ -1,0 +1,42 @@
+.btn-reset {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  color: inherit;
+}
+
+.btn-s {
+  @include flex-center;
+  width: fit-content;
+  cursor: pointer;
+  border: 1px solid var(--primary);
+  border-radius: 12px;
+  outline: none;
+  padding: 14px 25px;
+  background-color: var(--primary);
+
+  color: var(--white);
+  text-align: center;
+  font-weight: 700;
+  font-size: 17px;
+
+  transition: color .3s ease, border-color .3s ease, background-color .3s ease;
+
+  @include hover {
+    background-color: var(--primary-hover);
+    border-color: var(--primary-hover);
+  }
+
+  &._outline {
+    background-color: transparent;
+    color: var(--primary);
+
+    @include hover {
+      border-color: var(--primary);
+      background-color: var(--primary);
+      color: var(--white);
+    }
+  }
+}

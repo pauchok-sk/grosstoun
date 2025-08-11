@@ -1,0 +1,83 @@
+<div class="modal modal-get" id="modal-get">
+  <div class="modal-get__wrapper">
+    <div class="modal-get__main">
+      <h3 class="modal-get__title _mulish">
+        Составим смету и персональное КП под ваш проект
+      </h3>
+      <div class="modal-get__main-subtitle">В предложении вы получите:</div>
+      <ul class="list modal-get__main-list">
+        <li>смету для вашего проекта</li>
+        <li>подбор подходящих видов натурального и/или искусственного камня</li>
+        <li>сроки поставки и логистики</li>
+        <li>условия оплаты, упаковки и доставки</li>
+        <li>полное описание материалов с фото, характеристиками и объёмами</li>
+      </ul>
+      <p class="modal-get__main-content">
+        Работаем как с готовыми чертежами, так и с первичным техническим
+        заданием
+      </p>
+    </div>
+    <div class="modal-get__form-wrapper">
+      <p class="modal-get__form-content">
+        Оставьте заявку, и мы подготовим подробное коммерческое предложение
+        с учётом ваших требований и параметров проекта
+      </p>
+      <form action="#" class="modal-get__form">
+        <div class="modal-get__form-inputs">
+          <div class="input-control">
+            <input type="text" placeholder="Ваше имя" class="input" />
+          </div>
+          <div class="input-control">
+            <input type="email" placeholder="Ваш e-mail" class="input" />
+          </div>
+          <div class="input-control">
+            <input type="tel" placeholder="Номер телефона" class="input" />
+          </div>
+        </div>
+        <div class="modal-get__form-item">
+          <div class="modal-get__form-item-title">
+            Какой мессенджер удобнее для вас?
+          </div>
+          <div class="modal-get__radio-wrapper">
+            <input
+              type="radio"
+              name="messeneger"
+              id="messeneger-tg"
+              class="input-radio"
+            />
+            <label for="messeneger-tg" class="label-radio">Telegram</label>
+            <input
+              type="radio"
+              name="messeneger"
+              id="messeneger-wh"
+              class="input-radio"
+            />
+            <label for="messeneger-wh" class="label-radio">WhatsApp</label>
+          </div>
+        </div>
+        <input type="checkbox" id="modal-get-policy" class="input-policy" />
+        <label for="modal-get-policy" class="label-policy">
+          <span>
+            Я согласен с 
+            <a href="#" target="_blank">Политикой конфиденциальности</a>
+          </span>
+        </label>
+        <div class="modal-get__form-bottom">
+          <button type="submit" class="btn-s modal-get__form-submit">Получить КП</button>
+          <input type="file" id="modal-get-file" class="input-file">
+          <label for="modal-get-file" data-attach-text="Файл прикреплен" class="label-file">
+            <svg>
+              <use xlink:href='img/icons/icons.svg#icon-loconfile'></use>
+            </svg>
+            <span>Прикрепить файл ТЗ, если есть</span>
+          </label>
+        </div>
+      </form>
+    </div>
+    <img src="@img/doc.png" alt="image" class="modal-get__wrapper-img">
+  </div>
+  <div class="modal-get__bottom">
+    <div class="modal-get__bottom-content _mulish">Менеджер свяжется с вами в ближайшее время, уточнит детали и пришлёт КП в выбранный мессенджер</div>
+    <div class="modal-get__bottom-policy">*Оставляя данные, вы даёте своё согласие на обработку персональных данных и принимаете условия соглашения.</div>
+  </div>
+</div>

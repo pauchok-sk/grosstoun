@@ -1,0 +1,32 @@
+.header-dropdown-overlay {
+  position: fixed;
+  background: #dbdbdb;
+  opacity: 0.75;
+  inset: 0;
+  z-index: 80;
+}
+.header-dropdown {
+  position: fixed;
+  top: 74px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1200px;
+  background-color: white;
+  border-radius: 0 0 20px 20px;
+  max-height: calc(100vh - 74px);
+  overflow-y: auto;
+  z-index: 90;
+
+  &__container {
+  }
+  &__grid {
+  }
+  &__item {
+  }
+  &__item-title {
+  }
+  &__item-wrapper {
+  }
+  &__item-type {
+  }
+}

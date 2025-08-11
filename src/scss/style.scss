@@ -1,0 +1,30 @@
+@import "./base/normalize";
+@import "./base/vars";
+@import "./base/templates";
+@import "./base/settings";
+@import "./base/media";
+@import "./base/body-config";
+@import "./base/config-container";
+
+// ui
+@import "./ui/button";
+@import "./ui/list";
+@import "./ui/title";
+@import "./ui/form";
+@import "./ui/tab";
+@import "./ui/card-production";
+
+// widgets
+@import "./widgets/burger";
+@import "./widgets/modal";
+@import "./widgets/header-dropdown";
+
+// components
+@import "./components/header";
+
+@import "./components/intro";
+@import "./components/s-catalog-rec";
+@import "./components/s-stones";
+@import "./components/s-about";
+
+@import "./components/footer";

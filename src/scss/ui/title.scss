@@ -1,0 +1,42 @@
+.m-title {
+  font-family: "Mulish", sans-serif;
+  font-size: 36px;
+  line-height: 111%;
+  text-transform: uppercase;
+
+  @include tablet {
+    font-size: 30px;
+  }
+}
+
+.s-title {
+  font-family: "Mulish", sans-serif;
+  font-size: 32px;
+  line-height: 125%;
+
+  @include tablet {
+    font-size: 28px;
+  }
+  @include tablet-min {
+    font-size: 24px;
+  }
+
+  span {
+    position: relative;
+    z-index: 1;
+    width: fit-content;
+    &::before {
+      position: absolute;
+      content: "";
+      width: 235px;
+      height: 7px;
+      background: url('@img/title-line.png') center / 100% auto no-repeat;
+      right: 0;
+      bottom: -7px;
+      z-index: -1;
+      @include tablet {
+        width: 180px;
+      }
+    }
+  }
+}

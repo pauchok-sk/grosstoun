@@ -1,0 +1,342 @@
+<header class="header">
+  <div class="container">
+    <div class="header__wrapper">
+      <a href="/" class="header__logo">
+        <img src="@img/logo.svg" alt="logo" />
+      </a>
+      <nav class="header__nav">
+        <ul class="list header__list">
+          <li>
+            <a href="#">
+              <span>Породы</span>
+              <svg>
+                <use xlink:href="img/icons/icons.svg#icon-arrow-down"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span>Изделия</span>
+              <svg>
+                <use xlink:href="img/icons/icons.svg#icon-arrow-down"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#">Проекты</a>
+          </li>
+          <li>
+            <a href="#">О компании</a>
+          </li>
+          <li>
+            <a href="#">Производство</a>
+          </li>
+          <li>
+            <a href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__contacts">
+        <div class="header__contacts-wrapper">
+          <div class="header__contacts-social">
+            <a href="#" target="_blank" class="header__social-btn">
+              <img src="@img/tg.svg" alt="icon" />
+            </a>
+            <a href="#" target="_blank" class="header__social-btn">
+              <img src="@img/wh.svg" alt="icon" />
+            </a>
+          </div>
+          <a href="tel:+79137271088" class="header__contacts-btn">
+            +7 913 727-10-88
+          </a>
+        </div>
+        <a href="mailto:grosstoun@yandex.ru" class="header__contacts-btn">
+          <svg>
+            <use xlink:href="img/icons/icons.svg#icon-mail"></use>
+          </svg>
+          <span>grosstoun@yandex.ru</span>
+        </a>
+      </div>
+      <div class="header__burger-btn" id="burger-open">
+        <svg>
+          <use xlink:href="img/icons/icons.svg#icon-burger"></use>
+        </svg>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="burger-overlay" id="burger-overlay"></div>
+<div class="burger" id="burger">
+  <div class="burger__head">
+    <a href="/" class="burger__logo">
+      <img src="@img/logo.svg" alt="logo" />
+    </a>
+    <div class="burger__close" id="burger-close">
+      <svg>
+        <use xlink:href="img/icons/icons.svg#icon-close"></use>
+      </svg>
+    </div>
+  </div>
+  <ul data-spollers class="list burger__list">
+    <li>
+      <div data-spoller class="burger__spoller-btn">
+        <a href="#">
+          <span>Породы</span>
+        </a>
+        <svg>
+          <use xlink:href="img/icons/icons.svg#icon-arrow-down"></use>
+        </svg>
+      </div>
+      <div>
+        <ul class="list burger__sublist">
+          <li><a href="#">Категория</a></li>
+          <li><a href="#">Категория</a></li>
+          <li><a href="#">Категория</a></li>
+          <li><a href="#">Категория</a></li>
+          <li><a href="#">Категория</a></li>
+        </ul>
+      </div>
+    </li>
+    <li>
+      <div data-spoller class="burger__spoller-btn">
+        <a href="#">
+          <span>Изделия</span>
+        </a>
+        <svg>
+          <use xlink:href="img/icons/icons.svg#icon-arrow-down"></use>
+        </svg>
+      </div>
+      <div>
+        <ul class="list burger__sublist">
+          <li><a href="#">Категория</a></li>
+          <li><a href="#">Категория</a></li>
+          <li><a href="#">Категория</a></li>
+          <li><a href="#">Категория</a></li>
+          <li><a href="#">Категория</a></li>
+        </ul>
+      </div>
+    </li>
+    <li>
+      <a href="#">Проекты</a>
+    </li>
+    <li>
+      <a href="#">О компании</a>
+    </li>
+    <li>
+      <a href="#">Производство</a>
+    </li>
+    <li>
+      <a href="#">Контакты</a>
+    </li>
+  </ul>
+  <div class="burger__contacts">
+    <div class="burger__contacts-wrapper">
+      <div class="burger__contacts-social">
+        <a href="#" target="_blank" class="burger__social-btn">
+          <img src="@img/tg.svg" alt="icon" />
+        </a>
+        <a href="#" target="_blank" class="burger__social-btn">
+          <img src="@img/wh.svg" alt="icon" />
+        </a>
+      </div>
+      <a href="tel:+79137271088" class="burger__contacts-btn">
+        +7 913 727-10-88
+      </a>
+    </div>
+    <a href="mailto:grosstoun@yandex.ru" class="burger__contacts-btn">
+      <svg>
+        <use xlink:href="img/icons/icons.svg#icon-mail"></use>
+      </svg>
+      <span>grosstoun@yandex.ru</span>
+    </a>
+  </div>
+</div>
+
+<div class="header-dropdown-overlay" id="header-dropdown-overlay"></div>
+<div data-header-dropdown="breeds" class="header-dropdown">
+  <div class="header-dropdown__container">
+    <div class="header-dropdown__grid">
+      <div class="header-dropdown__item">
+        <a href="#" class="header-dropdown__item-title">
+          <span>Мрамор</span>
+          <svg>
+            <use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+          </svg>
+        </a>
+        <div class="header-dropdown__item-wrapper">
+          <a href="#" class="header-dropdown__item-type">
+            <img src="@img/preview.jpg" alt="image" />
+            <span>Коелга</span>
+          </a>
+          <a href="#" class="header-dropdown__item-type">
+            <img src="@img/preview.jpg" alt="image" />
+            <span>Змеевик</span>
+          </a>
+          <a href="#" class="header-dropdown__item-type">
+            <img src="@img/preview.jpg" alt="image" />
+            <span>Мраморный известняк</span>
+          </a>
+          <a href="#" class="header-dropdown__item-type">
+            <img src="@img/preview.jpg" alt="image" />
+            <span>Мрамор Дипломат</span>
+          </a>
+          <a href="#" class="header-dropdown__item-type">
+            <img src="@img/preview.jpg" alt="image" />
+            <span>Мрамор Полоцкий</span>
+          </a>
+        </div>
+      </div>
+      <div class="header-dropdown__item">
+        <a href="#" class="header-dropdown__item-title">
+          <span>Мрамор</span>
+          <svg>
+            <use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+          </svg>
+        </a>
+        <div class="header-dropdown__item-wrapper">
+          <a href="#" class="header-dropdown__item-type">
+            <img src="@img/preview.jpg" alt="image" />
+            <span>Коелга</span>
+          </a>
+          <a href="#" class="header-dropdown__item-type">
+            <img src="@img/preview.jpg" alt="image" />
+            <span>Змеевик</span>
+          </a>
+          <a href="#" class="header-dropdown__item-type">
+            <img src="@img/preview.jpg" alt="image" />
+            <span>Мраморный известняк</span>
+          </a>
+          <a href="#" class="header-dropdown__item-type">
+            <img src="@img/preview.jpg" alt="image" />
+            <span>Мрамор Дипломат</span>
+          </a>
+          <a href="#" class="header-dropdown__item-type">
+            <img src="@img/preview.jpg" alt="image" />
+            <span>Мрамор Полоцкий</span>
+          </a>
+        </div>
+      </div>
+      <div class="header-dropdown__item">
+        <a href="#" class="header-dropdown__item-title">
+          <span>Мрамор</span>
+          <svg>
+            <use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+          </svg>
+        </a>
+        <div class="header-dropdown__item-wrapper">
+          <a href="#" class="header-dropdown__item-type">
+            <img src="@img/preview.jpg" alt="image" />
+            <span>Коелга</span>
+          </a>
+          <a href="#" class="header-dropdown__item-type">
+            <img src="@img/preview.jpg" alt="image" />
+            <span>Змеевик</span>
+          </a>
+          <a href="#" class="header-dropdown__item-type">
+            <img src="@img/preview.jpg" alt="image" />
+            <span>Мраморный известняк</span>
+          </a>
+          <a href="#" class="header-dropdown__item-type">
+            <img src="@img/preview.jpg" alt="image" />
+            <span>Мрамор Дипломат</span>
+          </a>
+          <a href="#" class="header-dropdown__item-type">
+            <img src="@img/preview.jpg" alt="image" />
+            <span>Мрамор Полоцкий</span>
+          </a>
+        </div>
+      </div>
+      <div class="header-dropdown__item">
+        <a href="#" class="header-dropdown__item-title">
+          <span>Мрамор</span>
+          <svg>
+            <use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+          </svg>
+        </a>
+        <div class="header-dropdown__item-wrapper">
+          <a href="#" class="header-dropdown__item-type">
+            <img src="@img/preview.jpg" alt="image" />
+            <span>Коелга</span>
+          </a>
+          <a href="#" class="header-dropdown__item-type">
+            <img src="@img/preview.jpg" alt="image" />
+            <span>Змеевик</span>
+          </a>
+          <a href="#" class="header-dropdown__item-type">
+            <img src="@img/preview.jpg" alt="image" />
+            <span>Мраморный известняк</span>
+          </a>
+          <a href="#" class="header-dropdown__item-type">
+            <img src="@img/preview.jpg" alt="image" />
+            <span>Мрамор Дипломат</span>
+          </a>
+          <a href="#" class="header-dropdown__item-type">
+            <img src="@img/preview.jpg" alt="image" />
+            <span>Мрамор Полоцкий</span>
+          </a>
+        </div>
+      </div>
+      <div class="header-dropdown__item">
+        <a href="#" class="header-dropdown__item-title">
+          <span>Мрамор</span>
+          <svg>
+            <use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+          </svg>
+        </a>
+        <div class="header-dropdown__item-wrapper">
+          <a href="#" class="header-dropdown__item-type">
+            <img src="@img/preview.jpg" alt="image" />
+            <span>Коелга</span>
+          </a>
+          <a href="#" class="header-dropdown__item-type">
+            <img src="@img/preview.jpg" alt="image" />
+            <span>Змеевик</span>
+          </a>
+          <a href="#" class="header-dropdown__item-type">
+            <img src="@img/preview.jpg" alt="image" />
+            <span>Мраморный известняк</span>
+          </a>
+          <a href="#" class="header-dropdown__item-type">
+            <img src="@img/preview.jpg" alt="image" />
+            <span>Мрамор Дипломат</span>
+          </a>
+          <a href="#" class="header-dropdown__item-type">
+            <img src="@img/preview.jpg" alt="image" />
+            <span>Мрамор Полоцкий</span>
+          </a>
+        </div>
+      </div>
+      <div class="header-dropdown__item">
+        <a href="#" class="header-dropdown__item-title">
+          <span>Мрамор</span>
+          <svg>
+            <use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+          </svg>
+        </a>
+        <div class="header-dropdown__item-wrapper">
+          <a href="#" class="header-dropdown__item-type">
+            <img src="@img/preview.jpg" alt="image" />
+            <span>Коелга</span>
+          </a>
+          <a href="#" class="header-dropdown__item-type">
+            <img src="@img/preview.jpg" alt="image" />
+            <span>Змеевик</span>
+          </a>
+          <a href="#" class="header-dropdown__item-type">
+            <img src="@img/preview.jpg" alt="image" />
+            <span>Мраморный известняк</span>
+          </a>
+          <a href="#" class="header-dropdown__item-type">
+            <img src="@img/preview.jpg" alt="image" />
+            <span>Мрамор Дипломат</span>
+          </a>
+          <a href="#" class="header-dropdown__item-type">
+            <img src="@img/preview.jpg" alt="image" />
+            <span>Мрамор Полоцкий</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
