@@ -1,9 +1,21 @@
 .header-dropdown-overlay {
   position: fixed;
   background: #dbdbdb;
-  opacity: 0.75;
+  opacity: 0;
+  visibility: hidden;
   inset: 0;
   z-index: 80;
+  transition:
+    opacity 0.4s ease,
+    visibility 0.4s ease;
+  @include laptop-min {
+    display: none;
+  }
+
+  &._active {
+    opacity: 0.75;
+    visibility: visible;
+  }
 }
 .header-dropdown {
   position: fixed;
@@ -11,22 +23,102 @@
   left: 50%;
   transform: translateX(-50%);
   width: 1200px;
+  max-width: calc(100% - 15px);
+  padding: 30px;
   background-color: white;
   border-radius: 0 0 20px 20px;
   max-height: calc(100vh - 74px);
   overflow-y: auto;
   z-index: 90;
 
+  opacity: 0;
+  visibility: hidden;
+
+  transition:
+    opacity 0.4s ease,
+    visibility 0.4s ease;
+
+  @include laptop-middle {
+    top: 57px;
+  }
+  @include laptop-min {
+    display: none;
+  }
+
+  &._active {
+    opacity: 1;
+    visibility: visible;
+
+    .header-dropdown__container {
+      transform: translateY(0);
+    }
+  }
+
   &__container {
+    width: 1000px;
+    max-width: 100%;
+    margin: 0 auto;
+    transform: translateY(30px);
+
+    transition: transform .4s ease;
   }
   &__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 105px;
+    row-gap: 40px;
+    @include laptop-middle {
+      gap: 30px;
+    }
   }
   &__item {
   }
   &__item-title {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: fit-content;
+
+    font-weight: 600;
+    font-size: 21px;
+
+    transition: color 0.3s ease;
+
+    @include hover {
+      color: var(--primary);
+    }
+
+    svg {
+      width: 24px;
+      height: 24px;
+    }
   }
   &__item-wrapper {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
   }
   &__item-type {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: fit-content;
+
+    font-size: 16px;
+    line-height: 125%;
+    color: rgba(40, 41, 42, 0.85);
+
+    transition: color 0.3s ease;
+    @include hover {
+      color: var(--primary);
+    }
+
+    img {
+      width: 118px;
+      height: 48px;
+      border-radius: 8px;
+      object-fit: cover;
+    }
   }
 }

@@ -14,7 +14,12 @@
 
 .content {
   font-size: 18px;
+  line-height: 133%;
   color: rgba(40, 41, 42, 0.85);
+
+  @include tablet {
+    font-size: 16px;
+  }
 
   p {
     margin: 0;

@@ -1,0 +1,132 @@
+.s-estimation {
+  &__grid {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    padding-bottom: 24px;
+    z-index: 1;
+    @include laptop-min {
+      gap: 20px;
+      row-gap: 30px;
+    }
+    @include tablet {
+      grid-template-columns: 1fr;
+    }
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @include laptop-middle {
+      padding: 0 !important;
+    }
+
+    &:first-child {
+      .s-estimation__item-gallery {
+        width: calc(100% - 24px);
+        margin-left: auto;
+      }
+    }
+    &:nth-child(2) {
+      padding-right: 24px;
+      padding-top: 24px;
+      .s-estimation__item-gallery {
+        margin-left: auto;
+      }
+    }
+  }
+  &__title {
+    margin: 0px 0px 16px 0px;
+  }
+  &__content {
+    font-size: 21px;
+    color: rgba(40, 41, 42, 0.85);
+    margin: 0px 0px 30px 0px;
+    @include laptop-min {
+      font-size: 18px;
+    }
+  }
+  &__item-gallery {
+    height: 320px;
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+
+    @include laptop-middle {
+      width: 100% !important;
+      padding: 20px;
+      border-radius: 8px;
+      height: auto;
+      aspect-ratio: 1 / 0.6;
+      background-color: var(--gray);
+    }
+    @include laptop-min {
+      padding: 10px;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+
+      @include laptop-middle {
+        border-radius: 20px;
+      }
+      @include laptop-min {
+        border-radius: 8px;
+      }
+    }
+  }
+  &__item-nav {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding-left: 14px;
+    margin-top: 20px;
+    @include laptop-min {
+      flex-wrap: wrap;
+    }
+  }
+  &__btn {
+    flex: 1;
+    @include laptop-min {
+      flex: none;
+      width: 100%;
+    }
+  }
+  &__file-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px;
+
+    font-size: 16px;
+    line-height: 119%;
+    color: rgba(0, 0, 0, 0.65);
+
+    transition: color .3s ease;
+    @include hover {
+      color: var(--primary);
+    }
+
+    img {
+      flex-shrink: 0;
+    }
+
+    span {
+      max-width: 170px;
+    }
+  }
+  &__bg {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+
+    @include laptop-middle {
+      display: none;
+    }
+  }
+}
