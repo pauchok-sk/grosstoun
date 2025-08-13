@@ -9,6 +9,22 @@
   @include tablet-min {
     padding: 25px 15px;
   }
+
+  &._simple {
+    width: 600px;
+  }
+
+  &__title {
+    margin: 0px 0px 32px 0px;
+  }
+  &__form {
+    .input-control {
+      margin-bottom: 16px;
+    }
+  }
+  &__form-btn {
+    width: 100%;
+  }
 }
 .modal-get {
   &__wrapper {

@@ -1,4 +1,25 @@
 .input-control {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  &._icon {
+    .input {
+      padding-left: 44px;
+      padding-top: 16px;
+      padding-bottom: 16px;
+
+      font-size: 16px;
+      line-height: 125%;
+    }
+    svg {
+      position: absolute;
+      left: 16px;
+      width: 20px;
+      height: 20px;
+      color: rgba(40, 41, 42, 0.5);
+    }
+  }
 }
 .input {
   display: flex;
@@ -123,7 +144,7 @@
   font-size: 13px;
   color: rgba(0, 0, 0, 0.65);
 
-  transition: color .3s ease;
+  transition: color 0.3s ease;
 
   @include hover {
     color: var(--primary);

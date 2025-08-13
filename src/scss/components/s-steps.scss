@@ -1,5 +1,5 @@
 .s-steps {
-  background-color: var(--gray);
+  background-color: var(--gray) !important;
   @include laptop-min {
     overflow: hidden;
   }

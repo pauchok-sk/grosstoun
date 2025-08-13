@@ -28,6 +28,35 @@
     }
   }
 }
+.content-big {
+  font-size: 21px;
+  color: rgba(40, 41, 42, 0.85);
+
+  @include tablet {
+    font-size: 18px;
+  }
+
+  p {
+    margin: 0;
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+}
 ._mulish {
   font-family: "Mulish", sans-serif;
+}
+
+.rect {
+  position: absolute;
+  display: block;
+  height: auto;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: -1;
+
+  @include laptop-middle {
+    display: none;
+  }
 }

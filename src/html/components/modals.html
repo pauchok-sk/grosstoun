@@ -63,21 +63,53 @@
           </span>
         </label>
         <div class="modal-get__form-bottom">
-          <button type="submit" class="btn-s modal-get__form-submit">Получить КП</button>
-          <input type="file" id="modal-get-file" class="input-file">
-          <label for="modal-get-file" data-attach-text="Файл прикреплен" class="label-file">
+          <button type="submit" class="btn-s modal-get__form-submit">
+            Получить КП
+          </button>
+          <input type="file" id="modal-get-file" class="input-file" />
+          <label
+            for="modal-get-file"
+            data-attach-text="Файл прикреплен"
+            class="label-file"
+          >
             <svg>
-              <use xlink:href='img/icons/icons.svg#icon-loconfile'></use>
+              <use xlink:href="img/icons/icons.svg#icon-loconfile"></use>
             </svg>
             <span>Прикрепить файл ТЗ, если есть</span>
           </label>
         </div>
       </form>
     </div>
-    <img src="@img/doc.png" alt="image" class="modal-get__wrapper-img">
+    <img src="@img/doc.png" alt="image" class="modal-get__wrapper-img" />
   </div>
   <div class="modal-get__bottom">
-    <div class="modal-get__bottom-content _mulish">Менеджер свяжется с вами в ближайшее время, уточнит детали и пришлёт КП в выбранный мессенджер</div>
-    <div class="modal-get__bottom-policy">*Оставляя данные, вы даёте своё согласие на обработку персональных данных и принимаете условия соглашения.</div>
+    <div class="modal-get__bottom-content _mulish">
+      Менеджер свяжется с вами в ближайшее время, уточнит детали и пришлёт
+      КП в выбранный мессенджер
+    </div>
+    <div class="modal-get__bottom-policy">
+      *Оставляя данные, вы даёте своё согласие на обработку персональных данных
+      и принимаете условия соглашения.
+    </div>
   </div>
+</div>
+
+<div class="modal _simple" id="modal-consult">
+  <h3 class="s-title modal__title">Записаться на консультацию</h3>
+  <form action="#" class="modal__form">
+    <div class="input-control">
+      <input type="text" placeholder="Имя" class="input" />
+    </div>
+    <div class="input-control">
+      <input type="tel" placeholder="Ваш телефон" class="input" />
+    </div>
+    <button class="btn-s modal__form-btn">Отправить</button>
+    <input type="checkbox" id="modal-consult-policy" class="input-policy" />
+    <label for="modal-consult-policy" class="label-policy">
+      <span>
+        Я согласен с 
+        <a href="#" target="_blank">Политикой конфиденциальности</a>
+      </span>
+    </label>
+  </form>
 </div>

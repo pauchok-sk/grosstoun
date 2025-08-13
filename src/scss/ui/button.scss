@@ -12,7 +12,7 @@
   width: fit-content;
   cursor: pointer;
   border: 1px solid var(--primary);
-  border-radius: 12px;
+  border-radius: 8px;
   outline: none;
   padding: 14px 25px;
   background-color: var(--primary);
@@ -37,6 +37,38 @@
       border-color: var(--primary);
       background-color: var(--primary);
       color: var(--white);
+    }
+  }
+}
+
+.btn-circle {
+  @include flex-center;
+  border-radius: 50%;
+  background-color: var(--primary);
+  outline: none;
+  border: none;
+  cursor: pointer;
+  width: 72px;
+  height: 72px;
+
+  color: var(--white);
+
+  transition: background-color .3s ease;
+
+  @include hover {
+    background-color: var(--primary-hover);
+  }
+  @include tablet {
+    width: 55px;
+    height: 55px;
+  }
+
+  svg {
+    width: 22px;
+    height: 22px;
+    @include tablet {
+      width: 17px;
+      height: 17px;
     }
   }
 }

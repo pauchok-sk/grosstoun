@@ -19,4 +19,4 @@ sliders();
 
 Fancybox.bind("[data-fancybox]", {});
 
-// Fancybox.show([{ src: "#modal-get", type: "inline" }]);
+// Fancybox.show([{ src: "#modal-consult", type: "inline" }]);

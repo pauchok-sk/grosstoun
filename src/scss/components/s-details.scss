@@ -1,0 +1,112 @@
+.s-details {
+  &__title {
+    margin: 0px 0px 35px 0px;
+  }
+  &__wrapper {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 0 30px 30px 30px;
+    z-index: 1;
+    @include laptop-middle {
+      padding: 0;
+    }
+    @include laptop-min {
+      gap: 30px;
+    }
+    @include tablet {
+      flex-wrap: wrap;
+    }
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 50px;
+    &:first-child {
+      flex: 0 1 565px;
+      padding-top: 30px;
+      .s-details__item-content {
+        padding-right: 15px;
+      }
+    }
+    &:nth-child(2) {
+      flex: 0 1 505px;
+    }
+
+    @include laptop-middle {
+      flex: 1 !important;
+      padding: 0 !important;
+      justify-content: start;
+      gap: 25px;
+    }
+    @include tablet {
+      gap: 15px;
+      flex: none !important;
+      width: 100%;
+
+      &:nth-child(2) {
+        flex-direction: column-reverse;
+      }
+    }
+  }
+  &__gallery {
+    @include flex-center;
+    position: relative;
+    border-radius: 16px;
+    width: 100%;
+    height: 290px;
+    overflow: hidden;
+
+    @include laptop-middle {
+      height: auto;
+      aspect-ratio: 1/0.53;
+      border-radius: 20px;
+      padding: 15px;
+      background-color: var(--gray);
+    }
+    @include tablet {
+      padding: 10px;
+      border-radius: 8px;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+
+      @include laptop-middle {
+        border-radius: 20px;
+      }
+      @include tablet {
+        border-radius: 8px;
+      }
+    }
+  }
+  &__item-play {
+    position: absolute;
+    width: 92px;
+    height: 92px;
+    background: url('@img/play.png') center / 100% auto no-repeat;
+    z-index: 1;
+
+    transition: transform .3s ease;
+
+    @include hover {
+      transform: scale(1.07);
+    }
+
+    @include tablet {
+      width: 60px;
+      height: 60px;
+    }
+  }
+  &__item-content {
+    margin: 0;
+    @include laptop-min {
+      padding: 0 !important;
+    }
+  }
+}
