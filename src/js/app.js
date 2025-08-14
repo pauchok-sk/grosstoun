@@ -1,5 +1,6 @@
 import "../scss/style.scss";
 import burger from "./files/burger.js";
+import contentSectMore from "./files/contentSectMore.js";
 import fileAttach from "./files/fileAttach.js";
 import headerDrodpown from "./files/headerDropdown.js";
 import headerScroll from "./files/headerScroll.js";
@@ -16,7 +17,8 @@ tabs();
 headerScroll();
 headerDrodpown();
 sliders();
+contentSectMore();
 
 Fancybox.bind("[data-fancybox]", {});
 
-// Fancybox.show([{ src: "#modal-consult", type: "inline" }]);
+// Fancybox.show([{ src: "#modal-get", type: "inline" }]);

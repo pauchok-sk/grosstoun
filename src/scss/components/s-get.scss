@@ -1,0 +1,136 @@
+.s-get {
+  &__body {
+    position: relative;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    overflow: hidden;
+
+    gap: 30px;
+    border-radius: 20px;
+    padding: 28px 28px 85px 28px;
+    background-color: var(--gray);
+    z-index: 1;
+
+    @include tablet {
+      flex-wrap: wrap;
+      padding: 25px;
+    }
+    @include tablet-min {
+      padding: 25px 15px;
+    }
+  }
+  &__doc {
+    position: absolute;
+    left: 275px;
+    bottom: -160px;
+    z-index: -1;
+
+    @include laptop-middle {
+      width: 400px;
+      bottom: -220px;
+    }
+    @include laptop-min {
+      left: 0;
+    }
+    @include tablet {
+      left: auto;
+      right: 0;
+      bottom: -80px;
+      width: 200px;
+    }
+  }
+  &__info {
+    flex: 0 1 470px;
+    @include tablet {
+      flex: none;
+      width: 100%;
+    }
+
+    span {
+      &::before {
+        @media (min-width: 992px) {
+          width: 332px;
+          height: 15px;
+          bottom: -9px;
+          background: url("@img/title-line-332.png") center / 100% auto
+            no-repeat;
+        }
+        @include laptop-min {
+          right: 100px;
+        }
+      }
+    }
+  }
+  &__title {
+    margin: 0px 0px 35px 0px;
+  }
+  &__subtitle {
+    font-weight: 600;
+    font-size: 20px;
+    color: rgba(40, 41, 42, 0.85);
+    margin: 0px 0px 16px 0px;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    max-width: 320px;
+
+    li {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+
+      font-size: 16px;
+      color: rgba(0, 0, 0, 0.65);
+
+      &::before {
+        content: "";
+        width: 20px;
+        height: 20px;
+        flex-shrink: 0;
+        background: url("@img/check-green.svg") center / 100% auto no-repeat;
+      }
+    }
+  }
+  &__content {
+    font-weight: 600;
+    font-size: 16px;
+    color: rgba(40, 41, 42, 0.85);
+    margin: 16px 0px 0px 0px;
+    max-width: 320px;
+  }
+  &__form-wrapper {
+    flex: 0 1 455px;
+    @include tablet {
+      flex: none;
+      width: 100%;
+    }
+  }
+  &__form-content {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 127%;
+    margin: 0px 0px 36px 0px;
+    @include tablet {
+      font-size: 18px;
+      margin-bottom: 25px;
+    }
+  }
+  &__form-inputs {
+    max-width: 380px;
+    @include tablet-min {
+      max-width: none;
+    }
+  }
+  &__form-submit {
+    width: 255px;
+    @include laptop-min {
+      width: 180px;
+    }
+    @include tablet-min {
+      width: 100%;
+    }
+  }
+}

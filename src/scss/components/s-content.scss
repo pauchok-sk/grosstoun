@@ -1,0 +1,41 @@
+.s-content {
+  background-color: var(--gray);
+  &__title {
+    margin: 0px 0px 32px 0px;
+  }
+  &__content {
+    * {
+      &:nth-child(n+7) {
+        display: none;
+        opacity: 0;
+        transform: translateY(-20px);
+
+        transition:
+          opacity 0.4s ease,
+          transform 0.4s ease;
+      }
+    }
+  }
+  &__btn-more {
+    width: 280px;
+    max-width: 100%;
+    margin-top: 45px;
+
+    @include tablet {
+      margin-top: 30px;
+      width: 100%;
+    }
+
+    &._active {
+      svg {
+        transform: rotate(0);
+      }
+    }
+
+    svg {
+      transform: rotate(180deg);
+
+      transition: transform 0.3s ease;
+    }
+  }
+}

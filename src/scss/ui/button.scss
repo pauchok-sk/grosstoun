@@ -16,13 +16,17 @@
   outline: none;
   padding: 14px 25px;
   background-color: var(--primary);
+  gap: 12px;
 
   color: var(--white);
   text-align: center;
   font-weight: 700;
   font-size: 17px;
 
-  transition: color .3s ease, border-color .3s ease, background-color .3s ease;
+  transition:
+    color 0.3s ease,
+    border-color 0.3s ease,
+    background-color 0.3s ease;
 
   @include hover {
     background-color: var(--primary-hover);
@@ -39,6 +43,21 @@
       color: var(--white);
     }
   }
+  &._gray {
+    background-color: #e7e7e9;
+    border-color: #e7e7e9;
+    color: var(--black);
+
+    @include hover {
+      background-color: #c5c5ca;
+      border-color: #c5c5ca;
+    }
+  }
+
+  svg {
+    width: 24px;
+    height: 24px;
+  }
 }
 
 .btn-circle {
@@ -53,7 +72,7 @@
 
   color: var(--white);
 
-  transition: background-color .3s ease;
+  transition: background-color 0.3s ease;
 
   @include hover {
     background-color: var(--primary-hover);

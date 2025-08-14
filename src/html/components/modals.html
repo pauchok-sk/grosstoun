@@ -22,8 +22,8 @@
         Оставьте заявку, и мы подготовим подробное коммерческое предложение
         с учётом ваших требований и параметров проекта
       </p>
-      <form action="#" class="modal-get__form">
-        <div class="modal-get__form-inputs">
+      <form action="#" class="form-get modal__form-get">
+        <div class="form-get__inputs">
           <div class="input-control">
             <input type="text" placeholder="Ваше имя" class="input" />
           </div>
@@ -34,11 +34,11 @@
             <input type="tel" placeholder="Номер телефона" class="input" />
           </div>
         </div>
-        <div class="modal-get__form-item">
-          <div class="modal-get__form-item-title">
+        <div class="form-get__item">
+          <div class="form-get__item-title">
             Какой мессенджер удобнее для вас?
           </div>
-          <div class="modal-get__radio-wrapper">
+          <div class="form-get__radio-wrapper">
             <input
               type="radio"
               name="messeneger"
@@ -62,8 +62,8 @@
             <a href="#" target="_blank">Политикой конфиденциальности</a>
           </span>
         </label>
-        <div class="modal-get__form-bottom">
-          <button type="submit" class="btn-s modal-get__form-submit">
+        <div class="form-get__bottom">
+          <button type="submit" class="btn-s form-get__submit">
             Получить КП
           </button>
           <input type="file" id="modal-get-file" class="input-file" />
@@ -75,7 +75,11 @@
             <svg>
               <use xlink:href="img/icons/icons.svg#icon-loconfile"></use>
             </svg>
-            <span>Прикрепить файл ТЗ, если есть</span>
+            <span>
+              Прикрепить файл ТЗ,
+              <br />
+              если есть
+            </span>
           </label>
         </div>
       </form>
