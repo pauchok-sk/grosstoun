@@ -5,6 +5,7 @@ import fileAttach from "./files/fileAttach.js";
 import headerDrodpown from "./files/headerDropdown.js";
 import headerScroll from "./files/headerScroll.js";
 import inputmask from "./files/inputmask.js";
+import nouislider from "./files/nouislider.js";
 import sliders from "./files/sliders.js";
 import spoller from "./files/spoller.js";
 import tabs from "./files/tabs.js";
@@ -18,6 +19,7 @@ headerScroll();
 headerDrodpown();
 sliders();
 contentSectMore();
+nouislider();
 
 Fancybox.bind("[data-fancybox]", {});
 

@@ -1,0 +1,26 @@
+.range {
+  height: 4px !important;
+  box-shadow: none;
+  border: none;
+
+  .noUi-connect {
+    background-color: var(--primary);
+  }
+  .noUi-base {
+    background-color: #f2f2f2;
+  }
+
+  .noUi-handle {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: none;
+    top: -5px;
+    right: -10px;
+
+    &::before, &::after {
+      display: none;
+    }
+  }
+}

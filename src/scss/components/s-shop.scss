@@ -1,0 +1,199 @@
+.s-shop {
+  &__title {
+    margin: 0px 0px 16px 0px;
+  }
+  &__content {
+    font-size: 21px;
+    color: rgba(40, 41, 42, 0.85);
+    margin: 0px 0px 28px 0px;
+    @include tablet {
+      font-size: 18px;
+    }
+  }
+  &__nav {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 24px;
+    row-gap: 16px;
+    margin-bottom: 24px;
+    @include laptop-min {
+      display: flex;
+      gap: 20px;
+      overflow-x: auto;
+      margin: 0 -15px 24px -15px;
+      padding: 0 15px;
+    }
+  }
+  &__nav-btn {
+    cursor: pointer;
+    padding: 9px;
+    border: 1px solid rgba(40, 41, 42, 0.5);
+    border-radius: 12px;
+
+    text-align: center;
+    font-weight: 600;
+    font-size: 18px;
+
+    transition:
+      color 0.3s ease,
+      border-color 0.3s ease,
+      background-color 0.3s ease;
+
+    @include hover {
+      color: var(--white);
+      border-color: var(--primary);
+      background-color: var(--primary);
+    }
+    @include laptop-min {
+      width: 180px;
+      flex-shrink: 0;
+    }
+    &._active {
+      color: var(--white);
+      border-color: var(--primary);
+      background-color: var(--primary);
+    }
+  }
+  &__head-sort {
+    @include flex-between;
+    gap: 30px;
+    margin: 35px 0px;
+    @include tablet {
+      flex-wrap: wrap;
+    }
+    @include tablet-min {
+      gap: 15px;
+    }
+  }
+  &__head-search {
+    font-size: 24px;
+    @include laptop-min {
+      font-size: 18px;
+    }
+  }
+  &__head-sort-wrapper {
+    display: flex;
+    gap: 110px;
+    @include laptop-middle {
+      gap: 30px;
+    }
+
+    a {
+      transition: color 0.3s ease;
+      @include hover {
+        color: var(--black);
+      }
+      &._active {
+        font-weight: 600;
+      }
+      @include tablet-min {
+        display: none;
+      }
+    }
+
+    select {
+      @media (min-width: 576px) {
+        display: none;
+      }
+      @include tablet {
+        padding: 0;
+        margin: 0;
+        border: none;
+        outline: none;
+      }
+    }
+  }
+  &__head-sort-item {
+    font-size: 24px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.65);
+    @include laptop-min {
+      font-size: 18px;
+    }
+  }
+  &__wrapper {
+    display: flex;
+    align-items: start;
+    gap: 55px;
+  }
+  &__sidebar {
+    width: 250px;
+  }
+  &__sidebar-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  &__sidebar-item {
+  }
+  &__sidebar-title {
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 12px;
+
+    transition: color 0.3s ease;
+
+    &[data-spoller] {
+      @include flex-between;
+      gap: 15px;
+      cursor: pointer;
+
+      @include hover {
+        color: var(--primary);
+      }
+
+      &._spoller-active {
+        svg {
+          transform: rotate(180deg);
+        }
+      }
+    }
+
+    svg {
+      width: 24px;
+      height: 24px;
+      flex-shrink: 0;
+      transition: transform 0.3s ease;
+    }
+  }
+  &__sidebar-prices {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    gap: 10px;
+
+    div {
+      width: 12px;
+      height: 1px;
+      background-color: #dcdada;
+    }
+
+    .input {
+      width: 95px;
+      font-size: 15px;
+      padding: 8px;
+      text-align: center;
+      border-color: #dcdada;
+    }
+  }
+  &__sidebar-check {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  &__range-price {
+    width: 222px;
+    max-width: 100%;
+    margin-top: 16px;
+  }
+  &__sidebar-clear {
+    width: 100%;
+    margin-top: 10px;
+  }
+  &__grid {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+}

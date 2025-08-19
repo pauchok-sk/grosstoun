@@ -13,11 +13,14 @@
 @import "./ui/form";
 @import "./ui/tab";
 @import "./ui/card-production";
+@import "./ui/breadcrumbs";
+@import "./ui/card-product";
 
 // widgets
 @import "./widgets/burger";
 @import "./widgets/modal";
 @import "./widgets/header-dropdown";
+@import "./widgets/range";
 
 // components
 @import "./components/header";
@@ -34,5 +37,6 @@
 @import "./components/s-details";
 @import "./components/s-get";
 @import "./components/s-content";
+@import "./components/s-shop";
 
 @import "./components/footer";
