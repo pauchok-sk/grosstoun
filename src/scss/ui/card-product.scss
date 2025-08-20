@@ -11,6 +11,9 @@
     @include hover {
       opacity: 0.7;
     }
+    @include tablet-min {
+      border-radius: 6px;
+    }
   }
   &__title {
     font-weight: 600;
@@ -23,8 +26,14 @@
     @include hover {
       color: var(--primary);
     }
+    @include tablet-min {
+      font-size: 16px;
+    }
   }
   &__price {
     font-size: 16px;
+    @include tablet-min {
+      font-size: 14px;
+    }
   }
 }

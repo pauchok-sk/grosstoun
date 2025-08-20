@@ -2,6 +2,7 @@ import "../scss/style.scss";
 import burger from "./files/burger.js";
 import contentSectMore from "./files/contentSectMore.js";
 import fileAttach from "./files/fileAttach.js";
+import filtersToggle from "./files/filtersToggle.js";
 import headerDrodpown from "./files/headerDropdown.js";
 import headerScroll from "./files/headerScroll.js";
 import inputmask from "./files/inputmask.js";
@@ -20,6 +21,7 @@ headerDrodpown();
 sliders();
 contentSectMore();
 nouislider();
+filtersToggle();
 
 Fancybox.bind("[data-fancybox]", {});
 

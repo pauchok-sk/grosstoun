@@ -1,0 +1,46 @@
+.breadcrumbs {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+
+  font-size: 21px;
+  line-height: 133%;
+  color: rgba(40, 41, 42, 0.85);
+  margin-bottom: 50px;
+
+  @include laptop-min {
+    margin-bottom: 30px;
+  }
+
+  @include tablet {
+    font-size: 16px;
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    transition: color .3s ease;
+    @include hover {
+      color: var(--primary);
+    }
+    @include tablet {
+      gap: 0;
+    }
+
+    &::after {
+      content: "";
+      width: 24px;
+      height: 24px;
+      background: url('@img/arrow-next.svg') center / 100% auto no-repeat;
+      @include tablet {
+        width: 16px;
+        height: 16px;
+      }
+    }
+  }
+  span {
+    font-weight: 600;
+  }
+}

@@ -1,0 +1,1898 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Grosstoun</title>
+	<meta charset="UTF-8" />
+	<meta name="format-detection" content="telephone=no" />
+	<link rel="shortcut icon" href="favicon.ico" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap&_v=20250820132202" rel="stylesheet" />
+	<link rel="stylesheet" href="./files/fancybox/fancybox.min.css?_v=20250820132202">
+	<link rel="stylesheet" href="./files/swiper/swiper.min.css?_v=20250820132202">
+	<link rel="stylesheet" href="./files/nouislider/nouislider.min.css?_v=20250820132202">
+	<link rel="stylesheet" href="css/style.min.css?_v=20250820132202" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body class="body">
+	<header class="header">
+		<div class="container">
+			<div class="header__wrapper">
+				<a href="/" class="header__logo">
+					<img src="img/logo.svg" alt="logo" />
+				</a>
+				<nav class="header__nav">
+					<ul class="list header__list">
+						<li data-header-dropdown-btn="breeds">
+							<a href="#">
+								<span>Породы</span>
+								<svg>
+									<use xlink:href="img/icons/icons.svg#icon-arrow-down"></use>
+								</svg>
+							</a>
+						</li>
+						<li data-header-dropdown-btn="production">
+							<a href="#">
+								<span>Изделия</span>
+								<svg>
+									<use xlink:href="img/icons/icons.svg#icon-arrow-down"></use>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="#">Проекты</a>
+						</li>
+						<li>
+							<a href="#">О компании</a>
+						</li>
+						<li>
+							<a href="#">Производство</a>
+						</li>
+						<li>
+							<a href="#">Контакты</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="header__contacts">
+					<div class="header__contacts-wrapper">
+						<div class="header__contacts-social">
+							<a href="#" target="_blank" class="header__social-btn">
+								<img src="img/tg.svg" alt="icon" />
+							</a>
+							<a href="#" target="_blank" class="header__social-btn">
+								<img src="img/wh.svg" alt="icon" />
+							</a>
+						</div>
+						<a href="tel:+79137271088" class="header__contacts-btn">
+							+7 913 727-10-88
+						</a>
+					</div>
+					<a href="mailto:grosstoun@yandex.ru" class="header__contacts-btn">
+						<svg>
+							<use xlink:href="img/icons/icons.svg#icon-mail"></use>
+						</svg>
+						<span>grosstoun@yandex.ru</span>
+					</a>
+				</div>
+				<div class="header__burger-btn" id="burger-open">
+					<svg>
+						<use xlink:href="img/icons/icons.svg#icon-burger"></use>
+					</svg>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="burger-overlay" id="burger-overlay"></div>
+	<div class="burger" id="burger">
+		<div class="burger__head">
+			<a href="/" class="burger__logo">
+				<img src="img/logo.svg" alt="logo" />
+			</a>
+			<div class="burger__close" id="burger-close">
+				<svg>
+					<use xlink:href="img/icons/icons.svg#icon-close"></use>
+				</svg>
+			</div>
+		</div>
+		<ul data-spollers class="list burger__list">
+			<li>
+				<div data-spoller class="burger__spoller-btn">
+					<a href="#">
+						<span>Породы</span>
+					</a>
+					<svg>
+						<use xlink:href="img/icons/icons.svg#icon-arrow-down"></use>
+					</svg>
+				</div>
+				<div>
+					<ul class="list burger__sublist">
+						<li><a href="#">Категория</a></li>
+						<li><a href="#">Категория</a></li>
+						<li><a href="#">Категория</a></li>
+						<li><a href="#">Категория</a></li>
+						<li><a href="#">Категория</a></li>
+					</ul>
+				</div>
+			</li>
+			<li>
+				<div data-spoller class="burger__spoller-btn">
+					<a href="#">
+						<span>Изделия</span>
+					</a>
+					<svg>
+						<use xlink:href="img/icons/icons.svg#icon-arrow-down"></use>
+					</svg>
+				</div>
+				<div>
+					<ul class="list burger__sublist">
+						<li><a href="#">Категория</a></li>
+						<li><a href="#">Категория</a></li>
+						<li><a href="#">Категория</a></li>
+						<li><a href="#">Категория</a></li>
+						<li><a href="#">Категория</a></li>
+					</ul>
+				</div>
+			</li>
+			<li>
+				<a href="#">Проекты</a>
+			</li>
+			<li>
+				<a href="#">О компании</a>
+			</li>
+			<li>
+				<a href="#">Производство</a>
+			</li>
+			<li>
+				<a href="#">Контакты</a>
+			</li>
+		</ul>
+		<div class="burger__contacts">
+			<div class="burger__contacts-wrapper">
+				<div class="burger__contacts-social">
+					<a href="#" target="_blank" class="burger__social-btn">
+						<img src="img/tg.svg" alt="icon" />
+					</a>
+					<a href="#" target="_blank" class="burger__social-btn">
+						<img src="img/wh.svg" alt="icon" />
+					</a>
+				</div>
+				<a href="tel:+79137271088" class="burger__contacts-btn">
+					+7 913 727-10-88
+				</a>
+			</div>
+			<a href="mailto:grosstoun@yandex.ru" class="burger__contacts-btn">
+				<svg>
+					<use xlink:href="img/icons/icons.svg#icon-mail"></use>
+				</svg>
+				<span>grosstoun@yandex.ru</span>
+			</a>
+		</div>
+	</div>
+
+	<div class="header-dropdown-overlay" id="header-dropdown-overlay"></div>
+	<div data-header-dropdown="breeds" class="header-dropdown">
+		<div class="header-dropdown__container">
+			<div class="header-dropdown__grid">
+				<div class="header-dropdown__item">
+					<a href="#" class="header-dropdown__item-title">
+						<span>Мрамор</span>
+						<svg>
+							<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+						</svg>
+					</a>
+					<div class="header-dropdown__item-wrapper">
+						<a href="#" class="header-dropdown__item-type">
+							<img src="img/preview.jpg" alt="image" />
+							<span>Коелга</span>
+						</a>
+						<a href="#" class="header-dropdown__item-type">
+							<img src="img/preview.jpg" alt="image" />
+							<span>Змеевик</span>
+						</a>
+						<a href="#" class="header-dropdown__item-type">
+							<img src="img/preview.jpg" alt="image" />
+							<span>Мраморный известняк</span>
+						</a>
+						<a href="#" class="header-dropdown__item-type">
+							<img src="img/preview.jpg" alt="image" />
+							<span>Мрамор Дипломат</span>
+						</a>
+						<a href="#" class="header-dropdown__item-type">
+							<img src="img/preview.jpg" alt="image" />
+							<span>Мрамор Полоцкий</span>
+						</a>
+					</div>
+				</div>
+				<div class="header-dropdown__item">
+					<a href="#" class="header-dropdown__item-title">
+						<span>Мрамор</span>
+						<svg>
+							<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+						</svg>
+					</a>
+					<div class="header-dropdown__item-wrapper">
+						<a href="#" class="header-dropdown__item-type">
+							<img src="img/preview.jpg" alt="image" />
+							<span>Коелга</span>
+						</a>
+						<a href="#" class="header-dropdown__item-type">
+							<img src="img/preview.jpg" alt="image" />
+							<span>Змеевик</span>
+						</a>
+						<a href="#" class="header-dropdown__item-type">
+							<img src="img/preview.jpg" alt="image" />
+							<span>Мраморный известняк</span>
+						</a>
+						<a href="#" class="header-dropdown__item-type">
+							<img src="img/preview.jpg" alt="image" />
+							<span>Мрамор Дипломат</span>
+						</a>
+						<a href="#" class="header-dropdown__item-type">
+							<img src="img/preview.jpg" alt="image" />
+							<span>Мрамор Полоцкий</span>
+						</a>
+					</div>
+				</div>
+				<div class="header-dropdown__item">
+					<a href="#" class="header-dropdown__item-title">
+						<span>Мрамор</span>
+						<svg>
+							<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+						</svg>
+					</a>
+					<div class="header-dropdown__item-wrapper">
+						<a href="#" class="header-dropdown__item-type">
+							<img src="img/preview.jpg" alt="image" />
+							<span>Коелга</span>
+						</a>
+						<a href="#" class="header-dropdown__item-type">
+							<img src="img/preview.jpg" alt="image" />
+							<span>Змеевик</span>
+						</a>
+						<a href="#" class="header-dropdown__item-type">
+							<img src="img/preview.jpg" alt="image" />
+							<span>Мраморный известняк</span>
+						</a>
+						<a href="#" class="header-dropdown__item-type">
+							<img src="img/preview.jpg" alt="image" />
+							<span>Мрамор Дипломат</span>
+						</a>
+						<a href="#" class="header-dropdown__item-type">
+							<img src="img/preview.jpg" alt="image" />
+							<span>Мрамор Полоцкий</span>
+						</a>
+					</div>
+				</div>
+				<div class="header-dropdown__item">
+					<a href="#" class="header-dropdown__item-title">
+						<span>Мрамор</span>
+						<svg>
+							<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+						</svg>
+					</a>
+					<div class="header-dropdown__item-wrapper">
+						<a href="#" class="header-dropdown__item-type">
+							<img src="img/preview.jpg" alt="image" />
+							<span>Коелга</span>
+						</a>
+						<a href="#" class="header-dropdown__item-type">
+							<img src="img/preview.jpg" alt="image" />
+							<span>Змеевик</span>
+						</a>
+						<a href="#" class="header-dropdown__item-type">
+							<img src="img/preview.jpg" alt="image" />
+							<span>Мраморный известняк</span>
+						</a>
+						<a href="#" class="header-dropdown__item-type">
+							<img src="img/preview.jpg" alt="image" />
+							<span>Мрамор Дипломат</span>
+						</a>
+						<a href="#" class="header-dropdown__item-type">
+							<img src="img/preview.jpg" alt="image" />
+							<span>Мрамор Полоцкий</span>
+						</a>
+					</div>
+				</div>
+				<div class="header-dropdown__item">
+					<a href="#" class="header-dropdown__item-title">
+						<span>Мрамор</span>
+						<svg>
+							<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+						</svg>
+					</a>
+					<div class="header-dropdown__item-wrapper">
+						<a href="#" class="header-dropdown__item-type">
+							<img src="img/preview.jpg" alt="image" />
+							<span>Коелга</span>
+						</a>
+						<a href="#" class="header-dropdown__item-type">
+							<img src="img/preview.jpg" alt="image" />
+							<span>Змеевик</span>
+						</a>
+						<a href="#" class="header-dropdown__item-type">
+							<img src="img/preview.jpg" alt="image" />
+							<span>Мраморный известняк</span>
+						</a>
+						<a href="#" class="header-dropdown__item-type">
+							<img src="img/preview.jpg" alt="image" />
+							<span>Мрамор Дипломат</span>
+						</a>
+						<a href="#" class="header-dropdown__item-type">
+							<img src="img/preview.jpg" alt="image" />
+							<span>Мрамор Полоцкий</span>
+						</a>
+					</div>
+				</div>
+				<div class="header-dropdown__item">
+					<a href="#" class="header-dropdown__item-title">
+						<span>Мрамор</span>
+						<svg>
+							<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+						</svg>
+					</a>
+					<div class="header-dropdown__item-wrapper">
+						<a href="#" class="header-dropdown__item-type">
+							<img src="img/preview.jpg" alt="image" />
+							<span>Коелга</span>
+						</a>
+						<a href="#" class="header-dropdown__item-type">
+							<img src="img/preview.jpg" alt="image" />
+							<span>Змеевик</span>
+						</a>
+						<a href="#" class="header-dropdown__item-type">
+							<img src="img/preview.jpg" alt="image" />
+							<span>Мраморный известняк</span>
+						</a>
+						<a href="#" class="header-dropdown__item-type">
+							<img src="img/preview.jpg" alt="image" />
+							<span>Мрамор Дипломат</span>
+						</a>
+						<a href="#" class="header-dropdown__item-type">
+							<img src="img/preview.jpg" alt="image" />
+							<span>Мрамор Полоцкий</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div data-header-dropdown="production" class="header-dropdown">
+		<div class="header-dropdown__container">
+			<div class="header-dropdown__grid">
+				<div class="header-dropdown__item">
+					<a href="#" class="header-dropdown__item-title">
+						<span>Мрамор</span>
+						<svg>
+							<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+						</svg>
+					</a>
+					<div class="header-dropdown__item-wrapper">
+						<a href="#" class="header-dropdown__item-type">Гранитные</a>
+						<a href="#" class="header-dropdown__item-type">Полнопиленная</a>
+						<a href="#" class="header-dropdown__item-type">Галтованная</a>
+						<a href="#" class="header-dropdown__item-type">Колотая</a>
+					</div>
+				</div>
+				<div class="header-dropdown__item">
+					<a href="#" class="header-dropdown__item-title">
+						<span>Мрамор</span>
+						<svg>
+							<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+						</svg>
+					</a>
+					<div class="header-dropdown__item-wrapper">
+						<a href="#" class="header-dropdown__item-type">Гранитные</a>
+						<a href="#" class="header-dropdown__item-type">Полнопиленная</a>
+						<a href="#" class="header-dropdown__item-type">Галтованная</a>
+						<a href="#" class="header-dropdown__item-type">Колотая</a>
+					</div>
+				</div>
+				<div class="header-dropdown__item">
+					<a href="#" class="header-dropdown__item-title">
+						<span>Мрамор</span>
+						<svg>
+							<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+						</svg>
+					</a>
+					<div class="header-dropdown__item-wrapper">
+						<a href="#" class="header-dropdown__item-type">Гранитные</a>
+						<a href="#" class="header-dropdown__item-type">Полнопиленная</a>
+						<a href="#" class="header-dropdown__item-type">Галтованная</a>
+						<a href="#" class="header-dropdown__item-type">Колотая</a>
+					</div>
+				</div>
+				<div class="header-dropdown__item">
+					<a href="#" class="header-dropdown__item-title">
+						<span>Мрамор</span>
+						<svg>
+							<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+						</svg>
+					</a>
+					<div class="header-dropdown__item-wrapper">
+						<a href="#" class="header-dropdown__item-type">Гранитные</a>
+						<a href="#" class="header-dropdown__item-type">Полнопиленная</a>
+						<a href="#" class="header-dropdown__item-type">Галтованная</a>
+						<a href="#" class="header-dropdown__item-type">Колотая</a>
+					</div>
+				</div>
+				<div class="header-dropdown__item">
+					<a href="#" class="header-dropdown__item-title">
+						<span>Мрамор</span>
+						<svg>
+							<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+						</svg>
+					</a>
+					<div class="header-dropdown__item-wrapper">
+						<a href="#" class="header-dropdown__item-type">Гранитные</a>
+						<a href="#" class="header-dropdown__item-type">Полнопиленная</a>
+						<a href="#" class="header-dropdown__item-type">Галтованная</a>
+						<a href="#" class="header-dropdown__item-type">Колотая</a>
+					</div>
+				</div>
+				<div class="header-dropdown__item">
+					<a href="#" class="header-dropdown__item-title">
+						<span>Мрамор</span>
+						<svg>
+							<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+						</svg>
+					</a>
+					<div class="header-dropdown__item-wrapper">
+						<a href="#" class="header-dropdown__item-type">Гранитные</a>
+						<a href="#" class="header-dropdown__item-type">Полнопиленная</a>
+						<a href="#" class="header-dropdown__item-type">Галтованная</a>
+						<a href="#" class="header-dropdown__item-type">Колотая</a>
+					</div>
+				</div>
+				<div class="header-dropdown__item">
+					<a href="#" class="header-dropdown__item-title">
+						<span>Мрамор</span>
+						<svg>
+							<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+						</svg>
+					</a>
+					<div class="header-dropdown__item-wrapper">
+						<a href="#" class="header-dropdown__item-type">Гранитные</a>
+						<a href="#" class="header-dropdown__item-type">Полнопиленная</a>
+						<a href="#" class="header-dropdown__item-type">Галтованная</a>
+						<a href="#" class="header-dropdown__item-type">Колотая</a>
+					</div>
+				</div>
+				<div class="header-dropdown__item">
+					<a href="#" class="header-dropdown__item-title">
+						<span>Мрамор</span>
+						<svg>
+							<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+						</svg>
+					</a>
+					<div class="header-dropdown__item-wrapper">
+						<a href="#" class="header-dropdown__item-type">Гранитные</a>
+						<a href="#" class="header-dropdown__item-type">Полнопиленная</a>
+						<a href="#" class="header-dropdown__item-type">Галтованная</a>
+						<a href="#" class="header-dropdown__item-type">Колотая</a>
+					</div>
+				</div>
+				<div class="header-dropdown__item">
+					<a href="#" class="header-dropdown__item-title">
+						<span>Мрамор</span>
+						<svg>
+							<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+						</svg>
+					</a>
+					<div class="header-dropdown__item-wrapper">
+						<a href="#" class="header-dropdown__item-type">Гранитные</a>
+						<a href="#" class="header-dropdown__item-type">Полнопиленная</a>
+						<a href="#" class="header-dropdown__item-type">Галтованная</a>
+						<a href="#" class="header-dropdown__item-type">Колотая</a>
+					</div>
+				</div>
+				<div class="header-dropdown__item">
+					<a href="#" class="header-dropdown__item-title">
+						<span>Мрамор</span>
+						<svg>
+							<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+						</svg>
+					</a>
+					<div class="header-dropdown__item-wrapper">
+						<a href="#" class="header-dropdown__item-type">Гранитные</a>
+						<a href="#" class="header-dropdown__item-type">Полнопиленная</a>
+						<a href="#" class="header-dropdown__item-type">Галтованная</a>
+						<a href="#" class="header-dropdown__item-type">Колотая</a>
+					</div>
+				</div>
+				<div class="header-dropdown__item">
+					<a href="#" class="header-dropdown__item-title">
+						<span>Мрамор</span>
+						<svg>
+							<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+						</svg>
+					</a>
+					<div class="header-dropdown__item-wrapper">
+						<a href="#" class="header-dropdown__item-type">Гранитные</a>
+						<a href="#" class="header-dropdown__item-type">Полнопиленная</a>
+						<a href="#" class="header-dropdown__item-type">Галтованная</a>
+						<a href="#" class="header-dropdown__item-type">Колотая</a>
+					</div>
+				</div>
+				<div class="header-dropdown__item">
+					<a href="#" class="header-dropdown__item-title">
+						<span>Мрамор</span>
+						<svg>
+							<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+						</svg>
+					</a>
+					<div class="header-dropdown__item-wrapper">
+						<a href="#" class="header-dropdown__item-type">Гранитные</a>
+						<a href="#" class="header-dropdown__item-type">Полнопиленная</a>
+						<a href="#" class="header-dropdown__item-type">Галтованная</a>
+						<a href="#" class="header-dropdown__item-type">Колотая</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<main>
+
+		<section class="intro sect-p">
+			<div class="container">
+				<div class="intro__wrapper">
+					<div class="intro__gallery" style="
+          background: url(&quot;img/intro.jpg&quot;) center / cover no-repeat;
+        ">
+						<div class="intro__gallery-container">
+							<h1 class="m-title intro__gallery-title">
+								Натуральный и искусственный камень оптом от производителя
+							</h1>
+							<p class="intro__gallery-content">
+								Крупный выбор мрамора, гранита, травертина и других пород —
+								в наличии и под заказ, прямые поставки из Китая, полное
+								сопровождение на каждом этапе — от заявки до доставки на объект
+							</p>
+						</div>
+					</div>
+					<div class="intro__adv">
+						<div class="intro__adv-item">
+							<div class="intro__adv-num">30+</div>
+							<div class="intro__adv-content">лет опыта</div>
+						</div>
+						<div class="intro__adv-item">
+							<div class="intro__adv-num">537</div>
+							<div class="intro__adv-content">реализованных проектов</div>
+						</div>
+						<div class="intro__adv-item">
+							<div class="intro__adv-num">
+								5 418 211 м
+								<small>в год</small>
+							</div>
+							<div class="intro__adv-content">производственных мощностей</div>
+						</div>
+						<div class="intro__adv-item">
+							<div class="intro__adv-num">12</div>
+							<div class="intro__adv-content">заводов</div>
+						</div>
+						<div class="intro__adv-item">
+							<div class="intro__adv-num">2 134 789</div>
+							<div class="intro__adv-content">
+								слэбов натурального камня в коллекции
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="intro__grid">
+					<div class="intro__item">
+						<h5 class="intro__title">Экспресс расчёт проекта</h5>
+						<p class="intro__item-content">
+							Отправьте ваше ТЗ, наши специалисты проведут расчёт и предоставят
+							КП в этот же день
+						</p>
+						<a href="#modal-get" data-fancybox class="btn-s intro__item-btn">
+							Получить КП
+						</a>
+					</div>
+					<div class="intro__item">
+						<h5 class="intro__title">
+							Специальные условия для оптовых покупателей
+						</h5>
+						<p class="intro__item-content">
+							Свяжитесь с нами в Telegram или WhatsApp. Ответим в течение 5 минут!
+						</p>
+						<div class="intro__social">
+							<a href="#" target="_blank" class="intro__social-btn _tg">
+								<span>Написать в Telegram</span>
+								<img src="img/tg.svg" alt="icon" />
+							</a>
+							<a href="#" target="_blank" class="intro__social-btn _wh">
+								<span>Написать в WhatsApp</span>
+								<img src="img/wh.svg" alt="icon" />
+							</a>
+						</div>
+					</div>
+					<div class="intro__item">
+						<h5 class="intro__title">Скачать прайс-лист со складскими остатками</h5>
+						<p class="intro__item-content">
+							Вышлем актуальные цены на изделия в наличии. Отгрузка в день оплаты!
+						</p>
+						<a href="img/intro.jpg" download class="btn-s _outline intro__item-btn">
+							Скачать прайс
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="s-catalog-rec sect-m">
+			<div class="container tabs">
+				<div class="s-catalog-rec__head">
+					<h2 class="s-title s-catalog-rec__title">
+						В нашем каталоге более
+						<span>800 сортов</span>
+						камня для отделки и строительства
+					</h2>
+					<p class="s-catalog-rec__content">
+						Фасадный облицовочный и строительный камень напрямую с заводов в Китае
+					</p>
+				</div>
+				<div class="s-catalog-rec__nav">
+					<div data-tab-btn="tab-1" class="s-catalog-rec__nav-btn _active">
+						Мрамор
+					</div>
+					<div data-tab-btn="tab-2" class="s-catalog-rec__nav-btn">Гранит</div>
+					<div data-tab-btn="tab-3" class="s-catalog-rec__nav-btn">Кварцит</div>
+					<div data-tab-btn="tab-4" class="s-catalog-rec__nav-btn">Оникс</div>
+					<div data-tab-btn="tab-5" class="s-catalog-rec__nav-btn">Травертин</div>
+					<div data-tab-btn="tab-6" class="s-catalog-rec__nav-btn">Сланец</div>
+				</div>
+				<div data-tab="tab-1" class="_active" style="opacity: 1;">
+					<div class="s-catalog-rec__grid">
+						<a href="#" itemscope class="s-catalog-rec__item">
+							<div class="s-catalog-rec__item-gallery">
+								<img src="img/category.jpg" alt="image" itemprop="image" />
+							</div>
+							<h5 class="s-catalog-rec__item-title" itemprop="name">
+								Экстремальный серый
+							</h5>
+						</a>
+						<a href="#" itemscope class="s-catalog-rec__item">
+							<div class="s-catalog-rec__item-gallery">
+								<img src="img/category.jpg" alt="image" itemprop="image" />
+							</div>
+							<h5 class="s-catalog-rec__item-title" itemprop="name">
+								Экстремальный серый
+							</h5>
+						</a>
+						<a href="#" itemscope class="s-catalog-rec__item">
+							<div class="s-catalog-rec__item-gallery">
+								<img src="img/category.jpg" alt="image" itemprop="image" />
+							</div>
+							<h5 class="s-catalog-rec__item-title" itemprop="name">
+								Экстремальный серый
+							</h5>
+						</a>
+						<a href="#" itemscope class="s-catalog-rec__item">
+							<div class="s-catalog-rec__item-gallery">
+								<img src="img/category.jpg" alt="image" itemprop="image" />
+							</div>
+							<h5 class="s-catalog-rec__item-title" itemprop="name">
+								Экстремальный серый
+							</h5>
+						</a>
+					</div>
+				</div>
+				<div data-tab="tab-2">
+					<div class="s-catalog-rec__grid">
+						<a href="#" itemscope class="s-catalog-rec__item">
+							<div class="s-catalog-rec__item-gallery">
+								<img src="img/category.jpg" alt="image" itemprop="image" />
+							</div>
+							<h5 class="s-catalog-rec__item-title" itemprop="name">
+								Экстремальный серый 2
+							</h5>
+						</a>
+						<a href="#" itemscope class="s-catalog-rec__item">
+							<div class="s-catalog-rec__item-gallery">
+								<img src="img/category.jpg" alt="image" itemprop="image" />
+							</div>
+							<h5 class="s-catalog-rec__item-title" itemprop="name">
+								Экстремальный серый
+							</h5>
+						</a>
+						<a href="#" itemscope class="s-catalog-rec__item">
+							<div class="s-catalog-rec__item-gallery">
+								<img src="img/category.jpg" alt="image" itemprop="image" />
+							</div>
+							<h5 class="s-catalog-rec__item-title" itemprop="name">
+								Экстремальный серый
+							</h5>
+						</a>
+						<a href="#" itemscope class="s-catalog-rec__item">
+							<div class="s-catalog-rec__item-gallery">
+								<img src="img/category.jpg" alt="image" itemprop="image" />
+							</div>
+							<h5 class="s-catalog-rec__item-title" itemprop="name">
+								Экстремальный серый
+							</h5>
+						</a>
+					</div>
+				</div>
+				<div data-tab="tab-3">
+					<div class="s-catalog-rec__grid">
+						<a href="#" itemscope class="s-catalog-rec__item">
+							<div class="s-catalog-rec__item-gallery">
+								<img src="img/category.jpg" alt="image" itemprop="image" />
+							</div>
+							<h5 class="s-catalog-rec__item-title" itemprop="name">
+								Экстремальный серый 3
+							</h5>
+						</a>
+						<a href="#" itemscope class="s-catalog-rec__item">
+							<div class="s-catalog-rec__item-gallery">
+								<img src="img/category.jpg" alt="image" itemprop="image" />
+							</div>
+							<h5 class="s-catalog-rec__item-title" itemprop="name">
+								Экстремальный серый
+							</h5>
+						</a>
+						<a href="#" itemscope class="s-catalog-rec__item">
+							<div class="s-catalog-rec__item-gallery">
+								<img src="img/category.jpg" alt="image" itemprop="image" />
+							</div>
+							<h5 class="s-catalog-rec__item-title" itemprop="name">
+								Экстремальный серый
+							</h5>
+						</a>
+						<a href="#" itemscope class="s-catalog-rec__item">
+							<div class="s-catalog-rec__item-gallery">
+								<img src="img/category.jpg" alt="image" itemprop="image" />
+							</div>
+							<h5 class="s-catalog-rec__item-title" itemprop="name">
+								Экстремальный серый
+							</h5>
+						</a>
+					</div>
+				</div>
+				<div data-tab="tab-4">
+					<div class="s-catalog-rec__grid">
+						<a href="#" itemscope class="s-catalog-rec__item">
+							<div class="s-catalog-rec__item-gallery">
+								<img src="img/category.jpg" alt="image" itemprop="image" />
+							</div>
+							<h5 class="s-catalog-rec__item-title" itemprop="name">
+								Экстремальный серый 4
+							</h5>
+						</a>
+						<a href="#" itemscope class="s-catalog-rec__item">
+							<div class="s-catalog-rec__item-gallery">
+								<img src="img/category.jpg" alt="image" itemprop="image" />
+							</div>
+							<h5 class="s-catalog-rec__item-title" itemprop="name">
+								Экстремальный серый
+							</h5>
+						</a>
+						<a href="#" itemscope class="s-catalog-rec__item">
+							<div class="s-catalog-rec__item-gallery">
+								<img src="img/category.jpg" alt="image" itemprop="image" />
+							</div>
+							<h5 class="s-catalog-rec__item-title" itemprop="name">
+								Экстремальный серый
+							</h5>
+						</a>
+						<a href="#" itemscope class="s-catalog-rec__item">
+							<div class="s-catalog-rec__item-gallery">
+								<img src="img/category.jpg" alt="image" itemprop="image" />
+							</div>
+							<h5 class="s-catalog-rec__item-title" itemprop="name">
+								Экстремальный серый
+							</h5>
+						</a>
+					</div>
+				</div>
+				<div data-tab="tab-5">
+					<div class="s-catalog-rec__grid">
+						<a href="#" itemscope class="s-catalog-rec__item">
+							<div class="s-catalog-rec__item-gallery">
+								<img src="img/category.jpg" alt="image" itemprop="image" />
+							</div>
+							<h5 class="s-catalog-rec__item-title" itemprop="name">
+								Экстремальный серый 3
+							</h5>
+						</a>
+						<a href="#" itemscope class="s-catalog-rec__item">
+							<div class="s-catalog-rec__item-gallery">
+								<img src="img/category.jpg" alt="image" itemprop="image" />
+							</div>
+							<h5 class="s-catalog-rec__item-title" itemprop="name">
+								Экстремальный серый
+							</h5>
+						</a>
+						<a href="#" itemscope class="s-catalog-rec__item">
+							<div class="s-catalog-rec__item-gallery">
+								<img src="img/category.jpg" alt="image" itemprop="image" />
+							</div>
+							<h5 class="s-catalog-rec__item-title" itemprop="name">
+								Экстремальный серый
+							</h5>
+						</a>
+						<a href="#" itemscope class="s-catalog-rec__item">
+							<div class="s-catalog-rec__item-gallery">
+								<img src="img/category.jpg" alt="image" itemprop="image" />
+							</div>
+							<h5 class="s-catalog-rec__item-title" itemprop="name">
+								Экстремальный серый
+							</h5>
+						</a>
+					</div>
+				</div>
+				<div data-tab="tab-6">
+					<div class="s-catalog-rec__grid">
+						<a href="#" itemscope class="s-catalog-rec__item">
+							<div class="s-catalog-rec__item-gallery">
+								<img src="img/category.jpg" alt="image" itemprop="image" />
+							</div>
+							<h5 class="s-catalog-rec__item-title" itemprop="name">
+								Экстремальный серый 3
+							</h5>
+						</a>
+						<a href="#" itemscope class="s-catalog-rec__item">
+							<div class="s-catalog-rec__item-gallery">
+								<img src="img/category.jpg" alt="image" itemprop="image" />
+							</div>
+							<h5 class="s-catalog-rec__item-title" itemprop="name">
+								Экстремальный серый
+							</h5>
+						</a>
+						<a href="#" itemscope class="s-catalog-rec__item">
+							<div class="s-catalog-rec__item-gallery">
+								<img src="img/category.jpg" alt="image" itemprop="image" />
+							</div>
+							<h5 class="s-catalog-rec__item-title" itemprop="name">
+								Экстремальный серый
+							</h5>
+						</a>
+						<a href="#" itemscope class="s-catalog-rec__item">
+							<div class="s-catalog-rec__item-gallery">
+								<img src="img/category.jpg" alt="image" itemprop="image" />
+							</div>
+							<h5 class="s-catalog-rec__item-title" itemprop="name">
+								Экстремальный серый
+							</h5>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="s-stones sect-p">
+			<div class="container">
+				<h2 class="s-title s-stones__title">
+					<span>Изделия</span>
+					из декоративного и натурального камня для архитектурных проектов
+				</h2>
+				<div class="s-stones__grid">
+					<a href="#" itemscope class="card-production">
+						<img src="img/production.jpg" alt="image" class="card-production__img" />
+						<span class="card-production__btn">
+							<div class="card-production__name" itemprop="name">Слэбы</div>
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-arrow-line-next"></use>
+							</svg>
+						</span>
+					</a>
+					<a href="#" itemscope class="card-production">
+						<img src="img/production.jpg" alt="image" class="card-production__img" />
+						<span class="card-production__btn">
+							<div class="card-production__name" itemprop="name">Плитка</div>
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-arrow-line-next"></use>
+							</svg>
+						</span>
+					</a>
+					<a href="#" itemscope class="card-production">
+						<img src="img/production.jpg" alt="image" class="card-production__img" />
+						<span class="card-production__btn">
+							<div class="card-production__name" itemprop="name">Слэбы</div>
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-arrow-line-next"></use>
+							</svg>
+						</span>
+					</a>
+					<a href="#" itemscope class="card-production">
+						<img src="img/production.jpg" alt="image" class="card-production__img" />
+						<span class="card-production__btn">
+							<div class="card-production__name" itemprop="name">Плитка</div>
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-arrow-line-next"></use>
+							</svg>
+						</span>
+					</a>
+					<a href="#" itemscope class="card-production">
+						<img src="img/production.jpg" alt="image" class="card-production__img" />
+						<span class="card-production__btn">
+							<div class="card-production__name" itemprop="name">Слэбы</div>
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-arrow-line-next"></use>
+							</svg>
+						</span>
+					</a>
+					<a href="#" itemscope class="card-production">
+						<img src="img/production.jpg" alt="image" class="card-production__img" />
+						<span class="card-production__btn">
+							<div class="card-production__name" itemprop="name">Плитка</div>
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-arrow-line-next"></use>
+							</svg>
+						</span>
+					</a>
+					<a href="#" itemscope class="card-production">
+						<img src="img/production.jpg" alt="image" class="card-production__img" />
+						<span class="card-production__btn">
+							<div class="card-production__name" itemprop="name">Слэбы</div>
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-arrow-line-next"></use>
+							</svg>
+						</span>
+					</a>
+					<a href="#" itemscope class="card-production">
+						<img src="img/production.jpg" alt="image" class="card-production__img" />
+						<span class="card-production__btn">
+							<div class="card-production__name" itemprop="name">Плитка</div>
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-arrow-line-next"></use>
+							</svg>
+						</span>
+					</a>
+				</div>
+			</div>
+		</section>
+
+		<section class="sect-p s-about" style="background: url('img/about-bg.png') bottom 0 left 0 / 100% auto no-repeat;">
+			<div class="container">
+				<h2 class="s-title s-about__title">
+					Grosstoun — прямой производитель и надёжный
+					<span>поставщик</span>
+					натурального и искусственного камней
+				</h2>
+				<div class="s-about__grid">
+					<article itemscope class="s-about__item">
+						<div class="s-about__item-gallery">
+							<img src="img/about-img-1.jpg" alt="image" />
+						</div>
+						<p itemprop="content" class="content s-about__item-content">
+							Предлагаем полный спектр услуг, включая логистику, таможенные
+							процедуры и консультации по выбору и обработке материалов. Все наши
+							продукты и процессы сертифицированы согласно международным стандартам
+						</p>
+					</article>
+					<article itemscope class="s-about__item">
+						<p itemprop="content" class="content s-about__item-content">
+							Мы работаем без посредников: владеем собственными карьерами и заводами
+							в Китае, что позволяет предлагать оптовые поставки камня по стабильным
+							ценам и с полным контролем качества.
+						</p>
+						<div class="s-about__item-gallery">
+							<img src="img/about-img-2.jpg" alt="image" />
+						</div>
+					</article>
+					<img src="img/left-rect.png" alt="images" class="s-about__bg">
+				</div>
+			</div>
+		</section>
+
+		<section class="s-decision sect-m">
+			<div class="container">
+				<div class="s-decision__body" style="
+        background: url(&quot;img/decision-bg.jpg&quot;) center / cover
+          no-repeat;
+      ">
+					<h2 class="s-title s-decision__title">
+						Фасады из гранита — профессиональное решение для вашего здания
+					</h2>
+					<div class="s-decision__inside">
+						<p class="content s-decision__content">
+							Мы проектируем, изготавливаем и монтируем фасады из натурального
+							гранита под ключ. Такое решение для облицовки зданий не только придаёт
+							объекту престижный внешний вид, но и обеспечивает надежную защиту от
+							погодных воздействий и долговечность
+						</p>
+						<p class="s-decision__bottom-content">
+							Оставьте заявку на консультацию, и мы подберём оптимальное решение для
+							вашего фасада!
+						</p>
+						<a href="#modal-get" data-fancybox class="btn-s s-decision__btn">
+							Заказать консультацию
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="sect-m s-estimation">
+			<div class="container">
+				<div class="s-estimation__grid">
+					<div class="s-estimation__item">
+						<h2 class="s-title s-estimation__title">
+							Составим смету для вашего проекта прямо
+							<span>сейчас!</span>
+						</h2>
+						<p class="s-estimation__content">
+							Отправьте техническое задание — мы рассчитаем стоимость с учётом ваших
+							требований и параметров проекта
+						</p>
+						<div class="s-estimation__item-gallery">
+							<img src="img/estimation-1.jpg" alt="image">
+						</div>
+					</div>
+					<div class="s-estimation__item">
+						<div class="s-estimation__item-gallery">
+							<img src="img/estimation-2.jpg" alt="image">
+						</div>
+						<div class="s-estimation__item-nav">
+							<a href="#modal-get" data-fancybox class="btn-s s-estimation__btn">Получить смету</a>
+							<a href="img/about-bg.png" download class="s-estimation__file-btn">
+								<img src="img/icon-pdf.svg" alt="icon">
+								<span>Получите подробную смету в PDF</span>
+							</a>
+						</div>
+					</div>
+					<img src="img/right-rect.png" alt="image" class="s-estimation__bg">
+				</div>
+			</div>
+		</section>
+
+		<section class="s-steps sect-p" style="background: url('img/steps-bg.png') bottom 0 left 0 / 100% auto no-repeat;">
+			<div class="container">
+				<h2 class="s-title s-steps__title">
+					<span>Путь</span>
+					от первого запроса до получения камня на объекте
+				</h2>
+				<div class="s-steps__nav">
+					<div class="s-steps__nav-btn _active">
+						<div class="s-steps__nav-circle">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-arrow-line-next"></use>
+							</svg>
+						</div>
+						<div class="s-steps__nav-btn-flex">
+							<div class="s-steps__nav-num">01</div>
+							<div class="s-steps__nav-content">
+								Обсуждение проекта и технического задания
+							</div>
+						</div>
+					</div>
+					<div class="s-steps__nav-btn">
+						<div class="s-steps__nav-circle">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-arrow-line-next"></use>
+							</svg>
+						</div>
+						<div class="s-steps__nav-btn-flex">
+							<div class="s-steps__nav-num">02</div>
+							<div class="s-steps__nav-content">
+								Подбор материала и предварительный расчёт
+							</div>
+						</div>
+					</div>
+					<div class="s-steps__nav-btn">
+						<div class="s-steps__nav-circle">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-arrow-line-next"></use>
+							</svg>
+						</div>
+						<div class="s-steps__nav-btn-flex">
+							<div class="s-steps__nav-num">03</div>
+							<div class="s-steps__nav-content">
+								Подтверждение и оформление заказа
+							</div>
+						</div>
+					</div>
+					<div class="s-steps__nav-btn">
+						<div class="s-steps__nav-circle">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-arrow-line-next"></use>
+							</svg>
+						</div>
+						<div class="s-steps__nav-btn-flex">
+							<div class="s-steps__nav-num">04</div>
+							<div class="s-steps__nav-content">
+								Производство и контроль качества
+							</div>
+						</div>
+					</div>
+					<div class="s-steps__nav-btn _last">
+						<div class="s-steps__nav-circle">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-circle-check"></use>
+							</svg>
+						</div>
+						<div class="s-steps__nav-btn-flex">
+							<div class="s-steps__nav-num">05</div>
+							<div class="s-steps__nav-content">
+								Доставка, оформление и сопровождение
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper s-steps__slider">
+					<div class="swiper-wrapper">
+						<div itemscope class="swiper-slide s-steps__slide">
+							<div class="s-steps__slide-gallery">
+								<a href="#" class="s-steps__slide-wrapper-img">
+									<img itemprop="image" src="img/steps.jpg" alt="image" />
+								</a>
+								<h5 itemprop="title" class="s-steps__slide-title">
+									01. Обсуждение проекта и технического задания
+								</h5>
+								<a href="#" class="s-steps__circle-btn">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#icon-arrow-line-next"></use>
+									</svg>
+								</a>
+								<button class="btn-s s-steps__btn-next">Следующий этап</button>
+							</div>
+							<div class="s-steps__info">
+								<ul itemprop="list-content" class="list s-steps__info-list">
+									<li class="s-steps__info-item">
+										<div>
+											<img src="img/steps-icon.svg" alt="icon" />
+										</div>
+										<span>Получаем первичное обращение и запрос от клиента</span>
+									</li>
+									<li class="s-steps__info-item">
+										<div>
+											<img src="img/steps-icon.svg" alt="icon" />
+										</div>
+										<span>
+											Уточняем задачи проекта, специфику объекта, формат поставки
+											(блоки, плиты, изделия)
+										</span>
+									</li>
+									<li class="s-steps__info-item">
+										<div>
+											<img src="img/steps-icon.svg" alt="icon" />
+										</div>
+										<span>
+											Определяем материал, место доставки, ориентировочные сроки
+										</span>
+									</li>
+									<li class="s-steps__info-item">
+										<div>
+											<img src="img/steps-icon.svg" alt="icon" />
+										</div>
+										<span>Запрашиваем чертежи, техническое задание</span>
+									</li>
+									<li class="s-steps__info-item">
+										<div>
+											<img src="img/steps-icon.svg" alt="icon" />
+										</div>
+										<span>Фиксируем бюджет и дополнительные условия</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div itemscope class="swiper-slide s-steps__slide">
+							<div class="s-steps__slide-gallery">
+								<a href="#" class="s-steps__slide-wrapper-img">
+									<img itemprop="image" src="img/steps.jpg" alt="image" />
+								</a>
+								<h5 itemprop="title" class="s-steps__slide-title">
+									02. Подбор материала и предварительный расчёт
+								</h5>
+								<a href="#" class="s-steps__circle-btn">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#icon-arrow-line-next"></use>
+									</svg>
+								</a>
+								<button class="btn-s s-steps__btn-next">Следующий этап</button>
+							</div>
+							<div class="s-steps__info">
+								<ul itemprop="list-content" class="list s-steps__info-list">
+									<li class="s-steps__info-item">
+										<div>
+											<img src="img/steps-icon.svg" alt="icon" />
+										</div>
+										<span>Получаем первичное обращение и запрос от клиента</span>
+									</li>
+									<li class="s-steps__info-item">
+										<div>
+											<img src="img/steps-icon.svg" alt="icon" />
+										</div>
+										<span>
+											Уточняем задачи проекта, специфику объекта, формат поставки
+											(блоки, плиты, изделия)
+										</span>
+									</li>
+									<li class="s-steps__info-item">
+										<div>
+											<img src="img/steps-icon.svg" alt="icon" />
+										</div>
+										<span>
+											Определяем материал, место доставки, ориентировочные сроки
+										</span>
+									</li>
+									<li class="s-steps__info-item">
+										<div>
+											<img src="img/steps-icon.svg" alt="icon" />
+										</div>
+										<span>Запрашиваем чертежи, техническое задание</span>
+									</li>
+									<li class="s-steps__info-item">
+										<div>
+											<img src="img/steps-icon.svg" alt="icon" />
+										</div>
+										<span>Фиксируем бюджет и дополнительные условия</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div itemscope class="swiper-slide s-steps__slide">
+							<div class="s-steps__slide-gallery">
+								<a href="#" class="s-steps__slide-wrapper-img">
+									<img itemprop="image" src="img/steps.jpg" alt="image" />
+								</a>
+								<h5 itemprop="title" class="s-steps__slide-title">
+									03. Подтверждение и оформление заказа
+								</h5>
+								<a href="#" class="s-steps__circle-btn">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#icon-arrow-line-next"></use>
+									</svg>
+								</a>
+								<button class="btn-s s-steps__btn-next">Следующий этап</button>
+							</div>
+							<div class="s-steps__info">
+								<ul itemprop="list-content" class="list s-steps__info-list">
+									<li class="s-steps__info-item">
+										<div>
+											<img src="img/steps-icon.svg" alt="icon" />
+										</div>
+										<span>Получаем первичное обращение и запрос от клиента</span>
+									</li>
+									<li class="s-steps__info-item">
+										<div>
+											<img src="img/steps-icon.svg" alt="icon" />
+										</div>
+										<span>
+											Уточняем задачи проекта, специфику объекта, формат поставки
+											(блоки, плиты, изделия)
+										</span>
+									</li>
+									<li class="s-steps__info-item">
+										<div>
+											<img src="img/steps-icon.svg" alt="icon" />
+										</div>
+										<span>
+											Определяем материал, место доставки, ориентировочные сроки
+										</span>
+									</li>
+									<li class="s-steps__info-item">
+										<div>
+											<img src="img/steps-icon.svg" alt="icon" />
+										</div>
+										<span>Запрашиваем чертежи, техническое задание</span>
+									</li>
+									<li class="s-steps__info-item">
+										<div>
+											<img src="img/steps-icon.svg" alt="icon" />
+										</div>
+										<span>Фиксируем бюджет и дополнительные условия</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div itemscope class="swiper-slide s-steps__slide">
+							<div class="s-steps__slide-gallery">
+								<a href="#" class="s-steps__slide-wrapper-img">
+									<img itemprop="image" src="img/steps.jpg" alt="image" />
+								</a>
+								<h5 itemprop="title" class="s-steps__slide-title">
+									04. Производство и контроль качества
+								</h5>
+								<a href="#" class="s-steps__circle-btn">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#icon-arrow-line-next"></use>
+									</svg>
+								</a>
+								<button class="btn-s s-steps__btn-next">Следующий этап</button>
+							</div>
+							<div class="s-steps__info">
+								<ul itemprop="list-content" class="list s-steps__info-list">
+									<li class="s-steps__info-item">
+										<div>
+											<img src="img/steps-icon.svg" alt="icon" />
+										</div>
+										<span>Получаем первичное обращение и запрос от клиента</span>
+									</li>
+									<li class="s-steps__info-item">
+										<div>
+											<img src="img/steps-icon.svg" alt="icon" />
+										</div>
+										<span>
+											Уточняем задачи проекта, специфику объекта, формат поставки
+											(блоки, плиты, изделия)
+										</span>
+									</li>
+									<li class="s-steps__info-item">
+										<div>
+											<img src="img/steps-icon.svg" alt="icon" />
+										</div>
+										<span>
+											Определяем материал, место доставки, ориентировочные сроки
+										</span>
+									</li>
+									<li class="s-steps__info-item">
+										<div>
+											<img src="img/steps-icon.svg" alt="icon" />
+										</div>
+										<span>Запрашиваем чертежи, техническое задание</span>
+									</li>
+									<li class="s-steps__info-item">
+										<div>
+											<img src="img/steps-icon.svg" alt="icon" />
+										</div>
+										<span>Фиксируем бюджет и дополнительные условия</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div itemscope class="swiper-slide s-steps__slide">
+							<div class="s-steps__slide-gallery">
+								<a href="#" class="s-steps__slide-wrapper-img">
+									<img itemprop="image" src="img/steps.jpg" alt="image" />
+								</a>
+								<h5 itemprop="title" class="s-steps__slide-title">
+									05. Доставка, оформление и сопровождение
+								</h5>
+								<a href="#" class="s-steps__circle-btn">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#icon-arrow-line-next"></use>
+									</svg>
+								</a>
+								<a href="#modal-consult" data-fancybox class="btn-s s-steps__btn-next">Заказать консультацию</a>
+							</div>
+							<div class="s-steps__info">
+								<ul itemprop="list-content" class="list s-steps__info-list">
+									<li class="s-steps__info-item">
+										<div>
+											<img src="img/steps-icon.svg" alt="icon" />
+										</div>
+										<span>Получаем первичное обращение и запрос от клиента</span>
+									</li>
+									<li class="s-steps__info-item">
+										<div>
+											<img src="img/steps-icon.svg" alt="icon" />
+										</div>
+										<span>
+											Уточняем задачи проекта, специфику объекта, формат поставки
+											(блоки, плиты, изделия)
+										</span>
+									</li>
+									<li class="s-steps__info-item">
+										<div>
+											<img src="img/steps-icon.svg" alt="icon" />
+										</div>
+										<span>
+											Определяем материал, место доставки, ориентировочные сроки
+										</span>
+									</li>
+									<li class="s-steps__info-item">
+										<div>
+											<img src="img/steps-icon.svg" alt="icon" />
+										</div>
+										<span>Запрашиваем чертежи, техническое задание</span>
+									</li>
+									<li class="s-steps__info-item">
+										<div>
+											<img src="img/steps-icon.svg" alt="icon" />
+										</div>
+										<span>Фиксируем бюджет и дополнительные условия</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="s-consult sect-m">
+			<div class="container">
+				<div class="s-consult__body" style="
+        background: url(&quot;img/consult.jpg&quot;) center / cover no-repeat;
+      ">
+					<div class="s-consult__head">
+						<h2 class="s-title s-consult__title">
+							Нужна помощь эксперта? Есть вопросы?
+						</h2>
+						<p class="s-consult__content">
+							Оставьте ваши контакты — специалист поможет выбрать подходящий камень,
+							сориентирует по срокам, стоимости и подберёт оптимальное решение
+							под ваш проект
+						</p>
+					</div>
+					<div class="s-consult__form-wrapper">
+						<form action="#" class="s-consult__form">
+							<div class="input-control _icon">
+								<svg>
+									<use xlink:href="img/icons/icons.svg#icon-tel"></use>
+								</svg>
+								<input type="tel" placeholder="Ваш телефон" class="input" />
+							</div>
+							<button class="btn-s s-consult__form-btn">
+								Получить консультацию
+							</button>
+						</form>
+						<p class="s-consult__form-policy">
+							*Нажимая на кнопку, вы даёте своё согласие на обработку
+							<a href="#" target="_blank">Персональных данных</a>
+							и принимаете 
+							<a href="#" target="_blank">Условия соглашения</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="sect-p s-production">
+			<div class="container">
+				<div itemscope class="s-production__wrapper">
+					<div class="s-production__gallery">
+						<a href="#" class="btn-circle s-production__gallery-btn">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-arrow-line-next"></use>
+							</svg>
+						</a>
+						<img itemprop="image" src="img/production-image.jpg" alt="image" />
+					</div>
+					<div class="s-production__body">
+						<h2 itemprop="title" class="s-title s-production__title">
+							Производим и поставляем камень под проекты любой
+							<span>сложности</span>
+						</h2>
+						<div itemprop="content" class="content-big s-production__content">
+							Надёжные оптовые поставки натурального и композитного камня напрямую
+							от производителя — от жилых комплексов и коммерческой отделки
+							до госзаказов
+						</div>
+						<div style="
+            background: url(&quot;img/production-lidosta.jpg&quot;) 0 0 / cover
+              no-repeat;
+          " class="s-production__lidosta">
+							<div class="s-production__lidosta-container">
+								<h5 class="s-production__lidosta-title _mulish">
+									Международный аэропорт Ухань Тяньхэ
+								</h5>
+								<p class="s-production__lidosta-content">
+									Производство и поставка фасадных каменных панелей
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="s-details sect-p" style="
+    background: url(&quot;img/production-bg.png&quot;) bottom 0 left 0 / 100%
+      auto no-repeat;
+  ">
+			<div class="container">
+				<h2 class="s-title s-details__title">
+					Производство в
+					<span>деталях</span>
+				</h2>
+				<div class="s-details__wrapper">
+					<div class="s-details__item">
+						<a href="//github.com/mediaelement/mediaelement-files/blob/master/big_buck_bunny.mp4?raw=true" data-fancybox class="s-details__gallery">
+							<img src="img/details-1.jpg" alt="image" />
+							<div class="s-details__item-play"></div>
+						</a>
+						<p class="content s-details__item-content">
+							Благодаря собственной производственной базе мы не зависим от сторонних
+							подрядчиков, а значит — соблюдаем сроки, оперативно реагируем на
+							заказы и обеспечиваем высокий уровень исполнения даже в индивидуальных
+							проектах.
+						</p>
+					</div>
+					<div class="s-details__item">
+						<p class="content s-details__item-content">
+							Все этапы производства — от первичной обработки до финальной
+							подготовки — мы выполняем самостоятельно. Распил камня, его тщательная
+							шлифовка, аккуратное лощение поверхности, а также бережная упаковка и
+							точная маркировка каждой единицы продукции проходят исключительно на
+							наших собственных мощностях.
+						</p>
+						<div class="s-details__gallery">
+							<img src="img/details-2.jpg" alt="image" />
+						</div>
+					</div>
+					<img src="img/left-rect-2.png" alt="image" class="rect">
+				</div>
+			</div>
+		</section>
+
+		<section class="s-get sect-m">
+			<div class="container">
+				<div class="s-get__body">
+					<img src="img/get-doc.png" alt="image" class="s-get__doc" />
+					<div itemscope class="s-get__info">
+						<h2 itemprop="title" class="s-title s-get__title">
+							Получите персональное
+							<span>КП</span>
+							под ваш проект
+						</h2>
+						<h3 itemprop="subtitle" class="s-get__subtitle">
+							В предложении вы получите:
+						</h3>
+						<ul itemprop="list" class="list s-get__list">
+							<li>
+								подбор подходящих видов натурального и/или искусственного камня
+							</li>
+							<li>смету для вашего проекта</li>
+							<li>сроки поставки и логистики</li>
+							<li>условия оплаты, упаковки и доставки</li>
+							<li>
+								полное описание материалов с фото, характеристиками и объёмами
+							</li>
+						</ul>
+						<p class="s-get__content">
+							Работаем как с готовыми чертежами, так и с первичным техническим
+							заданием
+						</p>
+					</div>
+					<div class="s-get__form-wrapper">
+						<p class="s-get__form-content">
+							Оставьте заявку, и мы подготовим подробное коммерческое предложение
+							с учётом ваших требований и параметров проекта
+						</p>
+						<form action="#" class="form-get">
+							<div class="form-get__inputs s-get__form-inputs">
+								<div class="input-control">
+									<input type="text" placeholder="Ваше имя" class="input" />
+								</div>
+								<div class="input-control">
+									<input type="email" placeholder="Ваш e-mail" class="input" />
+								</div>
+								<div class="input-control">
+									<input type="tel" placeholder="Номер телефона" class="input" />
+								</div>
+							</div>
+							<div class="form-get__item">
+								<div class="form-get__item-title">
+									Какой мессенджер удобнее для вас?
+								</div>
+								<div class="form-get__radio-wrapper">
+									<input type="radio" name="messeneger" id="messeneger-tg" class="input-radio" />
+									<label for="messeneger-tg" class="label-radio">Telegram</label>
+									<input type="radio" name="messeneger" id="messeneger-wh" class="input-radio" />
+									<label for="messeneger-wh" class="label-radio">WhatsApp</label>
+								</div>
+							</div>
+							<input type="checkbox" id="s-get-policy" class="input-policy" />
+							<label for="s-get-policy" class="label-policy">
+								<span>
+									Я согласен с 
+									<a href="#" target="_blank">Политикой конфиденциальности</a>
+								</span>
+							</label>
+							<div class="form-get__bottom">
+								<button type="submit" class="btn-s form-get__submit s-get__form-submit">
+									Запросить КП
+								</button>
+								<input type="file" id="s-get-file" class="input-file" />
+								<label for="s-get-file" data-attach-text="Файл прикреплен" class="label-file">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#icon-loconfile"></use>
+									</svg>
+									<span>
+										Прикрепить файл ТЗ,
+										<br />
+										если есть
+									</span>
+								</label>
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="s-get__bottom-wrapper">
+					<p class="s-get__bottom-content _mulish">
+						Менеджер свяжется с вами в ближайшее время, уточнит детали и пришлёт
+						КП в выбранный мессенджер
+					</p>
+				</div>
+				<p class="s-get__bottom-policy">
+					*Оставляя данные, вы даёте своё согласие на обработку
+					<a href="#" target="_blank">Персональных данных</a>
+					и принимаете
+					<a href="#" target="_blank">Условия соглашения</a>
+					.
+				</p>
+			</div>
+		</section>
+
+		<section class="sect-p s-content">
+			<div class="container">
+				<h2 class="s-title s-content__title">О компании</h2>
+				<div class="content _mulish s-content__content">
+					<p>
+						Компания Grosstoun — производитель натурального камня с добычей в
+						собственных карьерах, а также производитель искусственного камня с
+						развитой промышленной базой: 12 высокотехнологичных заводов позволяют
+						выпускать продукцию в больших объёмах, с точным соблюдением стандартов и
+						сроков. Также мы входим в топ крупнейших поставщиков искусственного
+						камня и натурального. Наша модель работы исключает посредников — вы
+						получаете камень оптом от производителя, по выгодным ценам и с гарантией
+						качества. Мы сопровождаем клиентов на всех этапах: от подбора и
+						согласования условий до доставки, таможенного оформления и после
+						продажной поддержки
+					</p>
+					<p>У нас можно приобрести:</p>
+					<ul>
+						<li>Крупноформатные натуральные камни оптом</li>
+						<li>Облицовочные искусственные камни оптом</li>
+						<li>Каменные блоки для строительства</li>
+						<li>Каменные изделия для благоустройства территорий</li>
+						<li>Декоративный камень для отделки интерьера и тд.</li>
+					</ul>
+					<h2>
+						Также вы можете заказать камень под ваш проект — по чертежам, с подбором
+						цвета, размера и текстуры
+					</h2>
+					<p>
+						Мы предоставляем весь необходимый комплект документов: инвойсы,
+						упаковочные листы, сертификаты соответствия и происхождения, работаем
+						строго по договору и всегда соблюдаем сроки. Нашими клиентами становятся
+						застройщики, девелоперы, архитектурные бюро, строительные и
+						производственные компании, которым необходим камень для фасада,
+						ландшафта, внутренней отделки или монументальных конструкций
+					</p>
+					<p>
+						Если вы ищете надёжного поставщика камня, способного обеспечить
+						стабильные объёмы, чёткую логистику и прозрачные условия сотрудничества,
+						Grosstoun — ваш выбор. Мы подберём материалы под задачи любого масштаба:
+						от частного дома до многофункционального комплекса. Для тех, кто хочет
+						купить натуральный камень из Китая или заказать искусственный камень под
+						заказ — у нас есть решение. Предоставим образцы, подберём аналоги и
+						организуем отгрузку
+					</p>
+					<ul>
+						<li>Крупноформатные натуральные камни оптом</li>
+						<li>Облицовочные искусственные камни оптом</li>
+						<li>Каменные блоки для строительства</li>
+						<li>Каменные изделия для благоустройства территорий</li>
+						<li>Декоративный камень для отделки интерьера и тд.</li>
+					</ul>
+					<p>
+						Мы предоставляем весь необходимый комплект документов: инвойсы,
+						упаковочные листы, сертификаты соответствия и происхождения, работаем
+						строго по договору и всегда соблюдаем сроки. Нашими клиентами становятся
+						застройщики, девелоперы, архитектурные бюро, строительные и
+						производственные компании, которым необходим камень для фасада,
+						ландшафта, внутренней отделки или монументальных конструкций
+					</p>
+					<p>
+						Если вы ищете надёжного поставщика камня, способного обеспечить
+						стабильные объёмы, чёткую логистику и прозрачные условия сотрудничества,
+						Grosstoun — ваш выбор. Мы подберём материалы под задачи любого масштаба:
+						от частного дома до многофункционального комплекса. Для тех, кто хочет
+						купить натуральный камень из Китая или заказать искусственный камень под
+						заказ — у нас есть решение. Предоставим образцы, подберём аналоги и
+						организуем отгрузку
+					</p>
+				</div>
+				<div class="btn-s _gray s-content__btn-more">
+					<span>Читать полностью</span>
+					<svg>
+						<use xlink:href="img/icons/icons.svg#icon-arrow-rect"></use>
+					</svg>
+				</div>
+			</div>
+		</section>
+
+
+	</main>
+	<div class="modal modal-get" id="modal-get">
+		<div class="modal-get__wrapper">
+			<div class="modal-get__main">
+				<h3 class="modal-get__title _mulish">
+					Составим смету и персональное КП под ваш проект
+				</h3>
+				<div class="modal-get__main-subtitle">В предложении вы получите:</div>
+				<ul class="list modal-get__main-list">
+					<li>смету для вашего проекта</li>
+					<li>подбор подходящих видов натурального и/или искусственного камня</li>
+					<li>сроки поставки и логистики</li>
+					<li>условия оплаты, упаковки и доставки</li>
+					<li>полное описание материалов с фото, характеристиками и объёмами</li>
+				</ul>
+				<p class="modal-get__main-content">
+					Работаем как с готовыми чертежами, так и с первичным техническим
+					заданием
+				</p>
+			</div>
+			<div class="modal-get__form-wrapper">
+				<p class="modal-get__form-content">
+					Оставьте заявку, и мы подготовим подробное коммерческое предложение
+					с учётом ваших требований и параметров проекта
+				</p>
+				<form action="#" class="form-get modal__form-get">
+					<div class="form-get__inputs">
+						<div class="input-control">
+							<input type="text" placeholder="Ваше имя" class="input" />
+						</div>
+						<div class="input-control">
+							<input type="email" placeholder="Ваш e-mail" class="input" />
+						</div>
+						<div class="input-control">
+							<input type="tel" placeholder="Номер телефона" class="input" />
+						</div>
+					</div>
+					<div class="form-get__item">
+						<div class="form-get__item-title">
+							Какой мессенджер удобнее для вас?
+						</div>
+						<div class="form-get__radio-wrapper">
+							<input type="radio" name="messeneger" id="messeneger-tg" class="input-radio" />
+							<label for="messeneger-tg" class="label-radio">Telegram</label>
+							<input type="radio" name="messeneger" id="messeneger-wh" class="input-radio" />
+							<label for="messeneger-wh" class="label-radio">WhatsApp</label>
+						</div>
+					</div>
+					<input type="checkbox" id="modal-get-policy" class="input-policy" />
+					<label for="modal-get-policy" class="label-policy">
+						<span>
+							Я согласен с 
+							<a href="#" target="_blank">Политикой конфиденциальности</a>
+						</span>
+					</label>
+					<div class="form-get__bottom">
+						<button type="submit" class="btn-s form-get__submit">
+							Получить КП
+						</button>
+						<input type="file" id="modal-get-file" class="input-file" />
+						<label for="modal-get-file" data-attach-text="Файл прикреплен" class="label-file">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-loconfile"></use>
+							</svg>
+							<span>
+								Прикрепить файл ТЗ,
+								<br />
+								если есть
+							</span>
+						</label>
+					</div>
+				</form>
+			</div>
+			<img src="img/doc.png" alt="image" class="modal-get__wrapper-img" />
+		</div>
+		<div class="modal-get__bottom">
+			<div class="modal-get__bottom-content _mulish">
+				Менеджер свяжется с вами в ближайшее время, уточнит детали и пришлёт
+				КП в выбранный мессенджер
+			</div>
+			<div class="modal-get__bottom-policy">
+				*Оставляя данные, вы даёте своё согласие на обработку персональных данных
+				и принимаете условия соглашения.
+			</div>
+		</div>
+	</div>
+
+	<div class="modal _simple" id="modal-consult">
+		<h3 class="s-title modal__title">Записаться на консультацию</h3>
+		<form action="#" class="modal__form">
+			<div class="input-control">
+				<input type="text" placeholder="Имя" class="input" />
+			</div>
+			<div class="input-control">
+				<input type="tel" placeholder="Ваш телефон" class="input" />
+			</div>
+			<button class="btn-s modal__form-btn">Отправить</button>
+			<input type="checkbox" id="modal-consult-policy" class="input-policy" />
+			<label for="modal-consult-policy" class="label-policy">
+				<span>
+					Я согласен с 
+					<a href="#" target="_blank">Политикой конфиденциальности</a>
+				</span>
+			</label>
+		</form>
+	</div>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__wrapper">
+				<div class="footer__main">
+					<a href="/" class="footer__logo">
+						<img src="img/logo-white.svg" alt="logo" />
+					</a>
+					<ul class="list footer__list">
+						<li><a href="#">О компании</a></li>
+						<li><a href="#">Производство</a></li>
+						<li><a href="#">Портфолио</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</div>
+				<div class="footer__nav">
+					<div class="footer__nav-item">
+						<h5 class="footer__nav-title">Породы</h5>
+						<ul class="list footer__nav-list">
+							<li><a href="#">Мрамор</a></li>
+							<li><a href="#">Гранит</a></li>
+							<li><a href="#">Кварцит</a></li>
+							<li><a href="#">Сланец</a></li>
+							<li><a href="#">Оникс</a></li>
+							<li><a href="#">Травертин</a></li>
+						</ul>
+					</div>
+					<div class="footer__nav-item">
+						<h5 class="footer__nav-title">Изделия</h5>
+						<ul class="list footer__nav-list">
+							<li><a href="#">Слэбы</a></li>
+							<li><a href="#">Плитка</a></li>
+							<li><a href="#">Панели</a></li>
+							<li><a href="#">Ступени</a></li>
+							<li><a href="#">Столешницы</a></li>
+							<li><a href="#">Брусчатка</a></li>
+							<li><a href="#">Бордюр</a></li>
+							<li><a href="#">Столы</a></li>
+						</ul>
+					</div>
+					<div class="footer__nav-item">
+						<h5 class="footer__nav-title">Контакты</h5>
+						<p class="footer__address">
+							г. Сямынь (Шуйтоу), провинция Фуцзянь, Китай
+						</p>
+						<div class="footer__contacts-info">
+							<div class="footer__social">
+								<a href="#" target="_blank" class="footer__social-btn">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#icon-tg"></use>
+									</svg>
+								</a>
+								<a href="#" target="_blank" class="footer__social-btn">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#icon-wh"></use>
+									</svg>
+								</a>
+							</div>
+							<ul class="list footer__contacts-list">
+								<li><a href="tel:+79137271088">+7 913 727-10-88</a></li>
+								<li>
+									<a href="mailto:grosstoun@yandex.ru">grosstoun@yandex.ru</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="footer__qr">
+					<p class="footer__qr-content">
+						Наведите камеру, чтобы связаться с нами
+					</p>
+					<img src="img/qr.png" alt="image" class="footer__qr-img" />
+				</div>
+			</div>
+			<div class="footer__bottom">
+				<p class="footer__bottom-content">
+					© 2025 International Building Materials Co., Ltd.
+					<br />
+					Все права защищены.
+					<br />
+					<a href="#" target="_blank">Политика конфиденциальности</a> | <a href="#" target="_blank">Пользовательское соглашение</a>
+				</p>
+				<a href="https://dm-marketing.pro/" target="_blank" class="footer__dev">
+					<img src="img/logo-dev.svg" alt="icon">
+					<span>Разработано в dm-marketing.pro</span>
+				</a>
+			</div>
+		</div>
+	</footer>
+
+	<script src="./files/fancybox/fancybox.min.js?_v=20250820132202"></script>
+	<script src="./files/inputmask/inputmask.min.js?_v=20250820132202"></script>
+	<script src="./files/swiper/swiper.min.js?_v=20250820132202"></script>
+	<script src="./files/nouislider/nouislider.min.js?_v=20250820132202"></script>
+	<script src="js/app.min.js?_v=20250820132202"></script>
+</body>
+
+</html>
