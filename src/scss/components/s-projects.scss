@@ -1,0 +1,61 @@
+.s-projects {
+  &__title {
+    margin: 0px 0px 16px 0px;
+  }
+  &__nav {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    margin: 30px 0px;
+
+    @include laptop-middle {
+      gap: 30px;
+    }
+    @include laptop-min {
+      margin: 25px 0;
+      gap: 20px;
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include tablet {
+      grid-template-columns: 1fr;
+    }
+
+    li {
+      flex-shrink: 0
+    }
+
+    a {
+      @include flex-center;
+      padding: 10px 20px;
+      border: 1px solid rgba(40, 41, 42, 0.5);
+      border-radius: 12px;
+
+      width: 100%;
+      font-weight: 600;
+      font-size: 18px;
+      text-align: center;
+
+      transition: color .3s ease, border-color .3s ease, background-color .3s ease;
+
+      @include hover {
+        border-color: var(--primary);
+        background-color: var(--primary);
+        color: white;
+      }
+    }
+  }
+  &__sect {
+    margin: 25px 0px;
+  }
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    @include laptop-min {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include tablet-min {
+      grid-template-columns: 1fr;
+    }
+  }
+}

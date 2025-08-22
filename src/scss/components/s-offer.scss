@@ -1,0 +1,73 @@
+.s-offer {
+  &__body {
+    position: relative;
+    overflow: hidden;
+    padding: 48px 24px;
+    border-radius: 20px;
+    z-index: 1;
+
+    &::before {
+      position: absolute;
+      content: "";
+      inset: 0;
+      background: linear-gradient(
+        359deg,
+        rgba(0, 0, 0, 0.65) 0%,
+        rgba(0, 0, 0, 0.65) 100%
+      );
+      z-index: -1;
+    }
+  }
+  &__inside {
+    background-color: var(--white);
+    border-radius: 20px;
+    padding: 24px;
+    width: 920px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  &__title {
+    text-align: center;
+    margin: 0px 0px 16px 0px;
+    span {
+      &::before {
+        width: 275px;
+        height: 13px;
+        background: url("@img/title-line-275.png") center / 100% auto no-repeat;
+      }
+    }
+  }
+  &__content {
+    max-width: 600px;
+    text-align: center;
+    margin: 0px auto 28px auto;
+  }
+  &__nav {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 24px;
+    margin: 0 auto;
+    width: 535px;
+    max-width: 100%;
+  }
+  &__nav-btn {
+    max-width: 100%;
+    width: 100%;
+  }
+  &__nav-download {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px;
+
+    font-size: 16px;
+    line-height: 119%;
+    color: rgba(0, 0, 0, 0.65);
+    transition: color .3s ease;
+
+    @include hover {
+      color: var(--primary);
+    }
+  }
+}

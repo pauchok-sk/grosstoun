@@ -1,4 +1,5 @@
 import "../scss/style.scss";
+import anchors from "./files/anchors.js";
 import burger from "./files/burger.js";
 import contentSectMore from "./files/contentSectMore.js";
 import fileAttach from "./files/fileAttach.js";
@@ -22,6 +23,7 @@ sliders();
 contentSectMore();
 nouislider();
 filtersToggle();
+anchors();
 
 Fancybox.bind("[data-fancybox]", {});
 

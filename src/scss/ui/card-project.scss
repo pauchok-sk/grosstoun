@@ -1,0 +1,37 @@
+.card-project {
+  &__img {
+    width: 100%;
+    border-radius: 20px;
+    display: block;
+    aspect-ratio: 1/0.68;
+    object-fit: cover;
+
+    transition: opacity .3s ease;
+    @include hover {
+      opacity: 0.7;
+    }
+  }
+  &__title {
+    font-family: "Mulish", sans-serif;
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 114%;
+    margin: 8px 0px 4px 0px;
+
+    transition: color .3s ease;
+    @include hover {
+      color: var(--primary);
+    }
+    @include tablet {
+      font-size: 18px;
+    }
+  }
+  &__city {
+    font-size: 18px;
+    line-height: 117%;
+    color: rgba(0, 0, 0, 0.65);
+    @include tablet {
+      font-size: 16px;
+    }
+  }
+}
