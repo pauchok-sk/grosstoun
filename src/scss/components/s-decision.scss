@@ -34,6 +34,13 @@
       );
     }
   }
+  &__head-content {
+    text-align: center;
+    color: var(--white);
+    width: 830px;
+    max-width: 100%;
+    margin: 0px auto 32px auto;
+  }
   &__title {
     text-align: center;
     max-width: 885px;
@@ -86,6 +93,52 @@
   &__btn {
     @include tablet-min {
       width: 100%;
+    }
+  }
+  &__form-wrapper {
+    width: 745px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 24px;
+    border-radius: 16px;
+    background: var(--white);
+    @include tablet {
+      padding: 20px 14px;
+    }
+  }
+  &__form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    row-gap: 16px;
+    width: 625px;
+    max-width: 100%;
+    margin: 0px auto 16px auto;
+
+    .input-control {
+      flex: 1;
+    }
+  }
+  &__form-btn {
+    width: 280px;
+    @include tablet {
+      width: 100%;
+    }
+  }
+  &__form-policy {
+    width: 605px;
+    max-width: 100%;
+    margin: 0 auto;
+
+    font-size: 13px;
+    text-align: center;
+    color: rgba(40, 41, 42, 0.5);
+
+    a {
+      transition: color 0.3s ease;
+      @include hover {
+        color: var(--primary);
+      }
     }
   }
 }
