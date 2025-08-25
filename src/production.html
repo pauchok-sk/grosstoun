@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="ru">
+  @@include('html/head.html',{ "title":"pauchoo0k" })
+  <body
+    class="body"
+    style="
+      background: url(&quot;@img/body-bg-min.png&quot;) 0 0 / 100% auto
+        no-repeat;
+    "
+  >
+    @@include('html/components/header.html')
+    <main>
+      <section itemscope class="sect-m s-content bg-transparent">
+        <div class="container">
+          <div class="breadcrumbs">
+            <a href="/">Главная</a>
+            <span>О Производство</span>
+          </div>
+          <h1 itemprop="title" class="s-title s-content__title">
+            Производства
+          </h1>
+          <div itemprop="content" class="content _mulish s-content__content">
+            <p>
+              Компания Grosstoun объединяет 12 высокотехнологичных заводов по
+              обработке камня в Китае — вблизи ключевых месторождений, что
+              позволяет нам оперативно обеспечивать любые объемы поставок. Все
+              производственные площадки оснащены современным оборудованием и
+              автоматизированными линиями, что обеспечивает стабильное качество
+              и высокую точность исполнения
+            </p>
+            <p>
+              Мы работаем с широким спектром горных пород: от прочнейших
+              гранитов до декоративного мрамора и уникальных экзотических
+              материалов, а также создаем решения под ключ — от подбора сырья до
+              упаковки готового продукта, от разработки чертежей до координации
+              логистики
+            </p>
+          </div>
+          <div class="btn-s _gray s-content__btn-more">
+            <span>Читать полностью</span>
+            <svg>
+              <use xlink:href="img/icons/icons.svg#icon-arrow-rect"></use>
+            </svg>
+          </div>
+        </div>
+      </section>
+      @@include('html/components/s-factories.html')
+      @@include('html/components/s-adv.html')
+      <section class="s-decision sect-m">
+        <div class="container">
+          <div
+            class="s-decision__body"
+            style="
+              background: url(&quot;@img/decision-bg.jpg&quot;) center / cover
+                no-repeat;
+            "
+          >
+            <h2 class="s-title s-decision__title">
+              Нужна помощь эксперта? Есть вопросы?
+            </h2>
+            <div class="content-big s-decision__head-content">
+              Оставьте ваши контакты — специалист поможет выбрать подходящий
+              камень, сориентирует по срокам, стоимости и подберёт оптимальное
+              решение под ваш проект
+            </div>
+            <div class="form-wrapper">
+              <form action="#" class="form-wrapper__form">
+                <div class="input-control _icon">
+                  <svg>
+                    <use xlink:href="img/icons/icons.svg#icon-tel"></use>
+                  </svg>
+                  <input type="tel" placeholder="Ваш телефон" class="input" />
+                </div>
+                <button class="btn-s form-wrapper__form-btn">
+                  Получить консультацию
+                </button>
+              </form>
+              <p class="form-wrapper__form-policy">
+                *Нажимая на кнопку, вы даёте своё согласие на обработку
+                <a href="#" target="_blank">Персональных данных</a>
+                и принимаете 
+                <a href="#" target="_blank">Условия соглашения</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="sect-p s-about"
+        style="
+          background: url(&quot;@img/about-bg.png&quot;) bottom 0 left 0 / 100%
+            auto no-repeat;
+        "
+      >
+        <div class="container">
+          <h2 class="s-title s-about__title">
+            Работаем с породами со всего
+            <span>мира</span>
+          </h2>
+          <div class="s-about__grid">
+            <div itemscope class="s-about__item">
+              <div class="s-about__item-gallery">
+                <img src="@img/about-img-1.jpg" alt="image" />
+              </div>
+              <p itemprop="content" class="content s-about__item-content">
+                Контролируем каждый этап — от добычи до финальной обработки,
+                чтобы ты получил идеальный камень без лишних наценок и
+                посредников
+              </p>
+            </div>
+            <div itemscope class="s-about__item">
+              <p itemprop="content" class="content s-about__item-content">
+                Россия, Китай, Индия, Иран, Египет, Турция, Киргизия, Армения,
+                Германия, Португалия, Греция, Италия, Испания, Бразилия и
+                другие.
+              </p>
+              <div class="s-about__item-gallery">
+                <img src="@img/about-img-2.jpg" alt="image" />
+              </div>
+            </div>
+            <img src="@img/left-rect.png" alt="images" class="s-about__bg" />
+          </div>
+        </div>
+      </section>
+      <section class="s-categories sect-m">
+        <div class="container">
+          <h2 class="s-title s-categories__title">
+            Натуральные и искусственные камни для фасадов, благоустройства
+            и строительства — оптом от
+            <span>производителя</span>
+          </h2>
+          <p class="content-big s-categories__content">
+            В нашем каталоге более 800 сортов камня для отделки и строительства
+          </p>
+          <div class="s-categories__grid">
+            <a href="#" itemscope class="s-categories__item">
+              <img
+                src="@img/category.png"
+                alt="image"
+                class="s-categories__item-img"
+              />
+              <div class="s-categories__item-footer">
+                <div itemprop="title" class="s-categories__item-title">
+                  Мрамор
+                </div>
+                <svg>
+                  <use
+                    xlink:href="img/icons/icons.svg#icon-arrow-line-next"
+                  ></use>
+                </svg>
+              </div>
+            </a>
+            <a href="#" itemscope class="s-categories__item">
+              <img
+                src="@img/category.png"
+                alt="image"
+                class="s-categories__item-img"
+              />
+              <div class="s-categories__item-footer">
+                <div itemprop="title" class="s-categories__item-title">
+                  Мрамор
+                </div>
+                <svg>
+                  <use
+                    xlink:href="img/icons/icons.svg#icon-arrow-line-next"
+                  ></use>
+                </svg>
+              </div>
+            </a>
+            <a href="#" itemscope class="s-categories__item">
+              <img
+                src="@img/category.png"
+                alt="image"
+                class="s-categories__item-img"
+              />
+              <div class="s-categories__item-footer">
+                <div itemprop="title" class="s-categories__item-title">
+                  Мрамор
+                </div>
+                <svg>
+                  <use
+                    xlink:href="img/icons/icons.svg#icon-arrow-line-next"
+                  ></use>
+                </svg>
+              </div>
+            </a>
+            <a href="#" itemscope class="s-categories__item">
+              <img
+                src="@img/category.png"
+                alt="image"
+                class="s-categories__item-img"
+              />
+              <div class="s-categories__item-footer">
+                <div itemprop="title" class="s-categories__item-title">
+                  Мрамор
+                </div>
+                <svg>
+                  <use
+                    xlink:href="img/icons/icons.svg#icon-arrow-line-next"
+                  ></use>
+                </svg>
+              </div>
+            </a>
+            <a href="#" itemscope class="s-categories__item">
+              <img
+                src="@img/category.png"
+                alt="image"
+                class="s-categories__item-img"
+              />
+              <div class="s-categories__item-footer">
+                <div itemprop="title" class="s-categories__item-title">
+                  Мрамор
+                </div>
+                <svg>
+                  <use
+                    xlink:href="img/icons/icons.svg#icon-arrow-line-next"
+                  ></use>
+                </svg>
+              </div>
+            </a>
+            <a href="#" itemscope class="s-categories__item">
+              <img
+                src="@img/category.png"
+                alt="image"
+                class="s-categories__item-img"
+              />
+              <div class="s-categories__item-footer">
+                <div itemprop="title" class="s-categories__item-title">
+                  Мрамор
+                </div>
+                <svg>
+                  <use
+                    xlink:href="img/icons/icons.svg#icon-arrow-line-next"
+                  ></use>
+                </svg>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+      @@include('html/components/s-stones.html')
+      @@include('html/components/s-offer.html')
+    </main>
+    @@include('html/components/modals.html')
+    @@include('html/components/footer.html')
+    <script src="js/app.min.js"></script>
+  </body>
+</html>

@@ -6,15 +6,20 @@ export default function contentSectMore() {
       sect.querySelector(".s-content__content").children
     ).slice(6);
     const btn = sect.querySelector(".s-content__btn-more");
-    const btnTitle = btn.querySelector("span");
+    const btnTitle = btn?.querySelector("span");
 
-    btn.addEventListener("click", () => {
-      if (btn.classList.contains("_active")) {
-        handleClose();
-      } else {
-        handleOpen();
-      }
-    });
+    if (sect.querySelector(".s-content__content").children.length <= 6)
+      btn.remove();
+
+    if (btn) {
+      btn.addEventListener("click", () => {
+        if (btn.classList.contains("_active")) {
+          handleClose();
+        } else {
+          handleOpen();
+        }
+      });
+    }
 
     function handleOpen() {
       items.forEach((item) => {

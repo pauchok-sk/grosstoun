@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="ru">
+  @@include('html/head.html',{ "title":"pauchoo0k" })
+  <body
+    class="body"
+    style="
+      background: url(&quot;@img/body-bg.png&quot;) 0 0 / 100% auto no-repeat;
+    "
+  >
+    @@include('html/components/header.html')
+    <main>
+      <section itemscope class="sect-m s-content bg-transparent">
+        <div class="container">
+          <div class="breadcrumbs">
+            <a href="/">Главная</a>
+            <span>О компании</span>
+          </div>
+          <h1 itemprop="title" class="s-title s-content__title">
+            О
+            <span>компании</span>
+          </h1>
+          <div itemprop="content" class="content _mulish s-content__content">
+            <p>
+              Grosstoun — поставщик натурального и искусственного камня и
+              производитель каменных изделий с полным циклом: от добычи в Китае
+              до финальной обработки и поставки на объекты в других странах
+            </p>
+            <p>
+              Мы работаем с девелоперами, архитекторами, строителями и
+              госструктурами, участвуем в благоустройстве городов и
+              строительстве общественных пространств. Нам доверяют объекты
+              федерального уровня, премиальные жилые комплексы и масштабные
+              транспортные узлы
+            </p>
+            <p>
+              Благодаря наличию собственных карьеров, 12 современных заводов и
+              локальным представительствам, мы предлагаем не просто материал, а
+              уверенность в качестве, сроках и результате.
+            </p>
+          </div>
+          <div class="btn-s _gray s-content__btn-more">
+            <span>Читать полностью</span>
+            <svg>
+              <use xlink:href="img/icons/icons.svg#icon-arrow-rect"></use>
+            </svg>
+          </div>
+        </div>
+      </section>
+      @@include('html/components/s-adv.html')
+      @@include('html/components/s-projects-rec.html')
+      <section class="s-decision sect-m">
+        <div class="container">
+          <div
+            class="s-decision__body"
+            style="
+              background: url(&quot;@img/decision-bg.jpg&quot;) center / cover
+                no-repeat;
+            "
+          >
+            <h2 class="s-title s-decision__title">
+              Нужна помощь эксперта? Есть вопросы?
+            </h2>
+            <div class="content-big s-decision__head-content">
+              Оставьте ваши контакты — специалист поможет выбрать подходящий
+              камень, сориентирует по срокам, стоимости и подберёт оптимальное
+              решение под ваш проект
+            </div>
+            <div class="form-wrapper">
+              <form action="#" class="form-wrapper__form">
+                <div class="input-control _icon">
+                  <svg>
+                    <use xlink:href="img/icons/icons.svg#icon-tel"></use>
+                  </svg>
+                  <input type="tel" placeholder="Ваш телефон" class="input" />
+                </div>
+                <button class="btn-s form-wrapper__form-btn">
+                  Получить консультацию
+                </button>
+              </form>
+              <p class="form-wrapper__form-policy">
+                *Нажимая на кнопку, вы даёте своё согласие на обработку
+                <a href="#" target="_blank">Персональных данных</a>
+                и принимаете 
+                <a href="#" target="_blank">Условия соглашения</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    @@include('html/components/modals.html')
+    @@include('html/components/footer.html')
+    <script src="js/app.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="ru">
+  @@include('html/head.html',{ "title":"pauchoo0k" })
+  <body
+    class="body"
+    style="
+      background: url(&quot;@img/body-bg.png&quot;) 0 0 / 100% auto no-repeat;
+    "
+  >
+    @@include('html/components/header.html')
+    <main>
+      @@include('html/components/s-contacts.html')
+      @@include('html/components/s-offer.html')
+    </main>
+    @@include('html/components/modals.html')
+    @@include('html/components/footer.html')
+
+    <script
+      src="https://api-maps.yandex.ru/2.1/?apikey=b46e9249-4925-4460-b11c-3aaf76ad0115&lang=ru_RU"
+      type="text/javascript"
+    ></script>
+    <script src="js/app.min.js"></script>
+  </body>
+</html>

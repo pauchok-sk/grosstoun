@@ -7,6 +7,7 @@ import filtersToggle from "./files/filtersToggle.js";
 import headerDrodpown from "./files/headerDropdown.js";
 import headerScroll from "./files/headerScroll.js";
 import inputmask from "./files/inputmask.js";
+import map from "./files/map.js";
 import nouislider from "./files/nouislider.js";
 import sliders from "./files/sliders.js";
 import spoller from "./files/spoller.js";
@@ -24,6 +25,7 @@ contentSectMore();
 nouislider();
 filtersToggle();
 anchors();
+map();
 
 Fancybox.bind("[data-fancybox]", {});
 

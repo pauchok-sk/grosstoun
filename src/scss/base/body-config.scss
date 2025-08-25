@@ -88,3 +88,18 @@
 .bg-gray {
   background-color: var(--gray);
 }
+.bg-transparent {
+  background-color: transparent !important;
+}
+
+.sect-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+  margin-bottom: 28px;
+  flex-wrap: wrap;
+
+  .s-title {
+    margin: 0;
+  }
+}
