@@ -9,6 +9,11 @@
     box-shadow: 2px 4px 8px 2px rgba(162, 152, 152, 0.2);
     color: var(--primary);
   }
+
+  &._lg {
+    background-color: #fafbfa;
+  }
+
   &__img {
     width: 100%;
     aspect-ratio: 1/0.6;

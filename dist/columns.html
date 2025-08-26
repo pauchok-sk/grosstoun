@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
 
 <head>
@@ -16,7 +16,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
-<body class="body">
+<body class="body" style="
+      background: url(&quot;img/body-bg.png&quot;) 0 0 / 100% auto no-repeat;
+    ">
 	<header class="header">
 		<div class="container">
 			<div class="header__wrapper">
@@ -535,410 +537,172 @@
 		</div>
 	</div>
 
-	<main>
 
-		<section class="intro sect-p">
+	<main>
+		<section class="hero sect-m">
 			<div class="container">
-				<div class="intro__wrapper">
-					<div class="intro__gallery" style="
-          background: url(&quot;img/intro.jpg&quot;) center / cover no-repeat;
-        ">
-						<div class="intro__gallery-container">
-							<h1 class="m-title intro__gallery-title">
-								Натуральный и искусственный камень оптом от производителя
-							</h1>
-							<p class="intro__gallery-content">
-								Крупный выбор мрамора, гранита, травертина и других пород —
-								в наличии и под заказ, прямые поставки из Китая, полное
-								сопровождение на каждом этапе — от заявки до доставки на объект
+				<div class="breadcrumbs">
+					<a href="/">Главная</a>
+					<a href="/">Изделия</a>
+					<span>Колонны</span>
+				</div>
+				<div itemscope class="hero__wrapper">
+					<div class="hero__gallery">
+						<div itemprop="gallery" class="swiper hero__slider">
+							<div class="hero__slider-arrow _prev">
+								<svg>
+									<use xlink:href="img/icons/icons.svg#icon-arrow-line-prev"></use>
+								</svg>
+							</div>
+							<div class="hero__slider-arrow _next">
+								<svg>
+									<use xlink:href="img/icons/icons.svg#icon-arrow-line-next"></use>
+								</svg>
+							</div>
+							<div class="swiper-wrapper">
+								<a href="img/hero-columns.jpg" data-fancybox="hero-gallery" class="swiper-slide hero__slide">
+									<img itemprop="image" src="img/hero-columns.jpg" alt="image" />
+								</a>
+								<a href="img/hero-columns.jpg" data-fancybox="hero-gallery" class="swiper-slide hero__slide">
+									<img itemprop="image" src="img/hero-columns.jpg" alt="image" />
+								</a>
+								<a href="img/hero-columns.jpg" data-fancybox="hero-gallery" class="swiper-slide hero__slide">
+									<img itemprop="image" src="img/hero-columns.jpg" alt="image" />
+								</a>
+								<a href="img/hero-columns.jpg" data-fancybox="hero-gallery" class="swiper-slide hero__slide">
+									<img itemprop="image" src="img/hero-columns.jpg" alt="image" />
+								</a>
+							</div>
+						</div>
+						<div class="swiper hero__thumb-slider">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide hero__thumb-slide">
+									<img src="img/hero-columns.jpg" alt="image" />
+								</div>
+								<div class="swiper-slide hero__thumb-slide">
+									<img src="img/hero-columns.jpg" alt="image" />
+								</div>
+								<div class="swiper-slide hero__thumb-slide">
+									<img src="img/hero-columns.jpg" alt="image" />
+								</div>
+								<div class="swiper-slide hero__thumb-slide">
+									<img src="img/hero-columns.jpg" alt="image" />
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="hero__info">
+						<h1 itemprop="title" class="s-title hero__title">Каменные колонны</h1>
+						<div itemprop="description" class="content hero__content">
+							<p>
+								Архитектурные колонны премиального качества из гранита, мрамора и
+								других природных материалов. Наши каменные изделия — безупречное
+								решение для тех, кто ценит внимание к деталям и стремится
+								подчеркнуть престиж объекта
 							</p>
 						</div>
-					</div>
-					<div class="intro__adv">
-						<div class="intro__adv-item">
-							<div class="intro__adv-num">30+</div>
-							<div class="intro__adv-content">лет опыта</div>
-						</div>
-						<div class="intro__adv-item">
-							<div class="intro__adv-num">537</div>
-							<div class="intro__adv-content">реализованных проектов</div>
-						</div>
-						<div class="intro__adv-item">
-							<div class="intro__adv-num">
-								5 418 211 м
-								<small>в год</small>
-							</div>
-							<div class="intro__adv-content">производственных мощностей</div>
-						</div>
-						<div class="intro__adv-item">
-							<div class="intro__adv-num">12</div>
-							<div class="intro__adv-content">заводов</div>
-						</div>
-						<div class="intro__adv-item">
-							<div class="intro__adv-num">2 134 789</div>
-							<div class="intro__adv-content">
-								слэбов натурального камня в коллекции
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="intro__grid">
-					<div class="intro__item">
-						<h5 class="intro__title">Экспресс расчёт проекта</h5>
-						<p class="intro__item-content">
-							Отправьте ваше ТЗ, наши специалисты проведут расчёт и предоставят
-							КП в этот же день
+						<div itemprop="price" class="hero__price">Цена: По запросу</div>
+						<p itemprop="price description" class="hero__price-descr">
+							*Цены могут корректироваться в зависимости от месторождения камня,
+							объёма и срока поставки, наличия на складе, сезонности.
 						</p>
-						<a href="#modal-get" data-fancybox class="btn-s intro__item-btn">
-							Получить КП
-						</a>
-					</div>
-					<div class="intro__item">
-						<h5 class="intro__title">
-							Специальные условия для оптовых покупателей
-						</h5>
-						<p class="intro__item-content">
-							Свяжитесь с нами в Telegram или WhatsApp. Ответим в течение 5 минут!
-						</p>
-						<div class="intro__social">
-							<a href="#" target="_blank" class="intro__social-btn _tg">
-								<span>Написать в Telegram</span>
+						<div class="hero__nav">
+							<a href="#modal-order" data-fancybox class="btn-s hero__nav-btn">
+								Оформить заказ
+							</a>
+							<a href="#" target="_blank" class="hero__social-btn _blue">
+								<span>
+									Написать
+									<br />
+									в Telegram
+								</span>
 								<img src="img/tg.svg" alt="icon" />
 							</a>
-							<a href="#" target="_blank" class="intro__social-btn _wh">
-								<span>Написать в WhatsApp</span>
+							<a href="#" target="_blank" class="hero__social-btn _green">
+								<span>
+									Написать
+									<br />
+									в WhatsApp
+								</span>
 								<img src="img/wh.svg" alt="icon" />
 							</a>
 						</div>
 					</div>
-					<div class="intro__item">
-						<h5 class="intro__title">Скачать прайс-лист со складскими остатками</h5>
-						<p class="intro__item-content">
-							Вышлем актуальные цены на изделия в наличии. Отгрузка в день оплаты!
-						</p>
-						<a href="img/intro.jpg" download class="btn-s _outline intro__item-btn">
-							Скачать прайс
-						</a>
-					</div>
 				</div>
 			</div>
 		</section>
 
-		<section class="s-catalog-rec sect-m">
-			<div class="container tabs">
-				<div class="s-catalog-rec__head">
-					<h2 class="s-title s-catalog-rec__title">
-						В нашем каталоге более
-						<span>800 сортов</span>
-						камня для отделки и строительства
-					</h2>
-					<p class="s-catalog-rec__content">
-						Фасадный облицовочный и строительный камень напрямую с заводов в Китае
-					</p>
-				</div>
-				<div class="s-catalog-rec__nav">
-					<div data-tab-btn="tab-1" class="s-catalog-rec__nav-btn _active">
-						Мрамор
-					</div>
-					<div data-tab-btn="tab-2" class="s-catalog-rec__nav-btn">Гранит</div>
-					<div data-tab-btn="tab-3" class="s-catalog-rec__nav-btn">Кварцит</div>
-					<div data-tab-btn="tab-4" class="s-catalog-rec__nav-btn">Оникс</div>
-					<div data-tab-btn="tab-5" class="s-catalog-rec__nav-btn">Травертин</div>
-					<div data-tab-btn="tab-6" class="s-catalog-rec__nav-btn">Сланец</div>
-				</div>
-				<div data-tab="tab-1" class="_active" style="opacity: 1;">
-					<div class="s-catalog-rec__grid">
-						<a href="#" itemscope class="s-catalog-rec__item">
-							<div class="s-catalog-rec__item-gallery">
-								<img src="img/category.jpg" alt="image" itemprop="image" />
-							</div>
-							<h5 class="s-catalog-rec__item-title" itemprop="name">
-								Экстремальный серый
-							</h5>
-						</a>
-						<a href="#" itemscope class="s-catalog-rec__item">
-							<div class="s-catalog-rec__item-gallery">
-								<img src="img/category.jpg" alt="image" itemprop="image" />
-							</div>
-							<h5 class="s-catalog-rec__item-title" itemprop="name">
-								Экстремальный серый
-							</h5>
-						</a>
-						<a href="#" itemscope class="s-catalog-rec__item">
-							<div class="s-catalog-rec__item-gallery">
-								<img src="img/category.jpg" alt="image" itemprop="image" />
-							</div>
-							<h5 class="s-catalog-rec__item-title" itemprop="name">
-								Экстремальный серый
-							</h5>
-						</a>
-						<a href="#" itemscope class="s-catalog-rec__item">
-							<div class="s-catalog-rec__item-gallery">
-								<img src="img/category.jpg" alt="image" itemprop="image" />
-							</div>
-							<h5 class="s-catalog-rec__item-title" itemprop="name">
-								Экстремальный серый
-							</h5>
-						</a>
-					</div>
-				</div>
-				<div data-tab="tab-2">
-					<div class="s-catalog-rec__grid">
-						<a href="#" itemscope class="s-catalog-rec__item">
-							<div class="s-catalog-rec__item-gallery">
-								<img src="img/category.jpg" alt="image" itemprop="image" />
-							</div>
-							<h5 class="s-catalog-rec__item-title" itemprop="name">
-								Экстремальный серый 2
-							</h5>
-						</a>
-						<a href="#" itemscope class="s-catalog-rec__item">
-							<div class="s-catalog-rec__item-gallery">
-								<img src="img/category.jpg" alt="image" itemprop="image" />
-							</div>
-							<h5 class="s-catalog-rec__item-title" itemprop="name">
-								Экстремальный серый
-							</h5>
-						</a>
-						<a href="#" itemscope class="s-catalog-rec__item">
-							<div class="s-catalog-rec__item-gallery">
-								<img src="img/category.jpg" alt="image" itemprop="image" />
-							</div>
-							<h5 class="s-catalog-rec__item-title" itemprop="name">
-								Экстремальный серый
-							</h5>
-						</a>
-						<a href="#" itemscope class="s-catalog-rec__item">
-							<div class="s-catalog-rec__item-gallery">
-								<img src="img/category.jpg" alt="image" itemprop="image" />
-							</div>
-							<h5 class="s-catalog-rec__item-title" itemprop="name">
-								Экстремальный серый
-							</h5>
-						</a>
-					</div>
-				</div>
-				<div data-tab="tab-3">
-					<div class="s-catalog-rec__grid">
-						<a href="#" itemscope class="s-catalog-rec__item">
-							<div class="s-catalog-rec__item-gallery">
-								<img src="img/category.jpg" alt="image" itemprop="image" />
-							</div>
-							<h5 class="s-catalog-rec__item-title" itemprop="name">
-								Экстремальный серый 3
-							</h5>
-						</a>
-						<a href="#" itemscope class="s-catalog-rec__item">
-							<div class="s-catalog-rec__item-gallery">
-								<img src="img/category.jpg" alt="image" itemprop="image" />
-							</div>
-							<h5 class="s-catalog-rec__item-title" itemprop="name">
-								Экстремальный серый
-							</h5>
-						</a>
-						<a href="#" itemscope class="s-catalog-rec__item">
-							<div class="s-catalog-rec__item-gallery">
-								<img src="img/category.jpg" alt="image" itemprop="image" />
-							</div>
-							<h5 class="s-catalog-rec__item-title" itemprop="name">
-								Экстремальный серый
-							</h5>
-						</a>
-						<a href="#" itemscope class="s-catalog-rec__item">
-							<div class="s-catalog-rec__item-gallery">
-								<img src="img/category.jpg" alt="image" itemprop="image" />
-							</div>
-							<h5 class="s-catalog-rec__item-title" itemprop="name">
-								Экстремальный серый
-							</h5>
-						</a>
-					</div>
-				</div>
-				<div data-tab="tab-4">
-					<div class="s-catalog-rec__grid">
-						<a href="#" itemscope class="s-catalog-rec__item">
-							<div class="s-catalog-rec__item-gallery">
-								<img src="img/category.jpg" alt="image" itemprop="image" />
-							</div>
-							<h5 class="s-catalog-rec__item-title" itemprop="name">
-								Экстремальный серый 4
-							</h5>
-						</a>
-						<a href="#" itemscope class="s-catalog-rec__item">
-							<div class="s-catalog-rec__item-gallery">
-								<img src="img/category.jpg" alt="image" itemprop="image" />
-							</div>
-							<h5 class="s-catalog-rec__item-title" itemprop="name">
-								Экстремальный серый
-							</h5>
-						</a>
-						<a href="#" itemscope class="s-catalog-rec__item">
-							<div class="s-catalog-rec__item-gallery">
-								<img src="img/category.jpg" alt="image" itemprop="image" />
-							</div>
-							<h5 class="s-catalog-rec__item-title" itemprop="name">
-								Экстремальный серый
-							</h5>
-						</a>
-						<a href="#" itemscope class="s-catalog-rec__item">
-							<div class="s-catalog-rec__item-gallery">
-								<img src="img/category.jpg" alt="image" itemprop="image" />
-							</div>
-							<h5 class="s-catalog-rec__item-title" itemprop="name">
-								Экстремальный серый
-							</h5>
-						</a>
-					</div>
-				</div>
-				<div data-tab="tab-5">
-					<div class="s-catalog-rec__grid">
-						<a href="#" itemscope class="s-catalog-rec__item">
-							<div class="s-catalog-rec__item-gallery">
-								<img src="img/category.jpg" alt="image" itemprop="image" />
-							</div>
-							<h5 class="s-catalog-rec__item-title" itemprop="name">
-								Экстремальный серый 3
-							</h5>
-						</a>
-						<a href="#" itemscope class="s-catalog-rec__item">
-							<div class="s-catalog-rec__item-gallery">
-								<img src="img/category.jpg" alt="image" itemprop="image" />
-							</div>
-							<h5 class="s-catalog-rec__item-title" itemprop="name">
-								Экстремальный серый
-							</h5>
-						</a>
-						<a href="#" itemscope class="s-catalog-rec__item">
-							<div class="s-catalog-rec__item-gallery">
-								<img src="img/category.jpg" alt="image" itemprop="image" />
-							</div>
-							<h5 class="s-catalog-rec__item-title" itemprop="name">
-								Экстремальный серый
-							</h5>
-						</a>
-						<a href="#" itemscope class="s-catalog-rec__item">
-							<div class="s-catalog-rec__item-gallery">
-								<img src="img/category.jpg" alt="image" itemprop="image" />
-							</div>
-							<h5 class="s-catalog-rec__item-title" itemprop="name">
-								Экстремальный серый
-							</h5>
-						</a>
-					</div>
-				</div>
-				<div data-tab="tab-6">
-					<div class="s-catalog-rec__grid">
-						<a href="#" itemscope class="s-catalog-rec__item">
-							<div class="s-catalog-rec__item-gallery">
-								<img src="img/category.jpg" alt="image" itemprop="image" />
-							</div>
-							<h5 class="s-catalog-rec__item-title" itemprop="name">
-								Экстремальный серый 3
-							</h5>
-						</a>
-						<a href="#" itemscope class="s-catalog-rec__item">
-							<div class="s-catalog-rec__item-gallery">
-								<img src="img/category.jpg" alt="image" itemprop="image" />
-							</div>
-							<h5 class="s-catalog-rec__item-title" itemprop="name">
-								Экстремальный серый
-							</h5>
-						</a>
-						<a href="#" itemscope class="s-catalog-rec__item">
-							<div class="s-catalog-rec__item-gallery">
-								<img src="img/category.jpg" alt="image" itemprop="image" />
-							</div>
-							<h5 class="s-catalog-rec__item-title" itemprop="name">
-								Экстремальный серый
-							</h5>
-						</a>
-						<a href="#" itemscope class="s-catalog-rec__item">
-							<div class="s-catalog-rec__item-gallery">
-								<img src="img/category.jpg" alt="image" itemprop="image" />
-							</div>
-							<h5 class="s-catalog-rec__item-title" itemprop="name">
-								Экстремальный серый
-							</h5>
-						</a>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section class="s-stones sect-p">
+		<section class="s-stones sect-p bg-transparent">
 			<div class="container">
-				<h2 class="s-title s-stones__title">
-					<span>Изделия</span>
-					из декоративного и натурального камня для архитектурных проектов
-				</h2>
+				<h2 class="s-title s-stones__title text-start">Другие колонны</h2>
 				<div class="s-stones__grid">
-					<a href="#" itemscope class="card-production">
-						<img src="img/production.jpg" alt="image" class="card-production__img" />
+					<a href="#" itemscope class="card-production _lg">
+						<img src="img/column.png" alt="image" class="card-production__img" />
 						<div class="card-production__btn">
-							<div class="card-production__name" itemprop="name">Слэбы</div>
+							<div class="card-production__name" itemprop="name">Мрамор</div>
 							<svg>
 								<use xlink:href="img/icons/icons.svg#icon-arrow-line-next"></use>
 							</svg>
 						</div>
 					</a>
-					<a href="#" itemscope class="card-production">
-						<img src="img/production.jpg" alt="image" class="card-production__img" />
+					<a href="#" itemscope class="card-production _lg">
+						<img src="img/column.png" alt="image" class="card-production__img" />
 						<div class="card-production__btn">
-							<div class="card-production__name" itemprop="name">Плитка</div>
+							<div class="card-production__name" itemprop="name">Гранит</div>
 							<svg>
 								<use xlink:href="img/icons/icons.svg#icon-arrow-line-next"></use>
 							</svg>
 						</div>
 					</a>
-					<a href="#" itemscope class="card-production">
-						<img src="img/production.jpg" alt="image" class="card-production__img" />
+					<a href="#" itemscope class="card-production _lg">
+						<img src="img/column.png" alt="image" class="card-production__img" />
 						<div class="card-production__btn">
-							<div class="card-production__name" itemprop="name">Слэбы</div>
+							<div class="card-production__name" itemprop="name">Кварцит</div>
 							<svg>
 								<use xlink:href="img/icons/icons.svg#icon-arrow-line-next"></use>
 							</svg>
 						</div>
 					</a>
-					<a href="#" itemscope class="card-production">
-						<img src="img/production.jpg" alt="image" class="card-production__img" />
+					<a href="#" itemscope class="card-production _lg">
+						<img src="img/column.png" alt="image" class="card-production__img" />
 						<div class="card-production__btn">
-							<div class="card-production__name" itemprop="name">Плитка</div>
+							<div class="card-production__name" itemprop="name">Оникс</div>
 							<svg>
 								<use xlink:href="img/icons/icons.svg#icon-arrow-line-next"></use>
 							</svg>
 						</div>
 					</a>
-					<a href="#" itemscope class="card-production">
-						<img src="img/production.jpg" alt="image" class="card-production__img" />
+					<a href="#" itemscope class="card-production _lg">
+						<img src="img/column.png" alt="image" class="card-production__img" />
 						<div class="card-production__btn">
-							<div class="card-production__name" itemprop="name">Слэбы</div>
+							<div class="card-production__name" itemprop="name">Мрамор</div>
 							<svg>
 								<use xlink:href="img/icons/icons.svg#icon-arrow-line-next"></use>
 							</svg>
 						</div>
 					</a>
-					<a href="#" itemscope class="card-production">
-						<img src="img/production.jpg" alt="image" class="card-production__img" />
+					<a href="#" itemscope class="card-production _lg">
+						<img src="img/column.png" alt="image" class="card-production__img" />
 						<div class="card-production__btn">
-							<div class="card-production__name" itemprop="name">Плитка</div>
+							<div class="card-production__name" itemprop="name">Гранит</div>
 							<svg>
 								<use xlink:href="img/icons/icons.svg#icon-arrow-line-next"></use>
 							</svg>
 						</div>
 					</a>
-					<a href="#" itemscope class="card-production">
-						<img src="img/production.jpg" alt="image" class="card-production__img" />
+					<a href="#" itemscope class="card-production _lg">
+						<img src="img/column.png" alt="image" class="card-production__img" />
 						<div class="card-production__btn">
-							<div class="card-production__name" itemprop="name">Слэбы</div>
+							<div class="card-production__name" itemprop="name">Кварцит</div>
 							<svg>
 								<use xlink:href="img/icons/icons.svg#icon-arrow-line-next"></use>
 							</svg>
 						</div>
 					</a>
-					<a href="#" itemscope class="card-production">
-						<img src="img/production.jpg" alt="image" class="card-production__img" />
+					<a href="#" itemscope class="card-production _lg">
+						<img src="img/column.png" alt="image" class="card-production__img" />
 						<div class="card-production__btn">
-							<div class="card-production__name" itemprop="name">Плитка</div>
+							<div class="card-production__name" itemprop="name">Оникс</div>
 							<svg>
 								<use xlink:href="img/icons/icons.svg#icon-arrow-line-next"></use>
 							</svg>
@@ -947,101 +711,129 @@
 				</div>
 			</div>
 		</section>
-
-		<section class="sect-p s-about" style="background: url('img/about-bg.png') bottom 0 left 0 / 100% auto no-repeat;">
+		<section class="s-stones sect-m bg-transparent">
 			<div class="container">
-				<h2 class="s-title s-about__title">
-					Grosstoun — прямой производитель и надёжный
-					<span>поставщик</span>
-					натурального и искусственного камней
+				<h2 class="s-title s-stones__title _big">
+					Натуральные и искусственные камни для фасадов, благоустройства
+					и строительства — оптом
+					<span>от производителя</span>
 				</h2>
-				<div class="s-about__grid">
-					<div itemscope class="s-about__item">
-						<div class="s-about__item-gallery">
-							<img src="img/about-img-1.jpg" alt="image" />
+				<p class="content-big s-stones__content">
+					В нашем каталоге более 800 сортов камня для отделки и строительства
+				</p>
+				<div class="s-stones__grid">
+					<a href="#" itemscope class="card-production _lg">
+						<img src="img/production.jpg" alt="image" class="card-production__img" />
+						<div class="card-production__btn">
+							<div class="card-production__name" itemprop="name">Слэбы</div>
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-arrow-line-next"></use>
+							</svg>
 						</div>
-						<p itemprop="content" class="content s-about__item-content">
-							Предлагаем полный спектр услуг, включая логистику, таможенные
-							процедуры и консультации по выбору и обработке материалов. Все наши
-							продукты и процессы сертифицированы согласно международным стандартам
-						</p>
-					</div>
-					<div itemscope class="s-about__item">
-						<p itemprop="content" class="content s-about__item-content">
-							Мы работаем без посредников: владеем собственными карьерами и заводами
-							в Китае, что позволяет предлагать оптовые поставки камня по стабильным
-							ценам и с полным контролем качества.
-						</p>
-						<div class="s-about__item-gallery">
-							<img src="img/about-img-2.jpg" alt="image" />
+					</a>
+					<a href="#" itemscope class="card-production _lg">
+						<img src="img/production.jpg" alt="image" class="card-production__img" />
+						<div class="card-production__btn">
+							<div class="card-production__name" itemprop="name">Плитка</div>
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-arrow-line-next"></use>
+							</svg>
 						</div>
-					</div>
-					<img src="img/left-rect.png" alt="images" class="s-about__bg">
+					</a>
+					<a href="#" itemscope class="card-production _lg">
+						<img src="img/production.jpg" alt="image" class="card-production__img" />
+						<div class="card-production__btn">
+							<div class="card-production__name" itemprop="name">Слэбы</div>
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-arrow-line-next"></use>
+							</svg>
+						</div>
+					</a>
+					<a href="#" itemscope class="card-production _lg">
+						<img src="img/production.jpg" alt="image" class="card-production__img" />
+						<div class="card-production__btn">
+							<div class="card-production__name" itemprop="name">Плитка</div>
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-arrow-line-next"></use>
+							</svg>
+						</div>
+					</a>
+					<a href="#" itemscope class="card-production _lg">
+						<img src="img/production.jpg" alt="image" class="card-production__img" />
+						<div class="card-production__btn">
+							<div class="card-production__name" itemprop="name">Слэбы</div>
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-arrow-line-next"></use>
+							</svg>
+						</div>
+					</a>
+					<a href="#" itemscope class="card-production _lg">
+						<img src="img/production.jpg" alt="image" class="card-production__img" />
+						<div class="card-production__btn">
+							<div class="card-production__name" itemprop="name">Плитка</div>
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-arrow-line-next"></use>
+							</svg>
+						</div>
+					</a>
+					<a href="#" itemscope class="card-production _lg">
+						<img src="img/production.jpg" alt="image" class="card-production__img" />
+						<div class="card-production__btn">
+							<div class="card-production__name" itemprop="name">Слэбы</div>
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-arrow-line-next"></use>
+							</svg>
+						</div>
+					</a>
+					<a href="#" itemscope class="card-production _lg">
+						<img src="img/production.jpg" alt="image" class="card-production__img" />
+						<div class="card-production__btn">
+							<div class="card-production__name" itemprop="name">Плитка</div>
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-arrow-line-next"></use>
+							</svg>
+						</div>
+					</a>
 				</div>
 			</div>
 		</section>
-
-		<section class="s-decision sect-m">
+		<section class="s-consult sect-m">
 			<div class="container">
-				<div class="s-decision__body" style="
-        background: url(&quot;img/decision-bg.jpg&quot;) center / cover
-          no-repeat;
-      ">
-					<h2 class="s-title s-decision__title">
-						Фасады из гранита — профессиональное решение для вашего здания
-					</h2>
-					<div class="s-decision__inside">
-						<p class="content s-decision__content">
-							Мы проектируем, изготавливаем и монтируем фасады из натурального
-							гранита под ключ. Такое решение для облицовки зданий не только придаёт
-							объекту престижный внешний вид, но и обеспечивает надежную защиту от
-							погодных воздействий и долговечность
-						</p>
-						<p class="s-decision__bottom-content">
-							Оставьте заявку на консультацию, и мы подберём оптимальное решение для
-							вашего фасада!
-						</p>
-						<a href="#modal-get" data-fancybox class="btn-s s-decision__btn">
-							Заказать консультацию
-						</a>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section class="sect-m s-estimation">
-			<div class="container">
-				<div class="s-estimation__grid">
-					<div class="s-estimation__item">
-						<h2 class="s-title s-estimation__title">
-							Составим смету для вашего проекта прямо
-							<span>сейчас!</span>
+				<div class="s-consult__body" style="
+              background: url(&quot;img/sklad.jpg&quot;) center / cover
+                no-repeat;
+            ">
+					<div class="s-consult__head">
+						<h2 class="s-title s-consult__title">
+							Складские остатки по привлекательным ценам
 						</h2>
-						<p class="s-estimation__content">
-							Отправьте техническое задание — мы рассчитаем стоимость с учётом ваших
-							требований и параметров проекта
+						<p class="s-consult__content">
+							Скачайте актуальный прайс-лист изделий в наличии, с выгодой до
+							20%
 						</p>
-						<div class="s-estimation__item-gallery">
-							<img src="img/estimation-1.jpg" alt="image">
-						</div>
 					</div>
-					<div class="s-estimation__item">
-						<div class="s-estimation__item-gallery">
-							<img src="img/estimation-2.jpg" alt="image">
-						</div>
-						<div class="s-estimation__item-nav">
-							<a href="#modal-get" data-fancybox class="btn-s s-estimation__btn">Получить смету</a>
-							<a href="img/about-bg.png" download class="s-estimation__file-btn">
-								<img src="img/icon-pdf.svg" alt="icon">
-								<span>Получите подробную смету в PDF</span>
-							</a>
-						</div>
+					<div class="s-consult__form-wrapper">
+						<form action="#" class="s-consult__form">
+							<div class="input-control _icon">
+								<svg>
+									<use xlink:href="img/icons/icons.svg#icon-tel"></use>
+								</svg>
+								<input type="tel" placeholder="Ваш телефон" class="input" />
+							</div>
+							<button class="btn-s s-consult__form-btn">
+								Получить консультацию
+							</button>
+						</form>
+						<p class="s-consult__form-policy">
+							*Нажимая на кнопку, вы даёте своё согласие на обработку
+							<a href="#" target="_blank">Персональных данных</a>
+							и принимаете 
+							<a href="#" target="_blank">Условия соглашения</a>
+						</p>
 					</div>
-					<img src="img/right-rect.png" alt="image" class="s-estimation__bg">
 				</div>
 			</div>
 		</section>
-
 		<section class="s-steps sect-p" style="background: url('img/steps-bg.png') bottom 0 left 0 / 100% auto no-repeat;">
 			<div class="container">
 				<h2 class="s-title s-steps__title">
@@ -1397,34 +1189,33 @@
 			</div>
 		</section>
 
-		<section class="s-consult sect-m">
+		<section class="s-decision sect-m">
 			<div class="container">
-				<div class="s-consult__body" style="
-        background: url(&quot;img/consult.jpg&quot;) center / cover no-repeat;
-      ">
-					<div class="s-consult__head">
-						<h2 class="s-title s-consult__title">
-							Нужна помощь эксперта? Есть вопросы?
-						</h2>
-						<p class="s-consult__content">
-							Оставьте ваши контакты — специалист поможет выбрать подходящий камень,
-							сориентирует по срокам, стоимости и подберёт оптимальное решение
-							под ваш проект
-						</p>
+				<div class="s-decision__body" style="
+              background: url(&quot;img/decision-bg.jpg&quot;) center / cover
+                no-repeat;
+            ">
+					<h2 class="s-title s-decision__title">
+						Нужна помощь эксперта? Есть вопросы?
+					</h2>
+					<div class="content-big s-decision__head-content">
+						Оставьте ваши контакты — специалист поможет выбрать подходящий
+						камень, сориентирует по срокам, стоимости и подберёт оптимальное
+						решение под ваш проект
 					</div>
-					<div class="s-consult__form-wrapper">
-						<form action="#" class="s-consult__form">
+					<div class="form-wrapper">
+						<form action="#" class="form-wrapper__form">
 							<div class="input-control _icon">
 								<svg>
 									<use xlink:href="img/icons/icons.svg#icon-tel"></use>
 								</svg>
 								<input type="tel" placeholder="Ваш телефон" class="input" />
 							</div>
-							<button class="btn-s s-consult__form-btn">
+							<button class="btn-s form-wrapper__form-btn">
 								Получить консультацию
 							</button>
 						</form>
-						<p class="s-consult__form-policy">
+						<p class="form-wrapper__form-policy">
 							*Нажимая на кнопку, вы даёте своё согласие на обработку
 							<a href="#" target="_blank">Персональных данных</a>
 							и принимаете 
@@ -1434,265 +1225,98 @@
 				</div>
 			</div>
 		</section>
-
-		<section class="sect-p s-production">
+		<section class="sect-m s-projects-rec">
 			<div class="container">
-				<div itemscope class="s-production__wrapper">
-					<div class="s-production__gallery">
-						<a href="#" class="btn-circle s-production__gallery-btn">
-							<svg>
-								<use xlink:href="img/icons/icons.svg#icon-arrow-line-next"></use>
-							</svg>
-						</a>
-						<img itemprop="image" src="img/production-image.jpg" alt="image" />
-					</div>
-					<div class="s-production__body">
-						<h2 itemprop="title" class="s-title s-production__title">
-							Производим и поставляем камень под проекты любой
-							<span>сложности</span>
-						</h2>
-						<div itemprop="content" class="content-big s-production__content">
-							Надёжные оптовые поставки натурального и композитного камня напрямую
-							от производителя — от жилых комплексов и коммерческой отделки
-							до госзаказов
-						</div>
-						<div style="
-            background: url(&quot;img/production-lidosta.jpg&quot;) 0 0 / cover
-              no-repeat;
-          " class="s-production__lidosta">
-							<div class="s-production__lidosta-container">
-								<h5 class="s-production__lidosta-title _mulish">
-									Международный аэропорт Ухань Тяньхэ
-								</h5>
-								<p class="s-production__lidosta-content">
-									Производство и поставка фасадных каменных панелей
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section class="s-details sect-p" style="
-    background: url(&quot;img/production-bg.png&quot;) bottom 0 left 0 / 100%
-      auto no-repeat;
-  ">
-			<div class="container">
-				<h2 class="s-title s-details__title">
-					Производство в
-					<span>деталях</span>
+				<h2 class="s-title s-projects-rec__title">
+					Огромное количество реализованных проектов
 				</h2>
-				<div class="s-details__wrapper">
-					<div class="s-details__item">
-						<a href="//github.com/mediaelement/mediaelement-files/blob/master/big_buck_bunny.mp4?raw=true" data-fancybox class="s-details__gallery">
-							<img src="img/details-1.jpg" alt="image" />
-							<div class="s-details__item-play"></div>
-						</a>
-						<p class="content s-details__item-content">
-							Благодаря собственной производственной базе мы не зависим от сторонних
-							подрядчиков, а значит — соблюдаем сроки, оперативно реагируем на
-							заказы и обеспечиваем высокий уровень исполнения даже в индивидуальных
-							проектах.
+				<p class="content-big s-projects-rec__content">
+					Не просто изготавливаем изделия, а предоставляем комплексный сервис, где
+					каждый клиент в базовом пакете услуг получает комплексную работу над
+					проектом под ключ
+				</p>
+				<div class="s-projects-rec__grid">
+					<a href="#" itemscope class="card-project">
+						<img itemprop="image" src="img/project.jpg" alt="image" class="card-project__img" />
+						<h5 itemprop="title" class="card-project__title">
+							Министерство общественной безопасности КНР
+						</h5>
+						<div itemprop="city" class="card-project__city">г. Пекин, Китай</div>
+					</a>
+					<a href="#" itemscope class="card-project">
+						<img itemprop="image" src="img/project.jpg" alt="image" class="card-project__img" />
+						<h5 itemprop="title" class="card-project__title">
+							Министерство общественной безопасности КНР
+						</h5>
+						<div itemprop="city" class="card-project__city">г. Пекин, Китай</div>
+					</a>
+					<a href="#" itemscope class="card-project">
+						<img itemprop="image" src="img/project.jpg" alt="image" class="card-project__img" />
+						<h5 itemprop="title" class="card-project__title">
+							Министерство общественной безопасности КНР
+						</h5>
+						<div itemprop="city" class="card-project__city">г. Пекин, Китай</div>
+					</a>
+					<a href="#" itemscope class="card-project">
+						<img itemprop="image" src="img/project.jpg" alt="image" class="card-project__img" />
+						<h5 itemprop="title" class="card-project__title">
+							Министерство общественной безопасности КНР
+						</h5>
+						<div itemprop="city" class="card-project__city">г. Пекин, Китай</div>
+					</a>
+					<a href="#" itemscope class="card-project">
+						<img itemprop="image" src="img/project.jpg" alt="image" class="card-project__img" />
+						<h5 itemprop="title" class="card-project__title">
+							Министерство общественной безопасности КНР
+						</h5>
+						<div itemprop="city" class="card-project__city">г. Пекин, Китай</div>
+					</a>
+					<a href="#" itemscope class="card-project">
+						<img itemprop="image" src="img/project.jpg" alt="image" class="card-project__img" />
+						<h5 itemprop="title" class="card-project__title">
+							Министерство общественной безопасности КНР
+						</h5>
+						<div itemprop="city" class="card-project__city">г. Пекин, Китай</div>
+					</a>
+				</div>
+			</div>
+		</section>
+
+		<section class="sect-m s-estimation">
+			<div class="container">
+				<div class="s-estimation__grid">
+					<div class="s-estimation__item">
+						<h2 class="s-title s-estimation__title">
+							Составим смету для вашего проекта прямо
+							<span>сейчас!</span>
+						</h2>
+						<p class="s-estimation__content">
+							Отправьте техническое задание — мы рассчитаем стоимость с учётом ваших
+							требований и параметров проекта
 						</p>
-					</div>
-					<div class="s-details__item">
-						<p class="content s-details__item-content">
-							Все этапы производства — от первичной обработки до финальной
-							подготовки — мы выполняем самостоятельно. Распил камня, его тщательная
-							шлифовка, аккуратное лощение поверхности, а также бережная упаковка и
-							точная маркировка каждой единицы продукции проходят исключительно на
-							наших собственных мощностях.
-						</p>
-						<div class="s-details__gallery">
-							<img src="img/details-2.jpg" alt="image" />
+						<div class="s-estimation__item-gallery">
+							<img src="img/estimation-1.jpg" alt="image">
 						</div>
 					</div>
-					<img src="img/left-rect-2.png" alt="image" class="rect">
-				</div>
-			</div>
-		</section>
-
-		<section class="s-get sect-m">
-			<div class="container">
-				<div class="s-get__body">
-					<img src="img/get-doc.png" alt="image" class="s-get__doc" />
-					<div itemscope class="s-get__info">
-						<h2 itemprop="title" class="s-title s-get__title">
-							Получите персональное
-							<span>КП</span>
-							под ваш проект
-						</h2>
-						<h3 itemprop="subtitle" class="s-get__subtitle">
-							В предложении вы получите:
-						</h3>
-						<ul itemprop="list" class="list s-get__list">
-							<li>
-								подбор подходящих видов натурального и/или искусственного камня
-							</li>
-							<li>смету для вашего проекта</li>
-							<li>сроки поставки и логистики</li>
-							<li>условия оплаты, упаковки и доставки</li>
-							<li>
-								полное описание материалов с фото, характеристиками и объёмами
-							</li>
-						</ul>
-						<p class="s-get__content">
-							Работаем как с готовыми чертежами, так и с первичным техническим
-							заданием
-						</p>
+					<div class="s-estimation__item">
+						<div class="s-estimation__item-gallery">
+							<img src="img/estimation-2.jpg" alt="image">
+						</div>
+						<div class="s-estimation__item-nav">
+							<a href="#modal-get" data-fancybox class="btn-s s-estimation__btn">Получить смету</a>
+							<a href="img/about-bg.png" download class="s-estimation__file-btn">
+								<img src="img/icon-pdf.svg" alt="icon">
+								<span>Получите подробную смету в PDF</span>
+							</a>
+						</div>
 					</div>
-					<div class="s-get__form-wrapper">
-						<p class="s-get__form-content">
-							Оставьте заявку, и мы подготовим подробное коммерческое предложение
-							с учётом ваших требований и параметров проекта
-						</p>
-						<form action="#" class="form-get">
-							<div class="form-get__inputs s-get__form-inputs">
-								<div class="input-control">
-									<input type="text" placeholder="Ваше имя" class="input" />
-								</div>
-								<div class="input-control">
-									<input type="email" placeholder="Ваш e-mail" class="input" />
-								</div>
-								<div class="input-control">
-									<input type="tel" placeholder="Номер телефона" class="input" />
-								</div>
-							</div>
-							<div class="form-get__item">
-								<div class="form-get__item-title">
-									Какой мессенджер удобнее для вас?
-								</div>
-								<div class="form-get__radio-wrapper">
-									<input type="radio" name="messeneger-s" id="messeneger-tg-s" class="input-radio" />
-									<label for="messeneger-tg-s" class="label-radio">Telegram</label>
-									<input type="radio" name="messeneger-s" id="messeneger-wh-s" class="input-radio" />
-									<label for="messeneger-wh-s" class="label-radio">WhatsApp</label>
-								</div>
-							</div>
-							<input type="checkbox" id="s-get-policy" class="input-policy" />
-							<label for="s-get-policy" class="label-policy">
-								<span>
-									Я согласен с 
-									<a href="#" target="_blank">Политикой конфиденциальности</a>
-								</span>
-							</label>
-							<div class="form-get__bottom">
-								<button type="submit" class="btn-s form-get__submit s-get__form-submit">
-									Запросить КП
-								</button>
-								<input type="file" id="s-get-file" class="input-file" />
-								<label for="s-get-file" data-attach-text="Файл прикреплен" class="label-file">
-									<svg>
-										<use xlink:href="img/icons/icons.svg#icon-loconfile"></use>
-									</svg>
-									<span>
-										Прикрепить файл ТЗ,
-										<br />
-										если есть
-									</span>
-								</label>
-							</div>
-						</form>
-					</div>
-				</div>
-				<div class="s-get__bottom-wrapper">
-					<p class="s-get__bottom-content _mulish">
-						Менеджер свяжется с вами в ближайшее время, уточнит детали и пришлёт
-						КП в выбранный мессенджер
-					</p>
-				</div>
-				<p class="s-get__bottom-policy">
-					*Оставляя данные, вы даёте своё согласие на обработку
-					<a href="#" target="_blank">Персональных данных</a>
-					и принимаете
-					<a href="#" target="_blank">Условия соглашения</a>
-					.
-				</p>
-			</div>
-		</section>
-
-		<section itemscope class="sect-p s-content">
-			<div class="container">
-				<h2 itemprop="title" class="s-title s-content__title">О компании</h2>
-				<div itemprop="content" class="content _mulish s-content__content">
-					<p>
-						Компания Grosstoun — производитель натурального камня с добычей в
-						собственных карьерах, а также производитель искусственного камня с
-						развитой промышленной базой: 12 высокотехнологичных заводов позволяют
-						выпускать продукцию в больших объёмах, с точным соблюдением стандартов и
-						сроков. Также мы входим в топ крупнейших поставщиков искусственного
-						камня и натурального. Наша модель работы исключает посредников — вы
-						получаете камень оптом от производителя, по выгодным ценам и с гарантией
-						качества. Мы сопровождаем клиентов на всех этапах: от подбора и
-						согласования условий до доставки, таможенного оформления и после
-						продажной поддержки
-					</p>
-					<p>У нас можно приобрести:</p>
-					<ul>
-						<li>Крупноформатные натуральные камни оптом</li>
-						<li>Облицовочные искусственные камни оптом</li>
-						<li>Каменные блоки для строительства</li>
-						<li>Каменные изделия для благоустройства территорий</li>
-						<li>Декоративный камень для отделки интерьера и тд.</li>
-					</ul>
-					<h2>
-						Также вы можете заказать камень под ваш проект — по чертежам, с подбором
-						цвета, размера и текстуры
-					</h2>
-					<p>
-						Мы предоставляем весь необходимый комплект документов: инвойсы,
-						упаковочные листы, сертификаты соответствия и происхождения, работаем
-						строго по договору и всегда соблюдаем сроки. Нашими клиентами становятся
-						застройщики, девелоперы, архитектурные бюро, строительные и
-						производственные компании, которым необходим камень для фасада,
-						ландшафта, внутренней отделки или монументальных конструкций
-					</p>
-					<p>
-						Если вы ищете надёжного поставщика камня, способного обеспечить
-						стабильные объёмы, чёткую логистику и прозрачные условия сотрудничества,
-						Grosstoun — ваш выбор. Мы подберём материалы под задачи любого масштаба:
-						от частного дома до многофункционального комплекса. Для тех, кто хочет
-						купить натуральный камень из Китая или заказать искусственный камень под
-						заказ — у нас есть решение. Предоставим образцы, подберём аналоги и
-						организуем отгрузку
-					</p>
-					<ul>
-						<li>Крупноформатные натуральные камни оптом</li>
-						<li>Облицовочные искусственные камни оптом</li>
-						<li>Каменные блоки для строительства</li>
-						<li>Каменные изделия для благоустройства территорий</li>
-						<li>Декоративный камень для отделки интерьера и тд.</li>
-					</ul>
-					<p>
-						Мы предоставляем весь необходимый комплект документов: инвойсы,
-						упаковочные листы, сертификаты соответствия и происхождения, работаем
-						строго по договору и всегда соблюдаем сроки. Нашими клиентами становятся
-						застройщики, девелоперы, архитектурные бюро, строительные и
-						производственные компании, которым необходим камень для фасада,
-						ландшафта, внутренней отделки или монументальных конструкций
-					</p>
-					<p>
-						Если вы ищете надёжного поставщика камня, способного обеспечить
-						стабильные объёмы, чёткую логистику и прозрачные условия сотрудничества,
-						Grosstoun — ваш выбор. Мы подберём материалы под задачи любого масштаба:
-						от частного дома до многофункционального комплекса. Для тех, кто хочет
-						купить натуральный камень из Китая или заказать искусственный камень под
-						заказ — у нас есть решение. Предоставим образцы, подберём аналоги и
-						организуем отгрузку
-					</p>
-				</div>
-				<div class="btn-s _gray s-content__btn-more">
-					<span>Читать полностью</span>
-					<svg>
-						<use xlink:href="img/icons/icons.svg#icon-arrow-rect"></use>
-					</svg>
+					<img src="img/right-rect.png" alt="image" class="s-estimation__bg">
 				</div>
 			</div>
 		</section>
-
 
 	</main>
+
 	<div class="modal modal-get" id="modal-get">
 		<div class="modal-get__wrapper">
 			<div class="modal-get__main">

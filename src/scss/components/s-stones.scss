@@ -14,13 +14,39 @@
 
     span {
       &::before {
-        background: url('@img/title-line-185.png') center / 100% auto no-repeat;
+        background: url("@img/title-line-185.png") center / 100% auto no-repeat;
         width: 180px;
         height: 12px;
         @include tablet {
           width: 150px;
           right: auto;
           left: 0;
+        }
+      }
+    }
+
+    &._big {
+      max-width: none;
+      @include laptop-middle {
+        position: relative;
+      }
+
+      span {
+        @include laptop-middle {
+          position: static;
+        }
+        &::before {
+          @media (min-width: 1200px) {
+            background: url("@img/title-line-450.png") center / 100% auto
+            no-repeat;
+            width: 450px;
+            height: 12px;
+          }
+          @include laptop-middle {
+            width: 150px;
+            left: 50%;
+            transform: translateX(-50%);
+          }
         }
       }
     }
