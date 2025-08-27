@@ -1645,10 +1645,14 @@ body {
 .s-steps {
   background-color: var(--gray)!important
 }
+.s-steps__title {
+  margin: 0 0 20px 0
+}
 .s-steps__title span::before {
   width: 120px;
   bottom: 0;
-  background: url(../img/title-line-120.png) center/100% auto no-repeat
+  background: url(../img/title-line-120.png) center/100% auto no-repeat;
+  z-index: -1
 }
 .s-steps__nav {
   display: flex;
@@ -3131,7 +3135,8 @@ body {
   }
   .s-steps__title span::before {
     right: auto;
-    left: 0
+    left: 0;
+    bottom: -5px
   }
   .s-steps__nav {
     overflow-x: auto;

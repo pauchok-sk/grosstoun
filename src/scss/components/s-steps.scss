@@ -4,14 +4,17 @@
     overflow: hidden;
   }
   &__title {
+    margin: 0px 0px 20px 0px;
     span {
       &::before {
         width: 120px;
         bottom: 0;
         background: url("@img/title-line-120.png") center / 100% auto no-repeat;
+        z-index: -1;
         @include laptop-min {
           right: auto;
           left: 0;
+          bottom: -5px;
         }
       }
     }
