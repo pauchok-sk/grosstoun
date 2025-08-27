@@ -236,15 +236,18 @@
         }
         const heroSlider = document.querySelector(".hero__slider");
         if (heroSlider) {
+            const isFlex = document.querySelector(".hero__gallery").classList.contains("_flex");
             const thumbSlider = document.querySelector(".hero__thumb-slider");
             const thumbSwiper = new Swiper(thumbSlider, {
                 speed: 800,
                 spaceBetween: 20,
                 slidesPerView: "auto",
+                direction: "horizontal",
                 breakpoints: {
                     768: {
                         spaceBetween: 24,
-                        slidesPerView: 3
+                        slidesPerView: 3,
+                        direction: isFlex ? "vertical" : "horizontal"
                     }
                 }
             });

@@ -2588,6 +2588,30 @@ body {
   min-height: 360px;
   flex: 0 1 calc(50% - 10px)
 }
+.s-spec__grid {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 80px;
+  row-gap: 60px
+}
+.s-spec__item {
+  display: flex;
+  align-items: start;
+  gap: 12px
+}
+.s-spec__item-icon {
+  flex-shrink: 0
+}
+.s-spec__item-title {
+  font-size: 24px;
+  line-height: 100%;
+  color: rgba(40,41,42,.85);
+  margin-bottom: 8px
+}
+.s-spec__item-value {
+  font-weight: 600;
+  font-size: 24px
+}
 .hero {
   overflow: hidden
 }
@@ -2648,7 +2672,8 @@ body {
   object-fit: cover
 }
 .hero__thumb-slider {
-  margin-top: 20px
+  margin-top: 20px;
+  overflow: hidden
 }
 .hero__thumb-slide {
   cursor: pointer;
@@ -2838,6 +2863,19 @@ body {
     width: 450px;
     height: 13px
   }
+  .hero__gallery._flex {
+    display: flex;
+    gap: 24px
+  }
+  .hero__gallery._flex .hero__slide {
+    height: 370px!important
+  }
+  .hero__gallery._flex .hero__thumb-slider {
+    margin-top: 0;
+    height: 370px;
+    width: 180px!important;
+    flex-shrink: 0
+  }
 }
 @media (min-width:992px) {
   .header__burger-btn {
@@ -2869,6 +2907,11 @@ body {
     mask: url(../img/production-mask.png);
     -webkit-mask-repeat: no-repeat;
     mask-repeat: no-repeat
+  }
+}
+@media (max-width:1365px) {
+  .s-spec__grid {
+    gap: 60px
   }
 }
 @media (max-width:1229px) {
@@ -2992,6 +3035,9 @@ body {
   }
   .s-projects__nav {
     gap: 30px
+  }
+  .s-spec__grid {
+    grid-template-columns: repeat(3,1fr)
   }
   .footer__wrapper {
     gap: 40px
@@ -3224,6 +3270,15 @@ body {
     width: 100%;
     flex: none
   }
+  .s-spec__grid {
+    gap: 40px
+  }
+  .s-spec__item-title {
+    font-size: 20px
+  }
+  .s-spec__item-value {
+    font-size: 20px
+  }
   .hero__wrapper {
     display: flex;
     flex-direction: column;
@@ -3249,6 +3304,11 @@ body {
   }
   .footer__dev {
     font-size: 18px
+  }
+}
+@media (max-width:991px)and (max-width:479px) {
+  .s-spec__item-value {
+    font-size: 14px
   }
 }
 @media (max-width:767px) {
@@ -3558,6 +3618,10 @@ body {
   .s-contacts__item-title {
     font-size: 20px
   }
+  .s-spec__grid {
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px
+  }
   .hero__gallery {
     width: 100%;
     overflow: visible
@@ -3736,6 +3800,9 @@ body {
   }
   .intro__social {
     grid-template-columns: 1fr
+  }
+  .s-spec__item-title {
+    font-size: 14px
   }
 }
 @media (any-hover:hover) {

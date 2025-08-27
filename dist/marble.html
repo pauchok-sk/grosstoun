@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
 
 <head>
@@ -16,7 +16,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
-<body class="body">
+<body class="body" style="
+      background: url(&quot;img/body-bg.png&quot;) 0 0 / 100% auto no-repeat;
+    ">
 	<header class="header">
 		<div class="container">
 			<div class="header__wrapper">
@@ -536,328 +538,387 @@
 	</div>
 
 	<main>
-
-		<section class="s-shop sect-p" style="
-    background: url(&quot;img/shop-bg.png&quot;) top 0 left 0 / 100% auto
-      no-repeat;
-  ">
+		<section class="hero sect-m">
 			<div class="container">
 				<div class="breadcrumbs">
 					<a href="/">Главная</a>
-					<a href="/">Породы</a>
-					<span>Гранит</span>
+					<a href="/">Изделия</a>
+					<span>Колонны</span>
 				</div>
-				<h1 class="s-title s-shop__title">Гранит</h1>
-				<p class="s-shop__content">
-					Эксклюзивные условия сотрудничества со всеми карьерами России, а также
-					поставок сырья из более чем 14 стран мира. В нашем каталоге собранно 90+
-					наименований различных пород камня
-				</p>
-				<div class="s-shop__nav">
-					<div data-tab-btn="tab-1" class="s-shop__nav-btn _active">Мрамор</div>
-					<a href="#" class="s-shop__nav-btn">Гранит</a>
-					<a href="#" class="s-shop__nav-btn">Кварцит</a>
-					<a href="#" class="s-shop__nav-btn">Оникс</a>
-					<a href="#" class="s-shop__nav-btn">Травертин</a>
-					<a href="#" class="s-shop__nav-btn">Сланец</a>
-				</div>
-				<div class="s-shop__head-sort">
-					<div class="s-shop__head-search">Найдено позиций: 108</div>
-					<div class="s-shop__head-sort-wrapper">
-						<div class="s-shop__head-sort-item">Сортировать по:</div>
-						<a href="#" class="s-shop__head-sort-item _active">Популярности</a>
-						<a href="#" class="s-shop__head-sort-item">Цене</a>
-						<a href="#" class="s-shop__head-sort-item">Названию А-Я</a>
-						<select class="s-shop__head-sort">
-							<option value="Популярности">Популярности</option>
-							<option value="Цене">Цене</option>
-							<option value="Названию А-Я">Названию А-Я</option>
-						</select>
-					</div>
-				</div>
-				<div class="s-shop__sidebar-open" id="filters-open">
-					<span>Фильтры</span>
-					<svg>
-						<use xlink:href='img/icons/icons.svg#icon-filters'></use>
-					</svg>
-				</div>
-				<div class="s-shop__wrapper">
-					<div class="s-shop__sidebar-overlay" id="filters-overlay"></div>
-					<div class="s-shop__sidebar" id="filters">
-						<form data-spollers action="#" class="s-shop__sidebar-form">
-							<div class="s-shop__sidebar-close" id="filters-close">
+				<div itemscope class="hero__wrapper">
+					<div class="hero__gallery">
+						<div itemprop="gallery" class="swiper hero__slider">
+							<div class="hero__slider-arrow _prev">
 								<svg>
-									<use xlink:href='img/icons/icons.svg#icon-close'></use>
+									<use xlink:href="img/icons/icons.svg#icon-arrow-line-prev"></use>
 								</svg>
 							</div>
-							<div class="s-shop__sidebar-item s-shop__prices">
-								<div class="s-shop__sidebar-title">Цена, ₽</div>
-								<div class="s-shop__sidebar-prices">
-									<input type="number" value="0" class="input" id="price-min" />
-									<div></div>
-									<input type="number" value="75000" class="input" id="price-max" />
-								</div>
-								<div class="s-shop__range-price range" data-min="0" data-max="75000" id="price-range"></div>
+							<div class="hero__slider-arrow _next">
+								<svg>
+									<use xlink:href="img/icons/icons.svg#icon-arrow-line-next"></use>
+								</svg>
 							</div>
-							<div class="s-shop__sidebar-item">
-								<div data-spoller class="s-shop__sidebar-title _spoller-active">
-									<span>Цвет</span>
-									<svg>
-										<use xlink:href="img/icons/icons.svg#icon-arrow-down"></use>
-									</svg>
-								</div>
-								<div>
-									<div class="s-shop__sidebar-check">
-										<input type="checkbox" id="color-1" class="input-check" />
-										<label for="color-1" class="label-check">Бежевый</label>
-
-										<input type="checkbox" id="color-2" class="input-check" />
-										<label for="color-2" class="label-check">Бежевый</label>
-
-										<input type="checkbox" id="color-3" class="input-check" />
-										<label for="color-3" class="label-check">Бежевый</label>
-
-										<input type="checkbox" id="color-4" class="input-check" />
-										<label for="color-4" class="label-check">Бежевый</label>
-
-										<input type="checkbox" id="color-5" class="input-check" />
-										<label for="color-5" class="label-check">Бежевый</label>
-
-										<input type="checkbox" id="color-6" class="input-check" />
-										<label for="color-6" class="label-check">Бежевый</label>
-									</div>
-								</div>
+							<div class="swiper-wrapper">
+								<a href="img/marble.jpg" data-fancybox="hero-gallery" class="swiper-slide hero__slide">
+									<img itemprop="image" src="img/marble.jpg" alt="image" />
+								</a>
+								<a href="img/marble.jpg" data-fancybox="hero-gallery" class="swiper-slide hero__slide">
+									<img itemprop="image" src="img/marble.jpg" alt="image" />
+								</a>
 							</div>
-							<div class="s-shop__sidebar-item">
-								<div data-spoller class="s-shop__sidebar-title _spoller-active">
-									<span>Страна</span>
-									<svg>
-										<use xlink:href="img/icons/icons.svg#icon-arrow-down"></use>
-									</svg>
-								</div>
-								<div>
-									<div class="s-shop__sidebar-check">
-										<input type="checkbox" id="country-1" class="input-check" />
-										<label for="country-1" class="label-check">Бразилия</label>
-
-										<input type="checkbox" id="country-2" class="input-check" />
-										<label for="country-2" class="label-check">Бразилия</label>
-
-										<input type="checkbox" id="country-3" class="input-check" />
-										<label for="country-3" class="label-check">Бразилия</label>
-
-										<input type="checkbox" id="country-4" class="input-check" />
-										<label for="country-4" class="label-check">Бразилия</label>
-
-										<input type="checkbox" id="country-5" class="input-check" />
-										<label for="country-5" class="label-check">Бразилия</label>
-
-										<input type="checkbox" id="country-6" class="input-check" />
-										<label for="country-6" class="label-check">Бразилия</label>
-									</div>
-								</div>
-							</div>
-							<div class="s-shop__sidebar-item">
-								<div data-spoller class="s-shop__sidebar-title _spoller-active">
-									<span>Назначение</span>
-									<svg>
-										<use xlink:href="img/icons/icons.svg#icon-arrow-down"></use>
-									</svg>
-								</div>
-								<div>
-									<div class="s-shop__sidebar-check">
-										<input type="checkbox" id="purpose-1" class="input-check" />
-										<label for="purpose-1" class="label-check">
-											Благоустройство
-										</label>
-
-										<input type="checkbox" id="purpose-2" class="input-check" />
-										<label for="purpose-2" class="label-check">
-											Благоустройство
-										</label>
-
-										<input type="checkbox" id="purpose-3" class="input-check" />
-										<label for="purpose-3" class="label-check">
-											Благоустройство
-										</label>
-
-										<input type="checkbox" id="purpose-4" class="input-check" />
-										<label for="purpose-4" class="label-check">
-											Благоустройство
-										</label>
-									</div>
-								</div>
-							</div>
-							<div class="s-shop__sidebar-item">
-								<div data-spoller class="s-shop__sidebar-title _spoller-active">
-									<span>Обработка</span>
-									<svg>
-										<use xlink:href="img/icons/icons.svg#icon-arrow-down"></use>
-									</svg>
-								</div>
-								<div>
-									<div class="s-shop__sidebar-check">
-										<input type="checkbox" id="proccess-1" class="input-check" />
-										<label for="proccess-1" class="label-check">Акваджэт</label>
-
-										<input type="checkbox" id="proccess-2" class="input-check" />
-										<label for="proccess-2" class="label-check">Акваджэт</label>
-
-										<input type="checkbox" id="proccess-3" class="input-check" />
-										<label for="proccess-3" class="label-check">Акваджэт</label>
-
-										<input type="checkbox" id="proccess-4" class="input-check" />
-										<label for="proccess-4" class="label-check">Акваджэт</label>
-									</div>
-								</div>
-							</div>
-							<button class="btn-s _outline s-shop__sidebar-clear">
-								Очистить фильтр
-							</button>
-						</form>
-					</div>
-					<div class="s-shop__body">
-						<div class="s-shop__grid">
-							<a href="#" itemscope class="card-product">
-								<img src="img/product.jpg" alt="image" itemprop="image" class="card-product__img" />
-								<h5 class="card-product__title" itemprop="title">Гранит Машад</h5>
-								<div class="card-product__price" itemprop="price">
-									Цена: от 5 460 ₽/м2
-								</div>
-							</a>
-							<a href="#" itemscope class="card-product">
-								<img src="img/product.jpg" alt="image" itemprop="image" class="card-product__img" />
-								<h5 class="card-product__title" itemprop="title">Гранит Машад</h5>
-								<div class="card-product__price" itemprop="price">
-									Цена: от 5 460 ₽/м2
-								</div>
-							</a>
-							<a href="#" itemscope class="card-product">
-								<img src="img/product.jpg" alt="image" itemprop="image" class="card-product__img" />
-								<h5 class="card-product__title" itemprop="title">Гранит Машад</h5>
-								<div class="card-product__price" itemprop="price">
-									Цена: от 5 460 ₽/м2
-								</div>
-							</a>
-							<a href="#" itemscope class="card-product">
-								<img src="img/product.jpg" alt="image" itemprop="image" class="card-product__img" />
-								<h5 class="card-product__title" itemprop="title">Гранит Машад</h5>
-								<div class="card-product__price" itemprop="price">
-									Цена: от 5 460 ₽/м2
-								</div>
-							</a>
-							<a href="#" itemscope class="card-product">
-								<img src="img/product.jpg" alt="image" itemprop="image" class="card-product__img" />
-								<h5 class="card-product__title" itemprop="title">Гранит Машад</h5>
-								<div class="card-product__price" itemprop="price">
-									Цена: от 5 460 ₽/м2
-								</div>
-							</a>
-							<a href="#" itemscope class="card-product">
-								<img src="img/product.jpg" alt="image" itemprop="image" class="card-product__img" />
-								<h5 class="card-product__title" itemprop="title">Гранит Машад</h5>
-								<div class="card-product__price" itemprop="price">
-									Цена: от 5 460 ₽/м2
-								</div>
-							</a>
-							<a href="#" itemscope class="card-product">
-								<img src="img/product.jpg" alt="image" itemprop="image" class="card-product__img" />
-								<h5 class="card-product__title" itemprop="title">Гранит Машад</h5>
-								<div class="card-product__price" itemprop="price">
-									Цена: от 5 460 ₽/м2
-								</div>
-							</a>
-							<a href="#" itemscope class="card-product">
-								<img src="img/product.jpg" alt="image" itemprop="image" class="card-product__img" />
-								<h5 class="card-product__title" itemprop="title">Гранит Машад</h5>
-								<div class="card-product__price" itemprop="price">
-									Цена: от 5 460 ₽/м2
-								</div>
-							</a>
-							<a href="#" itemscope class="card-product">
-								<img src="img/product.jpg" alt="image" itemprop="image" class="card-product__img" />
-								<h5 class="card-product__title" itemprop="title">Гранит Машад</h5>
-								<div class="card-product__price" itemprop="price">
-									Цена: от 5 460 ₽/м2
-								</div>
-							</a>
-							<a href="#" itemscope class="card-product">
-								<img src="img/product.jpg" alt="image" itemprop="image" class="card-product__img" />
-								<h5 class="card-product__title" itemprop="title">Гранит Машад</h5>
-								<div class="card-product__price" itemprop="price">
-									Цена: от 5 460 ₽/м2
-								</div>
-							</a>
-							<a href="#" itemscope class="card-product">
-								<img src="img/product.jpg" alt="image" itemprop="image" class="card-product__img" />
-								<h5 class="card-product__title" itemprop="title">Гранит Машад</h5>
-								<div class="card-product__price" itemprop="price">
-									Цена: от 5 460 ₽/м2
-								</div>
-							</a>
-							<a href="#" itemscope class="card-product">
-								<img src="img/product.jpg" alt="image" itemprop="image" class="card-product__img" />
-								<h5 class="card-product__title" itemprop="title">Гранит Машад</h5>
-								<div class="card-product__price" itemprop="price">
-									Цена: от 5 460 ₽/м2
-								</div>
-							</a>
-							<a href="#" itemscope class="card-product">
-								<img src="img/product.jpg" alt="image" itemprop="image" class="card-product__img" />
-								<h5 class="card-product__title" itemprop="title">Гранит Машад</h5>
-								<div class="card-product__price" itemprop="price">
-									Цена: от 5 460 ₽/м2
-								</div>
-							</a>
-							<a href="#" itemscope class="card-product">
-								<img src="img/product.jpg" alt="image" itemprop="image" class="card-product__img" />
-								<h5 class="card-product__title" itemprop="title">Гранит Машад</h5>
-								<div class="card-product__price" itemprop="price">
-									Цена: от 5 460 ₽/м2
-								</div>
-							</a>
-							<a href="#" itemscope class="card-product">
-								<img src="img/product.jpg" alt="image" itemprop="image" class="card-product__img" />
-								<h5 class="card-product__title" itemprop="title">Гранит Машад</h5>
-								<div class="card-product__price" itemprop="price">
-									Цена: от 5 460 ₽/м2
-								</div>
-							</a>
-							<a href="#" itemscope class="card-product">
-								<img src="img/product.jpg" alt="image" itemprop="image" class="card-product__img" />
-								<h5 class="card-product__title" itemprop="title">Гранит Машад</h5>
-								<div class="card-product__price" itemprop="price">
-									Цена: от 5 460 ₽/м2
-								</div>
-							</a>
-							<a href="#" itemscope class="card-product">
-								<img src="img/product.jpg" alt="image" itemprop="image" class="card-product__img" />
-								<h5 class="card-product__title" itemprop="title">Гранит Машад</h5>
-								<div class="card-product__price" itemprop="price">
-									Цена: от 5 460 ₽/м2
-								</div>
-							</a>
-							<a href="#" itemscope class="card-product">
-								<img src="img/product.jpg" alt="image" itemprop="image" class="card-product__img" />
-								<h5 class="card-product__title" itemprop="title">Гранит Машад</h5>
-								<div class="card-product__price" itemprop="price">
-									Цена: от 5 460 ₽/м2
-								</div>
-							</a>
 						</div>
-						<div class="s-shop__nav-bottom">
-							<div class="pagination">
-								<div>1</div>
-								<a href="#">2</a>
-								<a href="#">3</a>
+						<div class="swiper hero__thumb-slider">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide hero__thumb-slide">
+									<img src="img/marble.jpg" alt="image" />
+								</div>
+								<div class="swiper-slide hero__thumb-slide">
+									<img src="img/marble.jpg" alt="image" />
+								</div>
 							</div>
-							<button class="btn-s s-shop__more">Показать еще</button>
+						</div>
+					</div>
+					<div class="hero__info">
+						<h1 itemprop="title" class="s-title hero__title">Мрамор Dark Prime</h1>
+						<div itemprop="description" class="content hero__content">
+							<p>
+								Мрамор Dark Prime отличается повышенной прочностью и улучшенными
+								эксплуатационными характеристиками по сравнению с традиционными
+								мраморными породами. Уникальный минеральный состав обеспечивает
+								камню исключительную долговечность и стабильность в различных
+								климатических условиях
+							</p>
+						</div>
+						<div itemprop="price" class="hero__price">Цена: от 3 250 руб./м2</div>
+						<p itemprop="price description" class="hero__price-descr">
+							*Цены могут корректироваться в зависимости от месторождения камня,
+							объёма и срока поставки, наличия на складе, сезонности.
+						</p>
+						<div class="hero__nav">
+							<a href="#modal-order" data-fancybox class="btn-s hero__nav-btn">
+								Оформить заказ
+							</a>
+							<a href="#" target="_blank" class="hero__social-btn _blue">
+								<span>
+									Написать
+									<br />
+									в Telegram
+								</span>
+								<img src="img/tg.svg" alt="icon" />
+							</a>
+							<a href="#" target="_blank" class="hero__social-btn _green">
+								<span>
+									Написать
+									<br />
+									в WhatsApp
+								</span>
+								<img src="img/wh.svg" alt="icon" />
+							</a>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
 
+		<section class="s-spec sect-p bg-gray">
+			<div class="container">
+				<div itemscope class="s-spec__grid">
+					<div itemprop="specification" class="s-spec__item">
+						<img itemprop="specification icon" src="img/pallete.svg" alt="icon" class="s-spec__item-icon" />
+						<div class="s-spec__item-body">
+							<div itemprop="specification title" class="s-spec__item-title">
+								Цвет:
+							</div>
+							<div itemprop="specfication value" class="s-spec__item-value">
+								Чёрный
+							</div>
+						</div>
+					</div>
+					<div itemprop="specification" class="s-spec__item">
+						<img itemprop="specification icon" src="img/structure.svg" alt="icon" class="s-spec__item-icon" />
+						<div class="s-spec__item-body">
+							<div itemprop="specification title" class="s-spec__item-title">
+								Структура зерна:
+							</div>
+							<div itemprop="specfication value" class="s-spec__item-value">
+								Cреднезернистая
+							</div>
+						</div>
+					</div>
+					<div itemprop="specification" class="s-spec__item">
+						<img itemprop="specification icon" src="img/location.svg" alt="icon" class="s-spec__item-icon" />
+						<div class="s-spec__item-body">
+							<div itemprop="specification title" class="s-spec__item-title">
+								Страна:
+							</div>
+							<div itemprop="specfication value" class="s-spec__item-value">
+								Иран
+							</div>
+						</div>
+					</div>
+					<div itemprop="specification" class="s-spec__item">
+						<img itemprop="specification icon" src="img/absorption.svg" alt="icon" class="s-spec__item-icon" />
+						<div class="s-spec__item-body">
+							<div itemprop="specification title" class="s-spec__item-title">
+								Водопоглащение:
+							</div>
+							<div itemprop="specfication value" class="s-spec__item-value">
+								0,37 %
+							</div>
+						</div>
+					</div>
+					<div itemprop="specification" class="s-spec__item">
+						<img itemprop="specification icon" src="img/cold.svg" alt="icon" class="s-spec__item-icon" />
+						<div class="s-spec__item-body">
+							<div itemprop="specification title" class="s-spec__item-title">
+								Морозостойкость:
+							</div>
+							<div itemprop="specfication value" class="s-spec__item-value">
+								0,37 %
+							</div>
+						</div>
+					</div>
+					<div itemprop="specification" class="s-spec__item">
+						<img itemprop="specification icon" src="img/radioactivity.svg" alt="icon" class="s-spec__item-icon" />
+						<div class="s-spec__item-body">
+							<div itemprop="specification title" class="s-spec__item-title">
+								Радиоактивность:
+							</div>
+							<div itemprop="specfication value" class="s-spec__item-value">
+								1 класс
+							</div>
+						</div>
+					</div>
+					<div itemprop="specification" class="s-spec__item">
+						<img itemprop="specification icon" src="img/strong.svg" alt="icon" class="s-spec__item-icon" />
+						<div class="s-spec__item-body">
+							<div itemprop="specification title" class="s-spec__item-title">
+								Предел прочности:
+							</div>
+							<div itemprop="specfication value" class="s-spec__item-value">
+								146 МПа
+							</div>
+						</div>
+					</div>
+					<div itemprop="specification" class="s-spec__item">
+						<img itemprop="specification icon" src="img/weight.svg" alt="icon" class="s-spec__item-icon" />
+						<div class="s-spec__item-body">
+							<div itemprop="specification title" class="s-spec__item-title">
+								Объёмный вес:
+							</div>
+							<div itemprop="specfication value" class="s-spec__item-value">
+								2600 кг/м3
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="s-stones sect-p bg-transparent">
+			<div class="container">
+				<h2 class="s-title s-stones__title text-start">
+					Изделия из Мрамора Dark Prime
+				</h2>
+				<div class="s-stones__grid">
+					<a href="#" itemscope class="card-production _lg">
+						<img src="img/production.jpg" alt="image" class="card-production__img" />
+						<div class="card-production__btn">
+							<div class="card-production__name" itemprop="name">Слэбы</div>
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-arrow-line-next"></use>
+							</svg>
+						</div>
+					</a>
+					<a href="#" itemscope class="card-production _lg">
+						<img src="img/production.jpg" alt="image" class="card-production__img" />
+						<div class="card-production__btn">
+							<div class="card-production__name" itemprop="name">Плитка</div>
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-arrow-line-next"></use>
+							</svg>
+						</div>
+					</a>
+					<a href="#" itemscope class="card-production _lg">
+						<img src="img/production.jpg" alt="image" class="card-production__img" />
+						<div class="card-production__btn">
+							<div class="card-production__name" itemprop="name">Панели</div>
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-arrow-line-next"></use>
+							</svg>
+						</div>
+					</a>
+					<a href="#" itemscope class="card-production _lg">
+						<img src="img/production.jpg" alt="image" class="card-production__img" />
+						<div class="card-production__btn">
+							<div class="card-production__name" itemprop="name">Ступени</div>
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-arrow-line-next"></use>
+							</svg>
+						</div>
+					</a>
+					<a href="#" itemscope class="card-production _lg">
+						<img src="img/production.jpg" alt="image" class="card-production__img" />
+						<div class="card-production__btn">
+							<div class="card-production__name" itemprop="name">Слэбы</div>
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-arrow-line-next"></use>
+							</svg>
+						</div>
+					</a>
+					<a href="#" itemscope class="card-production _lg">
+						<img src="img/production.jpg" alt="image" class="card-production__img" />
+						<div class="card-production__btn">
+							<div class="card-production__name" itemprop="name">Плитка</div>
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-arrow-line-next"></use>
+							</svg>
+						</div>
+					</a>
+					<a href="#" itemscope class="card-production _lg">
+						<img src="img/production.jpg" alt="image" class="card-production__img" />
+						<div class="card-production__btn">
+							<div class="card-production__name" itemprop="name">Панели</div>
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-arrow-line-next"></use>
+							</svg>
+						</div>
+					</a>
+					<a href="#" itemscope class="card-production _lg">
+						<img src="img/production.jpg" alt="image" class="card-production__img" />
+						<div class="card-production__btn">
+							<div class="card-production__name" itemprop="name">Ступени</div>
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-arrow-line-next"></use>
+							</svg>
+						</div>
+					</a>
+				</div>
+			</div>
+		</section>
+		<section class="s-stones sect-m bg-transparent">
+			<div class="container">
+				<h2 class="s-title s-stones__title _big">
+					Натуральные и искусственные камни для фасадов, благоустройства
+					и строительства — оптом
+					<span>от производителя</span>
+				</h2>
+				<p class="content-big s-stones__content">
+					В нашем каталоге более 800 сортов камня для отделки и строительства
+				</p>
+				<div class="s-stones__grid">
+					<a href="#" itemscope class="card-production _lg">
+						<img src="img/production.jpg" alt="image" class="card-production__img" />
+						<div class="card-production__btn">
+							<div class="card-production__name" itemprop="name">Слэбы</div>
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-arrow-line-next"></use>
+							</svg>
+						</div>
+					</a>
+					<a href="#" itemscope class="card-production _lg">
+						<img src="img/production.jpg" alt="image" class="card-production__img" />
+						<div class="card-production__btn">
+							<div class="card-production__name" itemprop="name">Плитка</div>
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-arrow-line-next"></use>
+							</svg>
+						</div>
+					</a>
+					<a href="#" itemscope class="card-production _lg">
+						<img src="img/production.jpg" alt="image" class="card-production__img" />
+						<div class="card-production__btn">
+							<div class="card-production__name" itemprop="name">Слэбы</div>
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-arrow-line-next"></use>
+							</svg>
+						</div>
+					</a>
+					<a href="#" itemscope class="card-production _lg">
+						<img src="img/production.jpg" alt="image" class="card-production__img" />
+						<div class="card-production__btn">
+							<div class="card-production__name" itemprop="name">Плитка</div>
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-arrow-line-next"></use>
+							</svg>
+						</div>
+					</a>
+					<a href="#" itemscope class="card-production _lg">
+						<img src="img/production.jpg" alt="image" class="card-production__img" />
+						<div class="card-production__btn">
+							<div class="card-production__name" itemprop="name">Слэбы</div>
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-arrow-line-next"></use>
+							</svg>
+						</div>
+					</a>
+					<a href="#" itemscope class="card-production _lg">
+						<img src="img/production.jpg" alt="image" class="card-production__img" />
+						<div class="card-production__btn">
+							<div class="card-production__name" itemprop="name">Плитка</div>
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-arrow-line-next"></use>
+							</svg>
+						</div>
+					</a>
+					<a href="#" itemscope class="card-production _lg">
+						<img src="img/production.jpg" alt="image" class="card-production__img" />
+						<div class="card-production__btn">
+							<div class="card-production__name" itemprop="name">Слэбы</div>
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-arrow-line-next"></use>
+							</svg>
+						</div>
+					</a>
+					<a href="#" itemscope class="card-production _lg">
+						<img src="img/production.jpg" alt="image" class="card-production__img" />
+						<div class="card-production__btn">
+							<div class="card-production__name" itemprop="name">Плитка</div>
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-arrow-line-next"></use>
+							</svg>
+						</div>
+					</a>
+				</div>
+			</div>
+		</section>
+		<section class="s-consult sect-m">
+			<div class="container">
+				<div class="s-consult__body" style="
+              background: url(&quot;img/sklad-stella.jpg&quot;) center / cover
+                no-repeat;
+            ">
+					<div class="s-consult__head">
+						<h2 class="s-title s-consult__title">
+							Складские остатки по привлекательным ценам
+						</h2>
+						<p class="s-consult__content">
+							Скачайте актуальный прайс-лист изделий в наличии, с выгодой до
+							20%
+						</p>
+					</div>
+					<div class="s-consult__form-wrapper">
+						<form action="#" class="s-consult__form">
+							<div class="input-control _icon">
+								<svg>
+									<use xlink:href="img/icons/icons.svg#icon-tel"></use>
+								</svg>
+								<input type="tel" placeholder="Ваш телефон" class="input" />
+							</div>
+							<button class="btn-s s-consult__form-btn">
+								Получить консультацию
+							</button>
+						</form>
+						<p class="s-consult__form-policy">
+							*Нажимая на кнопку, вы даёте своё согласие на обработку
+							<a href="#" target="_blank">Персональных данных</a>
+							и принимаете 
+							<a href="#" target="_blank">Условия соглашения</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
 		<section class="s-steps sect-p" style="background: url('img/steps-bg.png') bottom 0 left 0 / 100% auto no-repeat;">
 			<div class="container">
 				<h2 class="s-title s-steps__title">
@@ -1213,34 +1274,33 @@
 			</div>
 		</section>
 
-		<section class="s-consult sect-m">
+		<section class="s-decision sect-m">
 			<div class="container">
-				<div class="s-consult__body" style="
-        background: url(&quot;img/consult.jpg&quot;) center / cover no-repeat;
-      ">
-					<div class="s-consult__head">
-						<h2 class="s-title s-consult__title">
-							Нужна помощь эксперта? Есть вопросы?
-						</h2>
-						<p class="s-consult__content">
-							Оставьте ваши контакты — специалист поможет выбрать подходящий камень,
-							сориентирует по срокам, стоимости и подберёт оптимальное решение
-							под ваш проект
-						</p>
+				<div class="s-decision__body" style="
+              background: url(&quot;img/decision-bg.jpg&quot;) center / cover
+                no-repeat;
+            ">
+					<h2 class="s-title s-decision__title">
+						Нужна помощь эксперта? Есть вопросы?
+					</h2>
+					<div class="content-big s-decision__head-content">
+						Оставьте ваши контакты — специалист поможет выбрать подходящий
+						камень, сориентирует по срокам, стоимости и подберёт оптимальное
+						решение под ваш проект
 					</div>
-					<div class="s-consult__form-wrapper">
-						<form action="#" class="s-consult__form">
+					<div class="form-wrapper">
+						<form action="#" class="form-wrapper__form">
 							<div class="input-control _icon">
 								<svg>
 									<use xlink:href="img/icons/icons.svg#icon-tel"></use>
 								</svg>
 								<input type="tel" placeholder="Ваш телефон" class="input" />
 							</div>
-							<button class="btn-s s-consult__form-btn">
+							<button class="btn-s form-wrapper__form-btn">
 								Получить консультацию
 							</button>
 						</form>
-						<p class="s-consult__form-policy">
+						<p class="form-wrapper__form-policy">
 							*Нажимая на кнопку, вы даёте своё согласие на обработку
 							<a href="#" target="_blank">Персональных данных</a>
 							и принимаете 
@@ -1250,7 +1310,95 @@
 				</div>
 			</div>
 		</section>
+		<section class="sect-m s-projects-rec">
+			<div class="container">
+				<h2 class="s-title s-projects-rec__title">
+					Огромное количество реализованных проектов
+				</h2>
+				<p class="content-big s-projects-rec__content">
+					Не просто изготавливаем изделия, а предоставляем комплексный сервис, где
+					каждый клиент в базовом пакете услуг получает комплексную работу над
+					проектом под ключ
+				</p>
+				<div class="s-projects-rec__grid">
+					<a href="#" itemscope class="card-project">
+						<img itemprop="image" src="img/project.jpg" alt="image" class="card-project__img" />
+						<h5 itemprop="title" class="card-project__title">
+							Министерство общественной безопасности КНР
+						</h5>
+						<div itemprop="city" class="card-project__city">г. Пекин, Китай</div>
+					</a>
+					<a href="#" itemscope class="card-project">
+						<img itemprop="image" src="img/project.jpg" alt="image" class="card-project__img" />
+						<h5 itemprop="title" class="card-project__title">
+							Министерство общественной безопасности КНР
+						</h5>
+						<div itemprop="city" class="card-project__city">г. Пекин, Китай</div>
+					</a>
+					<a href="#" itemscope class="card-project">
+						<img itemprop="image" src="img/project.jpg" alt="image" class="card-project__img" />
+						<h5 itemprop="title" class="card-project__title">
+							Министерство общественной безопасности КНР
+						</h5>
+						<div itemprop="city" class="card-project__city">г. Пекин, Китай</div>
+					</a>
+					<a href="#" itemscope class="card-project">
+						<img itemprop="image" src="img/project.jpg" alt="image" class="card-project__img" />
+						<h5 itemprop="title" class="card-project__title">
+							Министерство общественной безопасности КНР
+						</h5>
+						<div itemprop="city" class="card-project__city">г. Пекин, Китай</div>
+					</a>
+					<a href="#" itemscope class="card-project">
+						<img itemprop="image" src="img/project.jpg" alt="image" class="card-project__img" />
+						<h5 itemprop="title" class="card-project__title">
+							Министерство общественной безопасности КНР
+						</h5>
+						<div itemprop="city" class="card-project__city">г. Пекин, Китай</div>
+					</a>
+					<a href="#" itemscope class="card-project">
+						<img itemprop="image" src="img/project.jpg" alt="image" class="card-project__img" />
+						<h5 itemprop="title" class="card-project__title">
+							Министерство общественной безопасности КНР
+						</h5>
+						<div itemprop="city" class="card-project__city">г. Пекин, Китай</div>
+					</a>
+				</div>
+			</div>
+		</section>
 
+		<section class="sect-m s-estimation">
+			<div class="container">
+				<div class="s-estimation__grid">
+					<div class="s-estimation__item">
+						<h2 class="s-title s-estimation__title">
+							Составим смету для вашего проекта прямо
+							<span>сейчас!</span>
+						</h2>
+						<p class="s-estimation__content">
+							Отправьте техническое задание — мы рассчитаем стоимость с учётом ваших
+							требований и параметров проекта
+						</p>
+						<div class="s-estimation__item-gallery">
+							<img src="img/estimation-1.jpg" alt="image">
+						</div>
+					</div>
+					<div class="s-estimation__item">
+						<div class="s-estimation__item-gallery">
+							<img src="img/estimation-2.jpg" alt="image">
+						</div>
+						<div class="s-estimation__item-nav">
+							<a href="#modal-get" data-fancybox class="btn-s s-estimation__btn">Получить смету</a>
+							<a href="img/about-bg.png" download class="s-estimation__file-btn">
+								<img src="img/icon-pdf.svg" alt="icon">
+								<span>Получите подробную смету в PDF</span>
+							</a>
+						</div>
+					</div>
+					<img src="img/right-rect.png" alt="image" class="s-estimation__bg">
+				</div>
+			</div>
+		</section>
 
 	</main>
 	<div class="modal modal-get" id="modal-get">

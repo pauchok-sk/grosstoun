@@ -8,21 +8,23 @@
     "
   >
     @@include('html/components/header.html')
-
     <main>
-      @@include('html/components/hero-columns.html')
+      @@include('html/components/hero-marble.html')
+      @@include('html/components/s-spec.html')
       <section class="s-stones sect-p bg-transparent">
         <div class="container">
-          <h2 class="s-title s-stones__title text-start">Другие колонны</h2>
+          <h2 class="s-title s-stones__title text-start">
+            Изделия из Мрамора Dark Prime
+          </h2>
           <div class="s-stones__grid">
             <a href="#" itemscope class="card-production _lg">
               <img
-                src="@img/column.png"
+                src="@img/production.jpg"
                 alt="image"
                 class="card-production__img"
               />
               <div class="card-production__btn">
-                <div class="card-production__name" itemprop="name">Мрамор</div>
+                <div class="card-production__name" itemprop="name">Слэбы</div>
                 <svg>
                   <use
                     xlink:href="img/icons/icons.svg#icon-arrow-line-next"
@@ -32,12 +34,12 @@
             </a>
             <a href="#" itemscope class="card-production _lg">
               <img
-                src="@img/column.png"
+                src="@img/production.jpg"
                 alt="image"
                 class="card-production__img"
               />
               <div class="card-production__btn">
-                <div class="card-production__name" itemprop="name">Гранит</div>
+                <div class="card-production__name" itemprop="name">Плитка</div>
                 <svg>
                   <use
                     xlink:href="img/icons/icons.svg#icon-arrow-line-next"
@@ -47,12 +49,12 @@
             </a>
             <a href="#" itemscope class="card-production _lg">
               <img
-                src="@img/column.png"
+                src="@img/production.jpg"
                 alt="image"
                 class="card-production__img"
               />
               <div class="card-production__btn">
-                <div class="card-production__name" itemprop="name">Кварцит</div>
+                <div class="card-production__name" itemprop="name">Панели</div>
                 <svg>
                   <use
                     xlink:href="img/icons/icons.svg#icon-arrow-line-next"
@@ -62,12 +64,12 @@
             </a>
             <a href="#" itemscope class="card-production _lg">
               <img
-                src="@img/column.png"
+                src="@img/production.jpg"
                 alt="image"
                 class="card-production__img"
               />
               <div class="card-production__btn">
-                <div class="card-production__name" itemprop="name">Оникс</div>
+                <div class="card-production__name" itemprop="name">Ступени</div>
                 <svg>
                   <use
                     xlink:href="img/icons/icons.svg#icon-arrow-line-next"
@@ -77,12 +79,12 @@
             </a>
             <a href="#" itemscope class="card-production _lg">
               <img
-                src="@img/column.png"
+                src="@img/production.jpg"
                 alt="image"
                 class="card-production__img"
               />
               <div class="card-production__btn">
-                <div class="card-production__name" itemprop="name">Мрамор</div>
+                <div class="card-production__name" itemprop="name">Слэбы</div>
                 <svg>
                   <use
                     xlink:href="img/icons/icons.svg#icon-arrow-line-next"
@@ -92,12 +94,12 @@
             </a>
             <a href="#" itemscope class="card-production _lg">
               <img
-                src="@img/column.png"
+                src="@img/production.jpg"
                 alt="image"
                 class="card-production__img"
               />
               <div class="card-production__btn">
-                <div class="card-production__name" itemprop="name">Гранит</div>
+                <div class="card-production__name" itemprop="name">Плитка</div>
                 <svg>
                   <use
                     xlink:href="img/icons/icons.svg#icon-arrow-line-next"
@@ -107,12 +109,12 @@
             </a>
             <a href="#" itemscope class="card-production _lg">
               <img
-                src="@img/column.png"
+                src="@img/production.jpg"
                 alt="image"
                 class="card-production__img"
               />
               <div class="card-production__btn">
-                <div class="card-production__name" itemprop="name">Кварцит</div>
+                <div class="card-production__name" itemprop="name">Панели</div>
                 <svg>
                   <use
                     xlink:href="img/icons/icons.svg#icon-arrow-line-next"
@@ -122,12 +124,12 @@
             </a>
             <a href="#" itemscope class="card-production _lg">
               <img
-                src="@img/column.png"
+                src="@img/production.jpg"
                 alt="image"
                 class="card-production__img"
               />
               <div class="card-production__btn">
-                <div class="card-production__name" itemprop="name">Оникс</div>
+                <div class="card-production__name" itemprop="name">Ступени</div>
                 <svg>
                   <use
                     xlink:href="img/icons/icons.svg#icon-arrow-line-next"
@@ -272,13 +274,12 @@
           </div>
         </div>
       </section>
-      
       <section class="s-consult sect-m">
         <div class="container">
           <div
             class="s-consult__body"
             style="
-              background: url(&quot;@img/sklad.jpg&quot;) center / cover
+              background: url(&quot;@img/sklad-stella.jpg&quot;) center / cover
                 no-repeat;
             "
           >
@@ -356,7 +357,6 @@
       @@include('html/components/s-projects-rec.html')
       @@include('html/components/s-estimation.html')
     </main>
-
     @@include('html/components/modals.html')
     @@include('html/components/footer.html')
     <script src="js/app.min.js"></script>

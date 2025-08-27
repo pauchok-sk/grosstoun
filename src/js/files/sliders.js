@@ -34,16 +34,21 @@ export default function sliders() {
   const heroSlider = document.querySelector(".hero__slider");
 
   if (heroSlider) {
+    const isFlex = document
+      .querySelector(".hero__gallery")
+      .classList.contains("_flex");
     const thumbSlider = document.querySelector(".hero__thumb-slider");
 
     const thumbSwiper = new Swiper(thumbSlider, {
       speed: 800,
       spaceBetween: 20,
       slidesPerView: "auto",
+      direction: "horizontal",
       breakpoints: {
         768: {
           spaceBetween: 24,
           slidesPerView: 3,
+          direction: isFlex ? "vertical" : "horizontal",
         },
       },
     });
@@ -52,15 +57,15 @@ export default function sliders() {
       speed: 800,
       spaceBetween: 20,
       autoplay: {
-        delay: 3500
+        delay: 3500,
       },
       thumbs: {
         swiper: thumbSwiper,
       },
       navigation: {
         prevEl: ".hero__slider-arrow._prev",
-        nextEl: ".hero__slider-arrow._next"
-      }
+        nextEl: ".hero__slider-arrow._next",
+      },
     });
   }
 }
